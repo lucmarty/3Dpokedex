@@ -32,7 +32,7 @@ const Pokemon: React.FC = () => {
   useEffect(() => {
     if (pokemon) {
       // Importer le modèle dynamiquement
-      import(`../models/${pokemon}/${pokemon}.glb`)
+      import(`../assets/models/${pokemon}/${pokemon}.glb`)
         .then((module) => setModelPath(module.default))
         .catch((err) =>
           console.error("Erreur lors du chargement du modèle :", err)
