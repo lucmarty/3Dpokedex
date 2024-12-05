@@ -11,7 +11,7 @@ const SpriteList: React.FC = () => {
             alt={pokemon.name.french}
             className="w-16 h-16 object-contain"
           />
-          <a href="https://youtu.be/dQw4w9WgXcQ"><p className="text-sm text-gray-800 mt-2">{pokemon.name.french}</p> </a>
+          <a href={`/pokemon/${pokemon.name.english.toLowerCase()}`}><p className="text-sm text-gray-800 mt-2">{pokemon.name.french}</p> </a>
         </div>
       ))}
     </div>
