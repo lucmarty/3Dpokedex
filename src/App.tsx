@@ -1,5 +1,4 @@
 import React from "react";
-import PokemonViewer from "./components/PokemonView";
 import SpriteList from './components/SpritesList';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Pokemon from "./components/Pokemon";
