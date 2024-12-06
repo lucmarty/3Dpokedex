@@ -33,7 +33,7 @@ const Pokemon: React.FC = () => {
     <div style={{ height: "100vh", width: "100vw" }}>
       <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }}>
         <Suspense fallback={null}>
-          
+
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={1} />
           <directionalLight position={[-5, 5, 5]} intensity={2} />
