@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 const SpriteList: React.FC = () => {
   const [filteredPokemon, setFilteredPokemon] = useState(pokedex.slice(0, 151));
   const pokemonTypes = Array.from(new Set(pokedex.flatMap((pokemon) => pokemon.type)));
-  const handleSearch = (searchText: string, selectedType: string, selectedType2: string) => {
+  const handleSearch = (searchText: string, selectedType: string, selectedType2: string, sortOption: string) => {
     const filtered = pokedex.slice(0, 151).filter((pokemon) => {
       const matchesText =
         pokemon.name.french.toLowerCase().includes(searchText) ||
@@ -16,7 +16,14 @@ const SpriteList: React.FC = () => {
       const matchesType = matchesFirstType && matchesSecondType;
       return matchesText && matchesType;
     });
-    setFilteredPokemon(filtered);
+    const sorted = filtered.sort((a, b) => {
+      if (sortOption !== "id") {
+        return b.base[sortOption as keyof typeof b.base] - a.base[sortOption as keyof typeof a.base];
+      } else {
+        return a.id - b.id;
+      }
+    });
+    setFilteredPokemon(sorted);
   };
   return (
     <div>

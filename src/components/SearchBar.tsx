@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 
 interface SearchBarProps {
-    onSearch: (searchText: string, selectedType: string, selectedType2: string) => void;
+    onSearch: (searchText: string, selectedType: string, selectedType2: string, sortOption: string) => void;
     pokemonTypes: string[];
   }
   
@@ -11,22 +11,29 @@ interface SearchBarProps {
     const [inputText, setInputText] = useState("");
     const [selectedType, setSelectedType] = useState("");
     const [selectedType2, setSelectedType2] = useState("");
+    const [sortOption, setSortOption] = useState("id");
   
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const lowerCase = e.target.value.toLowerCase();
       setInputText(lowerCase);
-      onSearch(lowerCase, selectedType, selectedType2);
+      onSearch(lowerCase, selectedType, selectedType2, sortOption);
     };
   
     const handleTypeChange = (e: React.ChangeEvent<{ value: unknown }>, typeIndex: number) => {
         const type = e.target.value as string;
         if (typeIndex === 1) {
           setSelectedType(type);
-          onSearch(inputText, type, selectedType2);
+          onSearch(inputText, type, selectedType2, sortOption);
         } else {
           setSelectedType2(type);
-          onSearch(inputText, selectedType, type);
+          onSearch(inputText, selectedType, type, sortOption);
         }
+    };
+
+    const handleSortChange = (e: React.ChangeEvent<{ value: unknown }>) => {
+        const value = e.target.value as string;
+        setSortOption(value);
+        onSearch(inputText, selectedType, selectedType2, value);
     };
     
   
@@ -75,6 +82,24 @@ interface SearchBarProps {
               {type}
             </MenuItem>
           ))}
+        </TextField>
+        <TextField
+          id="sort-select"
+          select
+          value={sortOption}
+          onChange={handleSortChange}
+          label="Trier par"
+          variant="outlined"
+          fullWidth
+          className="bg-white rounded-lg shadow-md"
+        >
+          <MenuItem value="id">Numéro</MenuItem>
+          <MenuItem value="HP">HP</MenuItem>
+          <MenuItem value="Attack">Attack</MenuItem>
+          <MenuItem value="Defense">Defense</MenuItem>
+          <MenuItem value="Sp. Attack">Sp. Attack</MenuItem>
+          <MenuItem value="Sp. Defense">Sp. Defense</MenuItem>
+          <MenuItem value="Speed">Speed</MenuItem>
         </TextField>
       </div>
       
