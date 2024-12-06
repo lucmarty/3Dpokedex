@@ -5,8 +5,25 @@ import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 import pokedex from "../pokedex.json";
 
+import * as THREE from "three";
+
 const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
   const gltf = useGLTF(modelPath);
+
+  useMemo(() => {
+    gltf.scene.traverse((child) => {
+      const mesh = child as THREE.Mesh;
+      if (mesh.isMesh) {
+        if (mesh.material) {
+          const material = mesh.material as THREE.MeshStandardMaterial;
+          material.metalness = 0;
+          material.alphaTest = 0.5;
+          material.transparent = true;
+        }
+      }
+    });
+  }, [gltf]);
+
   return (
     <primitive object={gltf.scene} scale={0.01} position={[0, -0.5, 0]} />
   );
