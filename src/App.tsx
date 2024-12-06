@@ -1,5 +1,6 @@
 import React from "react";
 import SpriteList from './components/SpritesList';
+import Menu from './components/Menu';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Pokemon from "./components/Pokemon";
 
@@ -8,10 +9,10 @@ const App: React.FC = () => {
      <BrowserRouter>
       <Routes>
         {/* Route pour afficher la liste ou une page d'accueil */}
-        <Route path="/" element={<div><h1>Bienvenue dans le Pokédex</h1> <SpriteList /></div>} />
+        <Route path="/" element={<><Menu /><h1>Bienvenue dans le Pokédex</h1> <SpriteList /></>} />
 
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
-        <Route path="/pokemon/:pokemon" element={<Pokemon />} />
+        <Route path="/pokemon/:pokemon" element={<><Menu /> <Pokemon /></>} />
         
       </Routes>
     </BrowserRouter>
