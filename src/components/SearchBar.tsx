@@ -33,7 +33,7 @@ interface SearchBarProps {
 
   return (
     <div className="main">
-      <div className="search">
+      <div className="search bg-white">
         <TextField
           id="outlined-basic"
           onChange={handleInputChange}
@@ -43,7 +43,7 @@ interface SearchBarProps {
           label="Chercher un pokemon"
         />
       </div>
-      <div className="filter mt-4 flex gap-4">
+      <div className="filter mt-4 flex gap-4 bg-white">
         <TextField
           id="type-select-1"
           select
