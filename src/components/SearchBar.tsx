@@ -37,11 +37,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, pokemonTypes }) => {
     };
 
     return (
-        <div className="main">
+        <>
             <div className="search bg-white">
                 <TextField id="outlined-basic" onChange={handleInputChange} value={inputText} variant="outlined" fullWidth label="Chercher un pokemon"/>
             </div>
-                <div className="filter mt-4 flex gap-4 bg-white">
+            <div className="filter mt-4 flex gap-4 bg-white">
                 <TextField id="type-select-1" select value={selectedType} onChange={(e) => handleTypeChange(e, 1)} label="Type 1" variant="outlined" fullWidth>
                     <MenuItem value="">All Types</MenuItem>
                     {pokemonTypes.map((type, index) => (
@@ -58,7 +58,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, pokemonTypes }) => {
                         </MenuItem>
                     ))}
                 </TextField>
-                <TextField id="sort-select" select value={sortOption} onChange={handleSortChange} label="Trier par" variant="outlined" fullWidth className="bg-white rounded-lg shadow-md">
+                <TextField id="sort-select" select value={sortOption} onChange={handleSortChange} label="Trier par" variant="outlined" fullWidth className="text-white-500 rounded-lg shadow-md">
                     <MenuItem value="id">Numéro</MenuItem>
                     <MenuItem value="HP">HP</MenuItem>
                     <MenuItem value="Attack">Attack</MenuItem>
@@ -68,7 +68,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, pokemonTypes }) => {
                     <MenuItem value="Speed">Speed</MenuItem>
                 </TextField>
             </div>
-        </div>
+        </>
     );
 };
 
