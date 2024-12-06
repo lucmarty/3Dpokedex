@@ -4,7 +4,6 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 import pokedex from "../pokedex.json"; 
-import { normalizeName } from '../tools';
 
 const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
   const gltf = useGLTF(modelPath);
@@ -21,81 +20,96 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
-    const svg = d3.select(svgRef.current);
-    const width = 500;
-    const height = 300;
-    const margin = { top: 20, right: 20, bottom: 50, left: 100 };
+    if (!svgRef.current) return;
 
-    svg.selectAll("*").remove(); 
+    const margin = 50;
+    const width = 400;
+    const height = 400;
+    const radius = Math.min(width, height) / 2 - margin;
 
-    svg
+    const statNames = ["HP", "Attack", "Defense", "Sp. Attack", "Sp. Defense", "Speed"];
+    const statValues = statNames.map((stat) => stats[stat]);
+
+    const angleSlice = (Math.PI * 2) / statNames.length;
+
+    const rScale = d3.scaleLinear().domain([0, Math.max(...statValues)]).range([0, radius]);
+
+    const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height)
-      .style("background", "#f9f9f9");
-
-    const data = Object.entries(stats); // Convertir les stats en tableau de paires [nom, valeur]
-
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-
-    const xScale = d3
-      .scaleLinear()
-      .domain([0, d3.max(data.map(([, value]) => value))!])
-      .nice()
-      .range([0, innerWidth]);
-
-    const yScale = d3
-      .scaleBand()
-      .domain(data.map(([key]) => key))
-      .range([0, innerHeight])
-      .padding(0.2);
-
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10); 
-
-    // Ajouter un groupe pour contenir le graphique
-    const graph = svg
       .append("g")
-      .attr("transform", `translate(${margin.left}, ${margin.top})`);
+      .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-    // Ajouter les barres
-    graph
-      .selectAll("rect")
-      .data(data)
-      .join("rect")
-      .attr("x", 0) 
-      .attr("y", ([key] : any) => yScale(key)!)
-      .attr("width", ([, value] : any) => xScale(value)) // La largeur correspond à la valeur
-      .attr("height", yScale.bandwidth()) // La hauteur est définie par `yScale`
-      .attr("fill", ([,], i : number) => colorScale(i.toString())!);
+    // Dessiner les axes
+    const axis = svg.selectAll(".axis")
+      .data(statNames)
+      .enter().append("line")
+      .attr("class", "axis")
+      .attr("x1", 0)
+      .attr("y1", 0)
+      .attr("x2", (d: any, i: number) => rScale(Math.max(...statValues)) * Math.cos(angleSlice * i))
+      .attr("y2", (d: any, i: number) => rScale(Math.max(...statValues)) * Math.sin(angleSlice * i))
+      .style("stroke", "#ccc");
 
-    // Ajouter les valeurs des stats au bout des barres
-    graph
-      .selectAll("text.value")
-      .data(data)
-      .join("text")
-      .attr("class", "value")
-      .attr("x", ([, value] :any) => xScale(value) + 5) // Légèrement à droite du bout de la barre
-      .attr("y", ([key] :any) => yScale(key)! + yScale.bandwidth() / 2) // Centré verticalement
-      .attr("text-anchor", "start")
-      .attr("alignment-baseline", "middle")
-      .attr("fill", "black")
-      .attr("font-size", "12px")
-      .text(([, value] :any) => value);
+    // Calculer les coordonnées des points pour la ligne radar
+    const radarPoints = statValues.map((value, i) => {
+      return [
+        rScale(value) * Math.cos(angleSlice * i),
+        rScale(value) * Math.sin(angleSlice * i)
+      ];
+    });
 
-    // Ajouter l'axe X (valeurs des stats)
-    graph
-      .append("g")
-      .attr("transform", `translate(0, ${innerHeight})`)
-      .call(d3.axisBottom(xScale));
 
-    // Ajouter l'axe Y (noms des stats)
-    graph
-      .append("g")
-      .call(d3.axisLeft(yScale));
+
+    // Dessiner les cercles pour les différentes valeurs
+    for (let i = 0; i < 5; i++) {
+      svg.append("circle")
+        .attr("r", rScale(Math.max(...statValues)) * (i + 1) / 5)
+        .attr("cx", 0)
+        .attr("cy", 0)
+        .style("fill", "none")
+        .style("stroke", "#ddd");
+    }
+
+    // Ajouter les labels pour les axes
+    svg.selectAll(".axis-label")
+      .data(statNames)
+      .enter().append("text")
+      .attr("class", "axis-label")
+      .attr("x", (d: any, i: number) => (rScale(Math.max(...statValues)) + 30) * Math.cos(angleSlice * i))
+      .attr("y", (d: any, i: number) => (rScale(Math.max(...statValues)) + 30) * Math.sin(angleSlice * i))
+      .text((d: any) => d)
+      .style("font-size", "10px")
+      .style("text-anchor", "middle");
+    
+    svg.selectAll(".axis-value")
+  .data(statNames)
+  .enter().append("text")
+  .attr("class", "axis-value")
+  .attr("x", (d: any, i: number) => (rScale(Math.max(...statValues)) + 10) * Math.cos(angleSlice * i))
+  .attr("y", (d: any, i: number) => (rScale(Math.max(...statValues)) + 10) * Math.sin(angleSlice * i))
+  .text((d: any, i: number) => stats[d])  // Afficher la valeur de la statistique
+  .style("font-size", "10px")
+  .style("text-anchor", "middle")
+  .style("dominant-baseline", "middle");
+
+     
+    
+    radarPoints.push(radarPoints[0]);
+
+   svg.append("path")
+  .data([radarPoints])
+  .attr("class", "radar-chart-serie")
+  .attr("d", d3.line().curve(d3.curveLinear)(radarPoints)) 
+  .style("fill", "#00f") 
+  .style("opacity", 0.3);
+
   }, [stats]);
 
   return <svg ref={svgRef}></svg>;
 };
+
+
 
 
 const Pokemon: React.FC = () => {
@@ -107,15 +121,14 @@ const Pokemon: React.FC = () => {
     return <div>Pokémon non spécifié</div>;
   }
 
-const selectedPokemon = pokedex.find(
-  (p) => normalizeName(p.name.english) === normalizeName(pokemon)
-);
+  const selectedPokemon = pokedex.find((p) => p.name.english.toLowerCase() === pokemon.toLowerCase());
 
   if (!selectedPokemon) {
     return <div>Pokémon introuvable</div>;
   }
 
-  const stats = selectedPokemon.base; // Statistiques de base
+  const stats = selectedPokemon.base; 
+  const type: string[] = selectedPokemon.type;
 
   return (
     <div style={{ height: "100vh", width: "100vw", display: "flex", flexDirection: "column" }}>
@@ -138,8 +151,26 @@ const selectedPokemon = pokedex.find(
           </Suspense>
         </Canvas>
       </div>
-      <div style={{ height: "300px", marginTop: "100px", marginBottom: "100px" }}>
-        <D3Graph stats={stats} />
+      <div className="flex justify-around items-center mt-9">
+        <div>
+          <D3Graph stats={stats} />
+        </div>
+        <div>
+        <img src={`/sprites/${selectedPokemon.sprites.default}`} alt={selectedPokemon.name.french} />
+        <h2>{selectedPokemon.name.french}</h2>
+        <p>Numéro : {selectedPokemon.id}</p>
+        <p>Type : </p>
+  {type.map((t) => (
+    <img
+      key={t}
+      src={`/types/${t.toLowerCase()}.png`} 
+      alt={t}
+      style={{ margin: "5px" }} 
+    />
+    
+  ))}
+</div>
+
       </div>
     </div>
   );
