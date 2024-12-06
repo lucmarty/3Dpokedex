@@ -9,7 +9,8 @@ const SpriteList: React.FC = () => {
     const filtered = pokedex.slice(0, 151).filter((pokemon) => {
       const matchesText =
         pokemon.name.french.toLowerCase().includes(searchText) ||
-        pokemon.name.english.toLowerCase().includes(searchText);
+        pokemon.name.english.toLowerCase().includes(searchText) ||
+        "" + pokemon.id == searchText;
       const matchesFirstType = selectedType === "" || pokemon.type.includes(selectedType);
       const matchesSecondType = selectedType2 === "" || pokemon.type.includes(selectedType2);
       const matchesType = matchesFirstType && matchesSecondType;
