@@ -3,11 +3,27 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
 
+import * as THREE from "three";
+
 /**
  * Chargement du modèle 3D via Drei's useGLTF
  */
 const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
   const gltf = useGLTF(modelPath);
+
+  useMemo(() => {
+    gltf.scene.traverse((child) => {
+      const mesh = child as THREE.Mesh;
+      if (mesh.isMesh) {
+        if (mesh.material) {
+          const material = mesh.material as THREE.MeshStandardMaterial;
+          material.metalness = 0;
+          material.alphaTest = 0.5;
+          material.transparent = true;
+        }
+      }
+    });
+  }, [gltf]);
 
   return (
     <primitive
@@ -33,7 +49,6 @@ const Pokemon: React.FC = () => {
     <div style={{ height: "100vh", width: "100vw" }}>
       <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }}>
         <Suspense fallback={null}>
-          
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={1} />
           <directionalLight position={[-5, 5, 5]} intensity={2} />
