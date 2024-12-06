@@ -2,6 +2,7 @@ import React from "react";
 import SpriteList from './components/SpritesList';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Pokemon from "./components/Pokemon";
+import Team from "./components/Team"
 
 const App: React.FC = () => {
   return (
@@ -12,10 +13,10 @@ const App: React.FC = () => {
 
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
         <Route path="/pokemon/:pokemon" element={<Pokemon />} />
-        
+
+        <Route path="/team" element={<Team />} />     
       </Routes>
-    </BrowserRouter>
-    
+    </BrowserRouter>    
   );
 };
 

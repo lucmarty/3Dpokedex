@@ -1,4 +1,4 @@
-import React, { Suspense, useMemo } from "react";
+import React, { Suspense, useMemo, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
@@ -20,20 +20,43 @@ const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
 
 const Pokemon: React.FC = () => {
   const { pokemon } = useParams<{ pokemon: string }>();
+
+  const [selectedPokemon, setSelectedPokemon] = useState<string[]>(() => {
+    const storedPokemon = sessionStorage.getItem("selectedPokemon");
+    return storedPokemon ? JSON.parse(storedPokemon) : [];
+  });
+
   const modelPath = useMemo(
     () => `/models/${pokemon}/${pokemon}.glb`,
     [pokemon]
   );
 
+  useEffect(() => {
+    sessionStorage.setItem("selectedPokemon", JSON.stringify(selectedPokemon));
+  }, [selectedPokemon]);
+
+
   if (!pokemon) {
     return <div>Pokémon non spécifié</div>;
   }
+
+  const handleAddPokemon = () => {
+    if (selectedPokemon.length > 6 ) {
+      alert("Votre équipe est déjà au complet !")
+      return;
+    }
+    if (selectedPokemon.includes(pokemon)) {
+      alert(`${pokemon} est déjà dans votre équipe !`);
+      return;
+    }
+    setSelectedPokemon((prev) => [...prev, pokemon]);
+    alert(`${pokemon} à été ajouter à votre équipe !`);
+  };
 
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
       <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }}>
         <Suspense fallback={null}>
-          
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={1} />
           <directionalLight position={[-5, 5, 5]} intensity={2} />
@@ -49,6 +72,7 @@ const Pokemon: React.FC = () => {
           />
         </Suspense>
       </Canvas>
+      <button onClick={handleAddPokemon}>Ajouter à la team</button>
     </div>
   );
 };
