@@ -22,4 +22,4 @@ const pokemonSchema = new mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('pokemon', pokemonSchema, 'pokedex');
+module.exports = mongoose.model('pokemon', pokemonSchema, 'pokemons');

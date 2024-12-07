@@ -10,7 +10,7 @@ app.use(cors());
 const PORT = 5001;
 
 mongoose.connect(
-    "mongodb+srv://user:user@pokedex.ozdzn.mongodb.net/pokemon?retryWrites=true&w=majority",
+    "mongodb+srv://lyam:lyam@pokedex.zgwxy.mongodb.net/pokedex",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -33,13 +33,31 @@ app.get('/', (req, res) => {
 app.get('/api/pokemons', async (req, res) => {
     try {
         console.log('Requête reçue pour /api/pokemons');
-        const pokemons = await mongoose.connection.db.collection('pokedex').find({}).toArray(); // Récupère tous les Pokémon
-        console.log('Pokemons récupérés :', pokemons);
+        const pokemons = await Pokemon.find() // Récupère tous les Pokémon
+        .then(pokemons => {
+            console.log('Pokemons récupéreeeeeeeeeés :', pokemons);
+            res.json(pokemons);
+        });
+        //console.log('Pokemons récupérés :', pokemons);
         res.json(pokemons);
     } catch (err) {
         console.error('Erreur lors de la récupération des Pokémon :', err);
         res.status(500).json({ error: 'Failed to fetch pokemons' });
     }
 });
+app.get('/api/pokemons/:id', async (req, res) => {
+    try {
+        console.log('Requête reçue pour /api/pokemons/:id');
+        const pokemon = await Pokemon.findOne({ id: req.params.id });
+        console.log('Pokemon récupéré :', pokemon);
+        res.json(pokemon);
+    } catch (err) {
+        console.error('Erreur lors de la récupération du Pokémon :', err);
+        res.status(500).json({ error: 'Failed to fetch pokemon' });
+    }
+});
+
+
+
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
