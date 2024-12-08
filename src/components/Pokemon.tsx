@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 
 import * as THREE from "three";
 
+import '../css/pokemon.css';
+
 /**
  * Chargement du modèle 3D via Drei's useGLTF
  */
@@ -40,13 +42,17 @@ const Pokemon: React.FC = () => {
     () => `/models/${pokemon}/${pokemon}.glb`,
     [pokemon]
   );
+  const audio = useMemo(
+    () => new Audio(`/models/${pokemon}/${pokemon}.mp3`),
+    [pokemon]
+  );
 
   if (!pokemon) {
     return <div>Pokémon non spécifié</div>;
   }
 
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
+    <div className="pokemon" style={{ height: "100vh", width: "100vw" }}>
       <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }}>
         <Suspense fallback={null}>
           <ambientLight intensity={1} />
@@ -64,6 +70,15 @@ const Pokemon: React.FC = () => {
           />
         </Suspense>
       </Canvas>
+      <button
+          onClick={() => {
+            if (audio) {
+              audio.play();
+            }
+          }}
+        >
+          Jouer le cri
+        </button>
     </div>
   );
 };
