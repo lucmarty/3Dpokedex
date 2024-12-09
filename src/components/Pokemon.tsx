@@ -1,5 +1,4 @@
 import React, { Suspense, useMemo, useEffect, useState, useRef } from "react";
-import React, { Suspense, useMemo, useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
