@@ -1,4 +1,5 @@
 import React, { Suspense, useMemo, useEffect, useState, useRef } from "react";
+import React, { Suspense, useMemo, useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
@@ -85,11 +86,21 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
       .data(statNames)
       .enter()
       .append("text")
+      .attr("x", (_, i) => (rScale(Math.max(...statValues)) + 10) * Math.cos(angleSlice * i))
+      .attr("y", (_, i) => (rScale(Math.max(...statValues)) + 10) * Math.sin(angleSlice * i))
+      .text((d) => d)
+      .style("font-size", "10px")
+      .style("text-anchor", "start");
+      
+      svg.selectAll(".axis-label")
+      .data(statValues  )
+      .enter()
+      .append("text")
       .attr("x", (_, i) => (rScale(Math.max(...statValues)) + 30) * Math.cos(angleSlice * i))
       .attr("y", (_, i) => (rScale(Math.max(...statValues)) + 30) * Math.sin(angleSlice * i))
       .text((d) => d)
       .style("font-size", "10px")
-      .style("text-anchor", "middle");
+      .style("text-anchor", "start");
 
     // Dessiner la ligne du radar (points connectés)
     const radarPoints = statValues.map((value, i) => [
