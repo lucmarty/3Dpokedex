@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
+import TypeDisplay from "./TypeDisplay";
 import pokedex from "../pokedex.json";
+import { Tab } from '@mui/base/Tab';
+import { Tabs } from '@mui/base/Tabs';
+import { TabsList  } from '@mui/base/TabsList';
+import { TabPanel  } from '@mui/base/TabPanel';
+
 
 interface Pokemon {
   id: number;
@@ -22,6 +28,7 @@ interface Pokemon {
     default: string;
   };
 }
+
 
 const Team: React.FC = () => {
   const [storedPokemon, setStoredPokemon] = useState<string[]>([]);
@@ -65,7 +72,7 @@ const Team: React.FC = () => {
         {pokemonDetails.map((pokemon) => (
           <div
             key={pokemon.id}
-            className="relative flex flex-col items-center w-fit cursor-pointer group"
+            className="relative flex flex-col items-center w-fit cursor-pointer group type-card border rounded p-4 shadow"
           >
             <img
               src={`/sprites/${pokemon.sprites.default}`}
@@ -73,7 +80,7 @@ const Team: React.FC = () => {
               className="w-16 h-16 object-contain"
             />
             <p className="text-sm text-white mt-2">{pokemon.name.french}</p>
-            {/* Croix rouge affichée au survol */}
+
             <div
               className="absolute top-0 right-0 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
               onClick={() => handleRemovePokemon(pokemon.id)}
@@ -82,6 +89,20 @@ const Team: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+
+      <div>
+        <Tabs defaultValue={0}>
+          <TabsList className="w-fit">
+            <Tab value={0}>Offensive</Tab>
+            <Tab value={1}>Défensive</Tab>
+          </TabsList>
+          <TabPanel value={0} className="w-fit">            
+            <TypeDisplay/>
+          </TabPanel>
+          <TabPanel value={1}><TypeDisplay/></TabPanel>
+        </Tabs>
       </div>
     </div>
   );
