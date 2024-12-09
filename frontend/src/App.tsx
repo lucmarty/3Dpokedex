@@ -16,11 +16,11 @@ const App: React.FC = () => {
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
         <Route path="/pokemon/:pokemon" element={<><Menu /> <Pokemon /></>} />
 
-        <Route path="/team" element={<><Menu /> <Team /></>} />     
-        
-        <Route path="/login" element={<><Menu /> <Login /></>} />     
+        <Route path="/team" element={<><Menu /> <Team /></>} />
+
+        <Route path="/login" element={<><Menu /> <Login /></>} />
       </Routes>
-    </BrowserRouter>    
+    </BrowserRouter>
   );
 };
 
