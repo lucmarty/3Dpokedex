@@ -26,7 +26,7 @@ const SpriteList: React.FC = () => {
     setFilteredPokemon(sorted);
   };
   return (
-    <div className="pr-10 pl-10 pb-8 bg-gray-100">
+    <div className="pr-10 pl-10 pb-8">
       <SearchBar onSearch={handleSearch} pokemonTypes={pokemonTypes} />
       <div className="grid grid-cols-9 gap-4 justify-start overflow-x-auto p-4 rounded-xl shadow-lg bg-white">
         {filteredPokemon.map((pokemon) => (
