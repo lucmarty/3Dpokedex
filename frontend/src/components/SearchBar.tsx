@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 
 interface SearchBarProps {
     onSearch: (searchText: string, selectedType: string, selectedType2: string, sortOption: string) => void;
@@ -35,74 +33,56 @@ interface SearchBarProps {
         setSortOption(value);
         onSearch(inputText, selectedType, selectedType2, value);
     };
-    
-  
-
   return (
-    <div className="main">
-      <div className="search bg-white">
-        <TextField
-          id="outlined-basic"
-          onChange={handleInputChange}
+    <div className="pb-4">
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Chercher un pokemon"
           value={inputText}
-          variant="outlined"
-          fullWidth
-          label="Chercher un pokemon"
+          onChange={handleInputChange}
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:outlined-none focus:ring-2 focus:ring-red-500"
         />
       </div>
-      <div className="filter mt-4 flex gap-4 bg-white">
-        <TextField
-          id="type-select-1"
-          select
+      <div className="filter mt-4 flex gap-4">
+        <select
           value={selectedType}
           onChange={(e) => handleTypeChange(e, 1)}
-          label="Type 1"
-          variant="outlined"
-          fullWidth
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
         >
-          <MenuItem value="">All Types</MenuItem>
+          <option value="">Tout</option>
           {pokemonTypes.map((type, index) => (
-            <MenuItem value={type} key={index}>
+            <option value={type} key={index}>
               {type}
-            </MenuItem>
+            </option>
           ))}
-        </TextField>
-        <TextField
-          id="type-select-2"
-          select
+        </select>
+        <select
           value={selectedType2}
           onChange={(e) => handleTypeChange(e, 2)}
-          label="Type 2"
-          variant="outlined"
-          fullWidth
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
         >
-          <MenuItem value="">All Types</MenuItem>
+          <option value="">Tout</option>
           {pokemonTypes.map((type, index) => (
-            <MenuItem value={type} key={index}>
+            <option value={type} key={index}>
               {type}
-            </MenuItem>
+            </option>
           ))}
-        </TextField>
-        <TextField
-          id="sort-select"
-          select
+        </select>
+        <select
           value={sortOption}
           onChange={handleSortChange}
-          label="Trier par"
-          variant="outlined"
-          fullWidth
-          className="bg-white rounded-lg shadow-md"
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
         >
-          <MenuItem value="id">Numéro</MenuItem>
-          <MenuItem value="HP">HP</MenuItem>
-          <MenuItem value="Attack">Attack</MenuItem>
-          <MenuItem value="Defense">Defense</MenuItem>
-          <MenuItem value="Sp. Attack">Sp. Attack</MenuItem>
-          <MenuItem value="Sp. Defense">Sp. Defense</MenuItem>
-          <MenuItem value="Speed">Speed</MenuItem>
-        </TextField>
+          <option value="id">Numéro</option>
+          <option value="HP">HP</option>
+          <option value="Attack">Attack</option>
+          <option value="Defense">Defense</option>
+          <option value="Sp. Attack">Sp. Attack</option>
+          <option value="Sp. Defense">Sp. Defense</option>
+          <option value="Speed">Speed</option>
+        </select>
       </div>
-      
     </div>
   );
 };

@@ -11,16 +11,32 @@ const App: React.FC = () => {
      <BrowserRouter>
       <Routes>
         {/* Route pour afficher la liste ou une page d'accueil */}
-        <Route path="/" element={<><Menu /><h1>Bienvenue dans le Pokédex</h1> <SpriteList /></>} />
+        <Route path="/" element={
+          <>
+            <Menu/>
+            <h1 className="text-center pt-4 pb-4 bg-gray-100 text-black">Bienvenue dans le Pokédex</h1>
+            <SpriteList/>
+          </>
+        } />
 
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
-        <Route path="/pokemon/:pokemon" element={<><Menu /> <Pokemon /></>} />
+        <Route path="/pokemon/:pokemon" element={
+          <>
+            <Menu/>
+            <Pokemon/>
+          </>
+          } />
 
-        <Route path="/team" element={<><Menu /> <Team /></>} />
-
-        <Route path="/login" element={<><Menu /> <Login /></>} />
+        <Route path="/team" element={
+          <>
+            <Menu/>
+            <Team/>
+          </>
+        } />     
+        
+        <Route path="/login" element={<><Menu /> <Login /></>} />     
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter>    
   );
 };
 
