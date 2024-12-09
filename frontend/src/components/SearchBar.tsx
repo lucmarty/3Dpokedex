@@ -41,14 +41,14 @@ interface SearchBarProps {
           placeholder="Chercher un pokemon"
           value={inputText}
           onChange={handleInputChange}
-          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:outlined-none focus:ring-2 focus:ring-red-500"
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500"
         />
       </div>
       <div className="filter mt-4 flex gap-4">
         <select
           value={selectedType}
           onChange={(e) => handleTypeChange(e, 1)}
-          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:ouline-none focus:ring-2 focus:ring-red-500"
         >
           <option value="">Tout</option>
           {pokemonTypes.map((type, index) => (
@@ -60,7 +60,7 @@ interface SearchBarProps {
         <select
           value={selectedType2}
           onChange={(e) => handleTypeChange(e, 2)}
-          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:ouline-none focus:ring-2 focus:ring-red-500"
         >
           <option value="">Tout</option>
           {pokemonTypes.map((type, index) => (
@@ -72,7 +72,7 @@ interface SearchBarProps {
         <select
           value={sortOption}
           onChange={handleSortChange}
-          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:oulined-none focus:ring-2 focus:ring-red-500"
+          className="w-full rounded-lg p-2 bg-white shadow-lg text-black focus:ouline-none focus:ring-2 focus:ring-red-500"
         >
           <option value="id">Numéro</option>
           <option value="HP">HP</option>
