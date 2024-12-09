@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = 5001;
+const PORT = 5002;
 // Connexion à la base de données
 mongoose.connect(
     "mongodb+srv://lyam:lyam@pokedex.zgwxy.mongodb.net/pokedex",
