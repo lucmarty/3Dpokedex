@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 //import pokedex from '../pokedex.json';
 
 const SpriteList: React.FC = () => {
-  const [pokemons, setPokemons] = useState([]); // État pour stocker les Pokémon
-  const [loading, setLoading] = useState(true); // État pour gérer le chargement
+  const [pokemons, setPokemons] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPokemons = async () => {
@@ -17,14 +17,14 @@ const SpriteList: React.FC = () => {
 
       }
       try {
-        const response = await fetch('http://localhost:5001/api/pokemons'); // URL de ton API
+        const response = await fetch('http://localhost:5001/api/pokemons');
         const data = await response.json();
         console.log('Données récupérées:', data);
-        setPokemons(data.slice(0, 151)); // On limite aux 151 premiers Pokémon
+        setPokemons(data.slice(0, 151));
       } catch (error) {
         console.error('Erreur lors de la récupération des Pokémon :', error);
       } finally {
-        setLoading(false); // Désactiver l'indicateur de chargement
+        setLoading(false);
       }
     };
 

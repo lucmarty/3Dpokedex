@@ -1,14 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Pokemon = require('./models/Pokemon'); // Import du modèle
+const Pokemon = require('./models/Pokemon');
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 const PORT = 5001;
-
+// Connexion à la base de données
 mongoose.connect(
     "mongodb+srv://lyam:lyam@pokedex.zgwxy.mongodb.net/pokedex",
     {
@@ -24,7 +24,7 @@ mongoose.connect(
     console.error('Failed to connect to MongoDB', err);
 });
 
-// Route de test
+// Route de  connexion
 app.get('/', (req, res) => {
     res.json({ message: 'Backend is running' });
 });
@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 app.get('/api/pokemons', async (req, res) => {
     try {
         console.log('Requête reçue pour /api/pokemons');
-        const pokemons = await Pokemon.find() // Récupère tous les Pokémon
+        const pokemons = await Pokemon.find()
         .then(pokemons => {
             console.log('Pokemons récupéreeeeeeeeeés :', pokemons);
             res.json(pokemons);
