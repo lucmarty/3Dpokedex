@@ -39,7 +39,7 @@ app.get('/api/pokemons', async (req, res) => {
             res.json(pokemons);
         });
         //console.log('Pokemons récupérés :', pokemons);
-        res.json(pokemons);
+
     } catch (err) {
         console.error('Erreur lors de la récupération des Pokémon :', err);
         res.status(500).json({ error: 'Failed to fetch pokemons' });

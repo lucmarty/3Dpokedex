@@ -12,7 +12,7 @@ const SpriteList: React.FC = () => {
       try {
         const response = await fetch('http://localhost:5002/api/pokemons');
         const data = await response.json();
-        //console.log("pokemon data", data);
+        console.log("pokemon data", data);
         setOriginalPokemon(data.slice(0, 151)); // Limiter aux 151 premiers Pokémon
         setFilteredPokemon(data.slice(0, 151));
 
