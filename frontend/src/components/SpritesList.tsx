@@ -30,7 +30,7 @@ const SpriteList: React.FC = () => {
       <SearchBar onSearch={handleSearch} pokemonTypes={pokemonTypes} />
       <div className="grid grid-cols-9 gap-4 justify-start overflow-x-auto p-4 rounded-xl shadow-lg bg-white">
         {filteredPokemon.map((pokemon) => (
-          <a href={`/pokemon/${pokemon.name.english.toLowerCase()}`} key={pokemon.id}>
+          <a href={`/pokemon/${pokemon.id}`} key={pokemon.id}>
             <div className="flex flex-col items-center w-full search">
               <img
                 src={`/sprites/${pokemon.sprites.default}`}
