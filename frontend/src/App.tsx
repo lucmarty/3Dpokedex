@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import SpriteList from './components/SpritesList';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Pokemon from "./components/Pokemon";
