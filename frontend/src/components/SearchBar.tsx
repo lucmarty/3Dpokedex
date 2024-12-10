@@ -34,7 +34,7 @@ interface SearchBarProps {
         onSearch(inputText, selectedType, selectedType2, value);
     };
   return (
-    <div className="pb-4">
+    <div className="my-12 p-6 sticky top-0 z-10 bg-gray-100 rounded-2xl scale-110 shadow-2xl border border-2 border-gray-200">
       <div className="search">
         <input
           type="text"
