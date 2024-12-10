@@ -2,7 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Pokemon = require('./models/Pokemon');
-
+const bcrypt = require('bcrypt');
+const User = require('./models/User'); // Votre modèle Mongoose
+const jwt = require('jsonwebtoken');
+const SECRET_KEY = 'ce_truc_est_cense_etre_secret_mais_osef_en_vrai_cest_pas_en_prod';
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -35,7 +38,7 @@ app.get('/api/pokemons', async (req, res) => {
         console.log('Requête reçue pour /api/pokemons');
         const pokemons = await Pokemon.find()
         .then(pokemons => {
-            console.log('Pokemons récupéreeeeeeeeeés :', pokemons);
+
             res.json(pokemons);
         });
         //console.log('Pokemons récupérés :', pokemons);
@@ -56,6 +59,76 @@ app.get('/api/pokemons/:id', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch pokemon' });
     }
 });
+
+app.post('/api/register', async (req, res) => {
+    try {
+        const { username, email, password, isAdmin } = req.body;
+
+        // Hacher le mot de passe
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Créer un nouvel utilisateur
+        const newUser = new User({
+            username,
+            email,
+            password: hashedPassword,
+            isAdmin: isAdmin || false, // Par défaut, les utilisateurs ne sont pas admin
+        });
+
+        // Enregistrer dans la base
+        await newUser.save();
+        res.status(201).json({ message: 'Utilisateur créé avec succès' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Erreur lors de l'enregistrement" });
+    }
+});
+
+
+app.post('/api/login', async (req, res) => {
+    try {
+        const { username, password } = req.body;
+        const user = await User.findOne({ username });
+        if (!user) return res.status(400).json({ error: 'Utilisateur non trouvé' });
+
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) return res.status(400).json({ error: 'Mot de passe incorrect' });
+
+        // Générer un token JWT
+        const token = jwt.sign(
+            { username: user.username, isAdmin: user.isAdmin },
+            SECRET_KEY,
+            { expiresIn: '1h' }
+        );
+
+        res.status(200).json({
+            message: 'Connexion réussie',
+            token,
+            username: user.username,
+            isAdmin: user.isAdmin, // Inclure le rôle admin
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Erreur lors de la connexion' });
+    }
+});
+
+const authenticateToken = (req, res, next) => {
+    const token = req.headers['authorization'];
+    if (!token) return res.status(401).json({ error: 'Accès non autorisé' });
+
+    jwt.verify(token, SECRET_KEY, (err, user) => {
+        if (err) return res.status(403).json({ error: 'Token invalide' });
+        req.user = user;
+        next();
+    });
+};
+
+// Protéger une route
+app.get('/api/protected', authenticateToken, (req, res) => {
+    res.json({ message: 'Bienvenue dans une route protégée' });
+});
+
 
 
 
