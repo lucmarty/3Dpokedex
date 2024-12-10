@@ -5,19 +5,13 @@ import Pokemon from "./components/Pokemon";
 import Team from "./components/Team";
 import Menu from "./components/Menu";
 import Login from "./components/Login";
-import ProtectedRoute from "./components/ProtectedRoute.tsx";
+
 import Admin from "./components/Admin";
 import Register from "./components/Register";
 
 
 const App: React.FC = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-    useEffect(() => {
-        // Vérifie si un token existe dans localStorage (ou un autre moyen d'auth)
-        const token = localStorage.getItem("token");
-        setIsAuthenticated(!!token); // Met à jour l'état selon la présence du token
-    }, []);
+    
     return (
 
      <BrowserRouter>
