@@ -1,67 +1,64 @@
 import React, { useEffect, useState } from "react";
-import pokedex from "../pokedex.json";
-
-interface Pokemon {
-  id: number;
-  name: {
-    english: string;
-    japanese: string;
-    chinese: string;
-    french: string;
-  };
-  type: string[];
-  base: {
-    HP: number;
-    Attack: number;
-    Defense: number;
-    "Sp. Attack": number;
-    "Sp. Defense": number;
-    Speed: number;
-  };
-  sprites: {
-    default: string;
-  };
-}
+import TeamCoverage from "./TeamCoverage";
 
 const Team: React.FC = () => {
-  const [storedPokemon, setStoredPokemon] = useState<string[]>([]);
+  const[team, setTeam] = useState<number[]>([]);
+  interface Pokemon {
+    id: number;
+    name: {
+      french: string;
+    };
+    sprites: {
+      default: string;
+    };
+  }
+  
   const [pokemonDetails, setPokemonDetails] = useState<Pokemon[]>([]);
 
+  // récupération des données de l'équipe stockées en session storage
   useEffect(() => {
     const data = sessionStorage.getItem("selectedPokemon");
     if (data) {
-      setStoredPokemon(JSON.parse(data));
+      setTeam(JSON.parse(data));
     }
   }, []);
 
+  // récupération des détails des Pokémon de l'équipe depuis la DB
   useEffect(() => {
-    if (storedPokemon.length > 0) {
-      const details = storedPokemon.map((name) =>
-        pokedex.find((pokemon: Pokemon) =>
-          pokemon.name.english.toLowerCase() === name.toLowerCase()
-        )
-      );
-      setPokemonDetails(details.filter(Boolean) as Pokemon[]);
+    if (team.length > 0) {
+      const fetchPokemonDetails = async () => {
+        const details = await Promise.all(
+          team.map(async (id) => {
+            try {
+              const response = await fetch('http://localhost:5002/api/pokemons/' + id);
+              const data = await response.json();
+              console.log('Données Pokémon récupérées:', data);
+              return data;
+            } catch (err) {
+              console.error('Erreur lors de la récupération des Pokémon:', err);
+              return null;
+            }
+          })
+        );
+        setPokemonDetails(details.filter(Boolean) as []);
+      };
+      fetchPokemonDetails();
     } else {
       setPokemonDetails([]);
     }
-  }, [storedPokemon]);
+  }, [team]);
 
+  // Suppression d'un Pokémon de l'équipe
   const handleRemovePokemon = (id: number) => {
-    const updatedStoredPokemon = storedPokemon.filter((name) => {
-      const pokemon = pokedex.find(
-        (p: Pokemon) => p.name.english.toLowerCase() === name.toLowerCase()
-      );
-      return pokemon?.id !== id;
-    });
-    setStoredPokemon(updatedStoredPokemon);
-    sessionStorage.setItem("selectedPokemon", JSON.stringify(updatedStoredPokemon));
-  };
+    const updatedTeam = team.filter((pokemonId) => pokemonId !== id);
+    setTeam(updatedTeam);
+    sessionStorage.setItem("selectedPokemon", JSON.stringify(updatedTeam));
+  }
 
   return (
-    <div>
+    <div className="w-full h-full bg-gray-100">
       <h1>Organisation d'équipe</h1>
-      <div className="flex gap-5">
+      <div className="w-fit grid grid-cols-6 gap-8 justify-start overflow-x-auto p-4 rounded-xl shadow-lg bg-white">
         {pokemonDetails.map((pokemon) => (
           <div
             key={pokemon.id}
@@ -72,7 +69,7 @@ const Team: React.FC = () => {
               alt={pokemon.name.french}
               className="w-16 h-16 object-contain"
             />
-            <p className="text-sm text-white mt-2">{pokemon.name.french}</p>
+            <p className="text-sm mt-2">{pokemon.name.french}</p>
             {/* Croix rouge affichée au survol */}
             <div
               className="absolute top-0 right-0 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
@@ -83,6 +80,7 @@ const Team: React.FC = () => {
           </div>
         ))}
       </div>
+        <TeamCoverage pokemons={pokemonDetails}/>
     </div>
   );
 };

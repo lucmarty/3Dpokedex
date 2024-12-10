@@ -121,7 +121,7 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
 
 const Pokemon: React.FC = () => {
   const { pokemon } = useParams<{ pokemon: string }>();
-  const [team, setTeam] = useState<string[]>(() => {
+  const [team, setTeam] = useState<number[]>(() => {
     const storedPokemon = sessionStorage.getItem("selectedPokemon");
     return storedPokemon ? JSON.parse(storedPokemon) : [];
   });
@@ -151,11 +151,11 @@ const Pokemon: React.FC = () => {
       alert("Votre équipe est déjà au complet !");
       return;
     }
-    if (team.includes(selectedPokemon.name.english)) {
+    if (team.includes(selectedPokemon.id)) {
       alert(`${selectedPokemon.name.french} est déjà dans votre équipe !`);
       return;
     }
-    setTeam((prev) => [...prev, selectedPokemon.name.english]);
+    setTeam((prev) => [...prev, selectedPokemon.id]);
     alert(`${selectedPokemon.name.french} a été ajouté à votre équipe !`);
   };
 
