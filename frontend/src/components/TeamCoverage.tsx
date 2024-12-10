@@ -32,14 +32,12 @@ const Type: string[] = [
     "fairy"
 ];
 
-// Initialisation de typeDict avec des valeurs par défaut
 const typeDict: Record<string, TypeAttributes> = Type.reduce((acc, type) => {
     acc[type] = { immune: 0, resist: 0, neutral: 0, weak: 0 };
     return acc;
 }, {} as Record<string, TypeAttributes>);
 
 const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons }) => {
-    // Parcours des pokemons et mise à jour de typeDict
     pokemons.forEach((pokemon) => {
         Object.entries(pokemon.coverage).forEach(([type, multiplier]) => {
             if (multiplier === 0) {
@@ -54,27 +52,32 @@ const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons }) => {
         });
     });
 
-    // Affichage du tableau
     return (
         <div>
-            <table>
+            <table className=" table-auto border-collapse  p-4 rounded-xl shadow-lg bg-white">
                 <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Immune</th>
-                        <th>Resist</th>
-                        <th>Neutral</th>
-                        <th>Weak</th>
+                    <tr className="text-left">
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Type</th>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Immune</th>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Resist</th>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Neutral</th>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Weak</th>
                     </tr>
                 </thead>
                 <tbody>
                     {Type.map((type) => (
-                        <tr key={type}>
-                            <td>{type}</td>
-                            <td>{typeDict[type].immune}</td>
-                            <td>{typeDict[type].resist}</td>
-                            <td>{typeDict[type].neutral}</td>
-                            <td>{typeDict[type].weak}</td>
+                        <tr key={type} className="border-b">
+                            <td className="px-4 py-2 text-sm text-gray-800">
+                                <img
+                                    className="w-20 object-contain"
+                                    src={"/types/" + type + ".png"}
+                                    alt={type}
+                                />
+                            </td>
+                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].immune}</td>
+                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].resist}</td>
+                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].neutral}</td>
+                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].weak}</td>
                         </tr>
                     ))}
                 </tbody>
