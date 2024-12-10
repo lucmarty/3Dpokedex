@@ -53,6 +53,8 @@ const Pokemon: React.FC = () => {
 
   const stats = selectedPokemon.base;
   const type: string[] = selectedPokemon.type;
+  const abilities: string[] = selectedPokemon.abilities;
+  const info = selectedPokemon.info;
 
   return (
     <div style={{ height: "100vh", width: "100vw", display: "flex", flexDirection: "column" }}>
@@ -76,6 +78,20 @@ const Pokemon: React.FC = () => {
               style={{ margin: "5px" }}
             />
           ))}
+          {abilities.map((a) => (
+            <p>{a}</p>
+          ))}
+          <div>
+          <p>{info.percent_male} % de male / {info.percent_female} % de femelle</p>
+          <p>Taille : {info.height_m} m</p>
+          <p>Poids : {info.weight_kg} Kg</p>
+          <p>Description : {info.description}</p>
+        {info.is_sublegendary === 1 || info.is_legendary === 1 ? (
+          <p>Ce pokémon est légendaire</p>
+        ) : info.is_mythical === 1 ? (
+          <p>Ce pokémon est mythique</p>
+        ) : null}
+          </div>
           <AddToTeamButton
             team={team}
             setTeam={setTeam}

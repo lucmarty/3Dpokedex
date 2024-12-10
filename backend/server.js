@@ -57,6 +57,42 @@ app.get('/api/pokemons/:id', async (req, res) => {
     }
 });
 
+// Route pour récupérer les statistiques maximales pour le graphe hexagone
+app.get('/api/pokemons/max-stats', async (req, res) => {
+    try {
+        console.log('Requête reçue pour /api/pokemons/max-stats');
+
+        const maxStats = await Pokemon.aggregate([
+            {
+                $group: {
+                    _id: null, 
+                    maxHP: { $max: "$base.HP" },
+                    maxAttack: { $max: "$base.Attack" },
+                    maxDefense: { $max: "$base.Defense" },
+                    maxSpAttack: { $max: "$base.Sp. Attack" },
+                    maxSpDefense: { $max: "$base.Sp. Defense" },
+                    maxSpeed: { $max: "$base.Speed" }
+                }
+            },
+            {
+                $project: {
+                    _id: 0, 
+                    maxHP: 1,
+                    maxAttack: 1,
+                    maxDefense: 1,
+                    maxSpAttack: 1,
+                    maxSpDefense: 1,
+                    maxSpeed: 1
+                }
+            }
+        ]);
+
+        res.json(maxStats[0] || {}); 
+    } catch (err) {
+        console.error('Erreur lors de la récupération des statistiques maximales :', err);
+        res.status(500).json({ error: 'Failed to fetch max stats' });
+    }
+});
 
 
 
