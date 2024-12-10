@@ -29,6 +29,52 @@ app.get('/', (req, res) => {
     res.json({ message: 'Backend is running' });
 });
 
+// Route pour récupérer les statistiques maximales pour le graphe hexagone 
+//La syntaxe est un peu bizarre mais j'ai dû transformer les bases stats en tableau pour pouvoir les manipuler 
+// à cause de "Sp. Attack" et "Sp. Defense" qui ayant des noms à la con retournait null avec ma précèdente manière
+app.get('/api/pokemons/max-stats', async (req, res) => {
+    try {
+        console.log('Requête reçue pour /api/pokemons/max-stats');
+        const maxStats = await Pokemon.aggregate([
+    {
+        $project: {
+            baseArray: { $objectToArray: "$base" } 
+        }
+    },
+    {
+        $unwind: "$baseArray"
+    },
+    {
+        $group: {
+            _id: null,
+            maxHP: { $max: { $cond: [{ $eq: ["$baseArray.k", "HP"] }, "$baseArray.v", 0] } },
+            maxAttack: { $max: { $cond: [{ $eq: ["$baseArray.k", "Attack"] }, "$baseArray.v", 0] } },
+            maxDefense: { $max: { $cond: [{ $eq: ["$baseArray.k", "Defense"] }, "$baseArray.v", 0] } },
+            maxSpAttack: { $max: { $cond: [{ $eq: ["$baseArray.k", "Sp. Attack"] }, "$baseArray.v", 0] } },
+            maxSpDefense: { $max: { $cond: [{ $eq: ["$baseArray.k", "Sp. Defense"] }, "$baseArray.v", 0] } },
+            maxSpeed: { $max: { $cond: [{ $eq: ["$baseArray.k", "Speed"] }, "$baseArray.v", 0] } }
+        }
+    },
+    {
+        
+        $project: {
+            _id: 0,
+            maxHP: 1,
+            maxAttack: 1,
+            maxDefense: 1,
+            maxSpAttack: 1,
+            maxSpDefense: 1,
+            maxSpeed: 1
+        }
+    }
+]);     console.log('Max stats:', maxStats);
+        res.json(maxStats[0] || {}); 
+    } catch (err) {
+        console.error('Erreur lors de la récupération des statistiques maximales :', err);
+        res.status(500).json({ error: 'Failed to fetch max stats' });
+    }
+});
+
 // Route pour récupérer tous les Pokémon
 app.get('/api/pokemons', async (req, res) => {
     try {
@@ -57,42 +103,7 @@ app.get('/api/pokemons/:id', async (req, res) => {
     }
 });
 
-// Route pour récupérer les statistiques maximales pour le graphe hexagone
-app.get('/api/pokemons/max-stats', async (req, res) => {
-    try {
-        console.log('Requête reçue pour /api/pokemons/max-stats');
 
-        const maxStats = await Pokemon.aggregate([
-            {
-                $group: {
-                    _id: null, 
-                    maxHP: { $max: "$base.HP" },
-                    maxAttack: { $max: "$base.Attack" },
-                    maxDefense: { $max: "$base.Defense" },
-                    maxSpAttack: { $max: "$base.Sp. Attack" },
-                    maxSpDefense: { $max: "$base.Sp. Defense" },
-                    maxSpeed: { $max: "$base.Speed" }
-                }
-            },
-            {
-                $project: {
-                    _id: 0, 
-                    maxHP: 1,
-                    maxAttack: 1,
-                    maxDefense: 1,
-                    maxSpAttack: 1,
-                    maxSpDefense: 1,
-                    maxSpeed: 1
-                }
-            }
-        ]);
-
-        res.json(maxStats[0] || {}); 
-    } catch (err) {
-        console.error('Erreur lors de la récupération des statistiques maximales :', err);
-        res.status(500).json({ error: 'Failed to fetch max stats' });
-    }
-});
 
 
 
