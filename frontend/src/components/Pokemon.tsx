@@ -4,7 +4,6 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 import pokedex from "../pokedex.json";
-
 import * as THREE from "three";
 
 const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
@@ -19,6 +18,17 @@ const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
           material.metalness = 0;
           material.alphaTest = 0.5;
           material.transparent = true;
+          if (material.map) {
+            if (material.map.name.includes("Fire")) {
+              material.color.set("orange");
+              material.emissive.set("red");
+              material.alphaMap = material.map;
+              material.opacity = 0.5;
+            }
+            if (material.map.name.includes("Beto")) {
+              material.color.set("#DDA0DD");
+            }
+          }
         }
       }
     });
@@ -104,7 +114,9 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
       .enter()
       .append("text")
       .attr(
+        
         "x",
+       
         (_, i) =>
           (rScale(Math.max(...statValues)) + 10) * Math.cos(angleSlice * i)
       )
@@ -125,12 +137,18 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
       .attr(
         "x",
         (_, i) =>
+         
           (rScale(Math.max(...statValues)) + 30) * Math.cos(angleSlice * i)
+      
       )
       .attr(
+        
         "y",
+       
         (_, i) =>
+         
           (rScale(Math.max(...statValues)) + 30) * Math.sin(angleSlice * i)
+      
       )
       .text((d) => d)
       .style("font-size", "10px")
@@ -161,6 +179,12 @@ const Pokemon: React.FC = () => {
     const storedPokemon = sessionStorage.getItem("selectedPokemon");
     return storedPokemon ? JSON.parse(storedPokemon) : [];
   });
+
+  const audio = useMemo(() => {
+    const audio = new Audio(`/models/${pokemon}/${pokemon}.mp3`);
+    audio.load();
+    return audio;
+  }, [pokemon]);
 
   const modelPath = useMemo(
     () => `/models/${pokemon}/${pokemon}.glb`,
@@ -197,6 +221,15 @@ const Pokemon: React.FC = () => {
 
   return (
     <div
+      className="pokemon"
+      style={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+    <div
       style={{
         height: "calc(100vh - 56px)",
         width: "100%",
@@ -232,6 +265,11 @@ const Pokemon: React.FC = () => {
         <div className="absolute left-10">
           <D3Graph stats={stats} />
         </div>
+        <div>
+          <img
+            src={`/sprites/${selectedPokemon.sprites.default}`}
+            alt={selectedPokemon.name.french}
+          />
         <div className="absolute right-10">
           <img
             src={`/sprites/${selectedPokemon.sprites.default}`}
@@ -253,6 +291,22 @@ const Pokemon: React.FC = () => {
           </button>
         </div>
       </div>
+      <label
+        onClick={() => {
+          audio.play();
+        }}
+        className="group cursor-pointer absolute bottom-5 w-[48px] h-[48px] bg-gradient-to-b from-blue-600 to-blue-400 rounded-full left-1/2 -translate-x-1/2 shadow-[inset_0px_4px_2px_#60a5fa,inset_0px_-4px_0px_#1e3a8a,0px_0px_2px_rgba(0,0,0,10)] active:shadow-[inset_0px_4px_2px_rgba(96,165,250,0.5),inset_0px_-4px_2px_rgba(37,99,235,0.5),0px_0px_2px_rgba(0,0,0,10)] z-20 flex items-center justify-center"
+      >
+        <div className="w-5 group-active:w-[31px] fill-blue-100 drop-shadow-[0px_2px_2px_rgba(0,0,0,0.5)]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Filled"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z"></path>
+          </svg>
+        </div>
+      </label>
     </div>
   );
 };
