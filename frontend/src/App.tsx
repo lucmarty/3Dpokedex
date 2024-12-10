@@ -8,16 +8,17 @@ import Login from "./components/Login";
 
 import Admin from "./components/Admin";
 import Register from "./components/Register";
+import Welcome from "./components/Welcome";
 
 
 const App: React.FC = () => {
-    
+
     return (
 
      <BrowserRouter>
       <Routes>
         {/* Route pour afficher la liste ou une page d'accueil */}
-        <Route path="/" element={<><Menu /><h1>Bienvenue dans le Pokédex</h1> <SpriteList /></>} />
+        <Route path="/" element={<><Menu /><Welcome /> <SpriteList /></>} />
 
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
         <Route path="/pokemon/:pokemon" element={<><Menu /> <Pokemon /></>} />
