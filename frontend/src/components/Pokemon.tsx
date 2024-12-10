@@ -114,9 +114,7 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
       .enter()
       .append("text")
       .attr(
-        
         "x",
-       
         (_, i) =>
           (rScale(Math.max(...statValues)) + 10) * Math.cos(angleSlice * i)
       )
@@ -137,18 +135,12 @@ const D3Graph: React.FC<{ stats: { [key: string]: number } }> = ({ stats }) => {
       .attr(
         "x",
         (_, i) =>
-         
           (rScale(Math.max(...statValues)) + 30) * Math.cos(angleSlice * i)
-      
       )
       .attr(
-        
         "y",
-       
         (_, i) =>
-         
           (rScale(Math.max(...statValues)) + 30) * Math.sin(angleSlice * i)
-      
       )
       .text((d) => d)
       .style("font-size", "10px")
@@ -221,15 +213,6 @@ const Pokemon: React.FC = () => {
 
   return (
     <div
-      className="pokemon"
-      style={{
-        height: "100vh",
-        width: "100vw",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-    <div
       style={{
         height: "calc(100vh - 56px)",
         width: "100%",
@@ -238,8 +221,19 @@ const Pokemon: React.FC = () => {
         justifyContent: "center",
       }}
     >
-      <div style={{ flex: 1 }}>
-        <Canvas camera={{ position: [0, 0.5, 2], fov: 50 }}>
+      <div
+        style={{
+          flex: 1,
+          overflow: "hidden",
+          backgroundImage: `url("/backgrounds/${selectedPokemon.type[0]}.png")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Canvas
+          camera={{ position: [0, 0.5, 2], fov: 50 }}
+          style={{ background: "transparent" }}
+        >
           <Suspense fallback={null}>
             <ambientLight intensity={1} />
             <directionalLight position={[5, 5, 5]} intensity={1} />
@@ -258,18 +252,10 @@ const Pokemon: React.FC = () => {
           </Suspense>
         </Canvas>
       </div>
-      <div
-        className="absolute flex items-center"
-        style={{ width: "100%" }}
-      >
+      <div className="absolute flex items-center" style={{ width: "100%" }}>
         <div className="absolute left-10">
           <D3Graph stats={stats} />
         </div>
-        <div>
-          <img
-            src={`/sprites/${selectedPokemon.sprites.default}`}
-            alt={selectedPokemon.name.french}
-          />
         <div className="absolute right-10">
           <img
             src={`/sprites/${selectedPokemon.sprites.default}`}
@@ -286,9 +272,7 @@ const Pokemon: React.FC = () => {
               style={{ margin: "5px" }}
             />
           ))}
-          <button onClick={handleAddPokemon}>
-            Ajouter à la team
-          </button>
+          <button onClick={handleAddPokemon}>Ajouter à la team</button>
         </div>
       </div>
       <label
