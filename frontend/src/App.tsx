@@ -21,7 +21,12 @@ const App: React.FC = () => {
         <Route path="/" element={<><Menu /><Welcome /> <SpriteList /></>} />
 
         {/* Route dynamique pour afficher les détails d'un Pokémon */}
-        <Route path="/pokemon/:pokemon" element={<><Menu /> <Pokemon /></>} />
+        <Route path="/pokemon/:id" element={
+          <>
+            <Menu/>
+            <Pokemon/>
+          </>
+          } />
 
         <Route path="/team" element={<><Menu /> <Team /></>} />
 
