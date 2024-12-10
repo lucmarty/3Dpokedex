@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import pokedex from "../pokedex.json";
 
 interface Pokemon {
   id: number;

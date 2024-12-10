@@ -1,6 +1,5 @@
 import React, { useMemo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import pokedex from "../pokedex.json";
 import Pokemon3D from "./Pokemon3D";
 import PokemonStats from "./PokemonStats";
 import AddToTeamButton from "./AddToTeamButton";
@@ -11,8 +10,38 @@ const Pokemon: React.FC = () => {
     const storedPokemon = sessionStorage.getItem("selectedPokemon");
     return storedPokemon ? JSON.parse(storedPokemon) : [];
   });
+  const [selectedPokemon, setSelectedPokemon] = useState<any>(null); 
+  const [isLoading, setIsLoading] = useState<boolean>(true); 
 
-  const selectedPokemon = pokedex.find((p) => p.id === Number(id));
+  useEffect(() => {
+   
+    const fetchPokemon = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch(`http://localhost:5002/api/pokemons/${id}`);
+        if (!response.ok) {
+          throw new Error("Erreur lors du chargement des données du Pokémon");
+        }
+        const data = await response.json();
+        setSelectedPokemon(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchPokemon();
+  }, [id]);
+
+  useEffect(() => {
+    sessionStorage.setItem("selectedPokemon", JSON.stringify(team));
+  }, [team]);
+
+  if (isLoading) {
+    return <div>Chargement...</div>;
+  }
+
   if (!selectedPokemon) {
     return <div>Pokémon introuvable</div>;
   }
@@ -21,10 +50,6 @@ const Pokemon: React.FC = () => {
     () => `/models/${selectedPokemon.name.english.toLowerCase()}/${selectedPokemon.name.english.toLowerCase()}.glb`,
     [selectedPokemon]
   );
-
-  useEffect(() => {
-    sessionStorage.setItem("selectedPokemon", JSON.stringify(team));
-  }, [team]);
 
   const stats = selectedPokemon.base;
   const type: string[] = selectedPokemon.type;
