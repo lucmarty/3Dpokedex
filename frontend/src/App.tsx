@@ -26,8 +26,8 @@ const App: React.FC = () => {
             <Menu/>
             <ErrorBoundary>
               <Pokemon />
-            <Slider/>
             </ErrorBoundary>
+            <Slider/>
           </>
           } />
 
