@@ -8,6 +8,7 @@ import Login from "./components/Login";
 
 import Admin from "./components/Admin";
 import Register from "./components/Register";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 
 const App: React.FC = () => {
@@ -23,7 +24,9 @@ const App: React.FC = () => {
         <Route path="/pokemon/:id" element={
           <>
             <Menu/>
-            <Pokemon/>
+            <ErrorBoundary>
+              <Pokemon />
+            </ErrorBoundary>
           </>
           } />
 

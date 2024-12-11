@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Pokemon3D from "./Pokemon3D";
 import PokemonStats from "./PokemonStats";
 import AddToTeamButton from "./AddToTeamButton";
+import EvolutionFamily from "./EvolutionFamily";
 
 const Pokemon: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -13,6 +14,8 @@ const Pokemon: React.FC = () => {
   const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
   const [maxStats, setMaxStats] = useState<any>(null); // State pour les max stats
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [pokemonData, setPokemonData] = useState<any[]>([]);
+
 
   useEffect(() => {
     const fetchPokemon = async () => {
@@ -33,6 +36,24 @@ const Pokemon: React.FC = () => {
 
     fetchPokemon();
   }, [id]);
+
+
+useEffect(() => {
+  const fetchPokemonData = async () => {
+    try {
+      const response = await fetch(`http://localhost:5002/api/pokemons`);
+      if (!response.ok) {
+        throw new Error("Erreur lors du chargement des données des Pokémon");
+      }
+      const data = await response.json();
+      setPokemonData(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  fetchPokemonData();
+}, []);
 
   // Récupérer les maxStats
   useEffect(() => {
@@ -71,6 +92,7 @@ const Pokemon: React.FC = () => {
     return <div>Pokémon introuvable ou données incomplètes</div>;
   }
 
+
   const stats = selectedPokemon.base;
   const type: string[] = selectedPokemon.type;
   const abilities: string[] = selectedPokemon.abilities;
@@ -90,7 +112,7 @@ const Pokemon: React.FC = () => {
             src={`/sprites/${selectedPokemon?.sprites?.default || 'default.png'}`}
             alt={selectedPokemon?.name?.french || 'Pokémon'}
           />
-          <h2>{selectedPokemon?.name?.french || 'Nom inconnu'}</h2>
+          <h2>{selectedPokemon?.name?.french || 'Nom inconnu'} / {selectedPokemon?.name?.english || 'Nom inconnu'} </h2>
           <p>Numéro : {selectedPokemon.id}</p>
           <p>Type :</p>
           {type?.map((t, index) => (
@@ -107,7 +129,7 @@ const Pokemon: React.FC = () => {
             ))}
           <div>
             <p>
-              {info?.percent_male || 0} % de male / {info?.percent_female || 0} % de femelle
+              {info?.percent_male || 0} % de male ♂️ / {info?.percent_female || 0} % de femelle ♀️
             </p>
             <p>Taille : {info?.height_m || 0} m</p>
             <p>Poids : {info?.weight_kg || 0} Kg</p>
@@ -119,6 +141,7 @@ const Pokemon: React.FC = () => {
             ) : null}
           </div>
           <AddToTeamButton team={team} setTeam={setTeam} pokemon={selectedPokemon} />
+          <EvolutionFamily evo={selectedPokemon.evo} pokemonData={pokemonData} />
         </div>
       </div>
     </div>

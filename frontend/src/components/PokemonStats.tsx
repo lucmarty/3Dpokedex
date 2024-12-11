@@ -15,6 +15,8 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
 
     if (!svgRef.current || !maxStats || !currentStats) return;
 
+    d3.select(svgRef.current).selectAll("*").remove();
+
     const svg = d3.select(svgRef.current)
       .attr("width", 400)
       .attr("height", 400)
