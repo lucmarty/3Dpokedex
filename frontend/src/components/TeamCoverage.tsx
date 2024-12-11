@@ -35,11 +35,11 @@ const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons, onRemovePokemon }
 
     // Fonction pour obtenir la classe CSS basée sur le multiplicateur
     const getMultiplierClass = (multiplier: number | undefined) => {
-        if (!multiplier || multiplier === 1) return "text-gray-800"; // Couleur neutre
-        if (multiplier >= 4) return "text-red-600 font-bold"; // Rouge intense pour x4
-        if (multiplier >= 2) return "text-red-400"; // Rouge pour x2
-        if (multiplier < 1) return "text-green-600"; // Vert pour x0.5 ou moins
-        return "text-gray-800"; // Par défaut
+        if (!multiplier || multiplier === 1) return "text-gray-800"; 
+        if (multiplier >= 4) return "text-red-600 font-bold"; 
+        if (multiplier >= 2) return "text-red-400"; 
+        if (multiplier < 1) return "text-green-600"; 
+        return "text-gray-800"; 
     };
 
     return (
@@ -61,7 +61,6 @@ const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons, onRemovePokemon }
                                             className="w-14 h-14 object-contain"
                                         />
                                         <p className="text-sm mt-2 text-gray-800">{pokemon.name.french}</p>
-                                        {/* Croix rouge pour supprimer */}
                                         <div
                                             className="absolute top-0 right-0 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
                                             onClick={(e) => {
@@ -81,7 +80,6 @@ const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons, onRemovePokemon }
                 </thead>
                 <tbody>
                     {Type.map((type) => {
-                        // Calculer les totaux de faiblesses et résistances pour ce type
                         let totalWeaknesses = 0;
                         let totalResistances = 0;
 
