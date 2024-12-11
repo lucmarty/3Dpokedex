@@ -70,7 +70,7 @@ const PokemonAdminList: React.FC<ListPokemonProps> = ({ onSelectPokemon }) => {
                     {pokemons.map((pokemon) => (
                         <tr
                             key={pokemon.id}
-                            className="cursor-pointer hover:bg-gray-100"
+                            className="cursor-pointer hover:bg-gray-500"
                             onClick={() => onSelectPokemon(pokemon)}
                         >
                             <td className="border border-gray-300 px-4 py-2 text-center">{pokemon.id}</td>

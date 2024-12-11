@@ -81,7 +81,7 @@ const SpriteList: React.FC = () => {
                         alt={pokemon.name.french}
                         className="w-16 h-16 object-contain"
                     />
-                    <p className="text-sm text-gray-800 mt-2">{pokemon.name.french}</p>
+                    <p className="text-xl text-gray-800 mt-2">{pokemon.name.french}</p>
                   </a>
                 </CSSTransition>
             ))}

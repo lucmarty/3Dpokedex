@@ -26,7 +26,7 @@
   background-attachment: fixed;
   background-size: cover; /* Assure que l'image occupe tout l'écran */
   font-family: 'bebas-neue', sans-serif;
-
+  font-size: x-large;
 }
 
 .logo {
