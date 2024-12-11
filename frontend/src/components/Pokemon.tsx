@@ -10,6 +10,12 @@ const Pokemon: React.FC = () => {
     const storedPokemon = sessionStorage.getItem("selectedPokemon");
     return storedPokemon ? JSON.parse(storedPokemon) : [];
   });
+
+  const audio = useMemo(() => {
+    const audio = new Audio(`/models/${pokemon}/${pokemon}.mp3`);
+    audio.load();
+    return audio;
+  }, [pokemon]);
   const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
   const [maxStats, setMaxStats] = useState<any>(null); // State pour les max stats
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -77,18 +83,57 @@ const Pokemon: React.FC = () => {
   const info = selectedPokemon.info;
 
   return (
-    <div style={{ height: "100vh", width: "100vw", display: "flex", flexDirection: "column" }}>
-      <div style={{ flex: 1 }}>
-        <Pokemon3D modelPath={modelPath} />
+    <div
+      style={{
+        height: "calc(100vh - 56px)",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <div
+        style={{
+          flex: 1,
+          overflow: "hidden",
+          backgroundImage: `url("/backgrounds/${selectedPokemon.type[0]}.png")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Canvas
+          camera={{ position: [0, 0.5, 2], fov: 50 }}
+          style={{ background: "transparent" }}
+        >
+          <Suspense fallback={null}>
+            <ambientLight intensity={1} />
+            <directionalLight position={[5, 5, 5]} intensity={1} />
+            <directionalLight position={[-5, 5, 5]} intensity={2} />
+            <directionalLight position={[5, -5, 5]} intensity={2} />
+            <directionalLight position={[5, 5, -5]} intensity={2} />
+            <PokemonModel modelPath={modelPath} />
+            <OrbitControls
+              enableDamping
+              dampingFactor={0.25}
+              minDistance={2}
+              maxDistance={6}
+              enablePan={false}
+              autoRotate
+            />
+          </Suspense>
+        </Canvas>
       </div>
-      <div className="flex justify-around items-center mt-9">
-        <div>
+      <div className="absolute flex items-center" style={{ width: "100%" }}>
+        <div className="absolute left-10">
           <PokemonStats maxStats={maxStats}  currentStats={stats}/> 
         </div>
-        <div>
+        <div className="absolute right-10">
           <img
+           
             src={`/sprites/${selectedPokemon?.sprites?.default || 'default.png'}`}
+           
             alt={selectedPokemon?.name?.french || 'Pokémon'}
+         
           />
           <h2>{selectedPokemon?.name?.french || 'Nom inconnu'}</h2>
           <p>Numéro : {selectedPokemon.id}</p>
@@ -121,6 +166,22 @@ const Pokemon: React.FC = () => {
           <AddToTeamButton team={team} setTeam={setTeam} pokemon={selectedPokemon} />
         </div>
       </div>
+      <label
+        onClick={() => {
+          audio.play();
+        }}
+        className="group cursor-pointer absolute bottom-5 w-[48px] h-[48px] bg-gradient-to-b from-blue-600 to-blue-400 rounded-full left-1/2 -translate-x-1/2 shadow-[inset_0px_4px_2px_#60a5fa,inset_0px_-4px_0px_#1e3a8a,0px_0px_2px_rgba(0,0,0,10)] active:shadow-[inset_0px_4px_2px_rgba(96,165,250,0.5),inset_0px_-4px_2px_rgba(37,99,235,0.5),0px_0px_2px_rgba(0,0,0,10)] z-20 flex items-center justify-center"
+      >
+        <div className="w-5 group-active:w-[31px] fill-blue-100 drop-shadow-[0px_2px_2px_rgba(0,0,0,0.5)]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Filled"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z"></path>
+          </svg>
+        </div>
+      </label>
     </div>
   );
 };
