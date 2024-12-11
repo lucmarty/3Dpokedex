@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TeamCoverage from "./TeamCoverage";
-import TeamList from "./TeamList";
+
 
 const Team: React.FC = () => {
   const [team, setTeam] = useState<number[]>([]);
@@ -67,8 +67,7 @@ const Team: React.FC = () => {
 
       ) : (
         <div className="flex flex-row items-center justify-evenly p-8">
-          <TeamList pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} />
-          <TeamCoverage pokemons={pokemonDetails} />
+          <TeamCoverage pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} />
         </div>
       )}
     </div>
