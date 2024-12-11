@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface TeamCoverageProps {
     pokemons: any[];
+    onRemovePokemon: (id: number) => void;
 }
-
-type TypeAttributes = {
-    immune: number;
-    resist: number;
-    neutral: number;
-    weak: number;
-};
 
 const Type: string[] = [
     "normal",
@@ -29,68 +23,106 @@ const Type: string[] = [
     "dragon",
     "dark",
     "steel",
-    "fairy"
+    "fairy",
 ];
 
-const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons }) => {
-    const [typeDict, setTypeDict] = useState<Record<string, TypeAttributes>>(
-        Type.reduce((acc, type) => {
-            acc[type] = { immune: 0, resist: 0, neutral: 0, weak: 0 };
-            return acc;
-        }, {} as Record<string, TypeAttributes>)
-    );
+const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons, onRemovePokemon }) => {
+    // Remplir les colonnes vides si moins de 6 Pokémon
+    const paddedPokemons = [
+        ...pokemons,
+        ...Array.from({ length: 6 - pokemons.length }, (_, i) => null),
+    ];
 
-    useEffect(() => {
-        const newTypeDict = Type.reduce((acc, type) => {
-            acc[type] = { immune: 0, resist: 0, neutral: 0, weak: 0 };
-            return acc;
-        }, {} as Record<string, TypeAttributes>);
-
-        pokemons.forEach((pokemon) => {
-            Object.entries(pokemon.coverage).forEach(([type, multiplier]) => {
-                if (multiplier === 0) {
-                    newTypeDict[type].immune += 1;
-                } else if (multiplier === 0.5) {
-                    newTypeDict[type].resist += 1;
-                } else if (multiplier === 1) {
-                    newTypeDict[type].neutral += 1;
-                } else if (multiplier === 2) {
-                    newTypeDict[type].weak += 1;
-                }
-            });
-        });
-
-        setTypeDict(newTypeDict);
-    }, [pokemons]);
+    // Fonction pour obtenir la classe CSS basée sur le multiplicateur
+    const getMultiplierClass = (multiplier: number | undefined) => {
+        if (!multiplier || multiplier === 1) return "text-gray-800"; // Couleur neutre
+        if (multiplier >= 4) return "text-red-600 font-bold"; // Rouge intense pour x4
+        if (multiplier >= 2) return "text-red-400"; // Rouge pour x2
+        if (multiplier < 1) return "text-green-600"; // Vert pour x0.5 ou moins
+        return "text-gray-800"; // Par défaut
+    };
 
     return (
         <div className="overflow-x-auto shadow-2xl">
             <table className="table-auto border-collapse p-4 rounded-xl bg-white">
                 <thead>
-                    <tr className="">
-                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Type</th>
-                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Immune</th>
-                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Resist</th>
-                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Neutral</th>
-                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Weak</th>
+                    <tr>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700"></th>
+                        {paddedPokemons.map((pokemon, index) => (
+                            <th
+                                key={pokemon ? pokemon.id : `placeholder-${index}`}
+                                className="px-4 py-2 border-b text-sm font-medium text-gray-700 w-24"
+                            >
+                                {pokemon ? (
+                                    <div className="relative group">
+                                        <img
+                                            src={`/sprites/${pokemon.sprites.default}`}
+                                            alt={pokemon.name.french}
+                                            className="w-14 h-14 object-contain"
+                                        />
+                                        <p className="text-sm mt-2 text-gray-800">{pokemon.name.french}</p>
+                                        {/* Croix rouge pour supprimer */}
+                                        <div
+                                            className="absolute top-0 right-0 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                onRemovePokemon(pokemon.id);
+                                            }}
+                                        >
+                                            X
+                                        </div>
+                                    </div>
+                                ) : " "}
+                            </th>
+                        ))}
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Total Faiblesses</th>
+                        <th className="px-4 py-2 border-b text-sm font-medium text-gray-700">Total Résistances</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {Type.map((type) => (
-                        <tr key={type} className="border-b">
-                            <td className="px-4 py-2 text-sm text-gray-800">
-                                <img
-                                    className="w-20 object-contain"
-                                    src={"/types/" + type + ".png"}
-                                    alt={type}
-                                />
-                            </td>
-                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].immune}</td>
-                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].resist}</td>
-                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].neutral}</td>
-                            <td className="px-4 py-2 text-sm text-gray-800">{typeDict[type].weak}</td>
-                        </tr>
-                    ))}
+                    {Type.map((type) => {
+                        // Calculer les totaux de faiblesses et résistances pour ce type
+                        let totalWeaknesses = 0;
+                        let totalResistances = 0;
+
+                        paddedPokemons.forEach((pokemon) => {
+                            const multiplier = pokemon?.coverage[type];
+                            if (multiplier > 1) totalWeaknesses++;
+                            else if (multiplier < 1) totalResistances++;
+                        });
+
+                        return (
+                            <tr key={type} className="border-b">
+                                {/* Type Icon */}
+                                <td className="px-4 py-2 text-sm text-gray-800">
+                                    <img
+                                        className="w-20 object-contain"
+                                        src={`/types/${type}.png`}
+                                        alt={type}
+                                    />
+                                </td>
+                                {/* Multipliers for each Pokémon */}
+                                {paddedPokemons.map((pokemon, index) => {
+                                    const multiplier = pokemon?.coverage[type];
+                                    return (
+                                        <td
+                                            key={pokemon ? pokemon.id : `placeholder-${index}`}
+                                            className={`px-4 py-2 text-sm text-center w-24 ${getMultiplierClass(multiplier)}`}
+                                        >
+                                            {multiplier != null && multiplier !== 1 ? `x${multiplier}` : multiplier === 0 ? "x0" : " "}
+                                        </td>
+                                    );
+                                })}
+                                {/* Totaux */}
+                                <td className="px-4 py-2 text-sm text-gray-800 text-center w-24">
+                                    {totalWeaknesses === 0 ? " " : totalWeaknesses}
+                                </td>
+                                <td className="px-4 py-2 text-sm text-gray-800 text-center w-24">
+                                    {totalResistances === 0 ? " " : totalResistances}
+                                </td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </table>
         </div>
