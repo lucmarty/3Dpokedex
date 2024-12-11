@@ -108,7 +108,7 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
   }
 
   return (
-    <div>
+    <div className="absolute left-10">
       <svg ref={svgRef}></svg>
     </div>
   );

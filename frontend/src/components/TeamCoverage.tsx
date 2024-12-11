@@ -64,7 +64,7 @@ const TeamCoverage: React.FC<TeamCoverageProps> = ({ pokemons }) => {
     }, [pokemons]);
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto shadow-2xl">
             <table className="table-auto border-collapse p-4 rounded-xl bg-white">
                 <thead>
                     <tr className="">

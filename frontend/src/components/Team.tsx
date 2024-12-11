@@ -58,15 +58,17 @@ const Team: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100">
-      <h1 className="text-center">Organisation d'équipe</h1>
-
+    <div>
       {pokemonDetails.length === 0 ? (
-        <p className="text-center">Aucun Pokémon dans l'équipe</p>
+        <div className="flex flex-col justify-self-center text-center">
+          <h2 className="text-4xl text-gray-800"> Votre équipe est vide.</h2>
+          <h1 className="text-5xl text-gray-800">Ajouter des Pokémons dans votre équipe ! </h1>
+        </div>
+
       ) : (
         <div className="flex flex-row items-center justify-evenly p-8">
-          <TeamList pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} /> 
-           <TeamCoverage pokemons={pokemonDetails} />
+          <TeamList pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} />
+          <TeamCoverage pokemons={pokemonDetails} />
         </div>
       )}
     </div>
