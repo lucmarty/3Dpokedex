@@ -19,7 +19,13 @@ const App: React.FC = () => {
         {/* Route pour afficher la liste ou une page d'accueil */}
         <Route path="/" element={<><Menu /> <SpriteList /></>} />
 
-        <Route path="/pokemon/:id" element={<><Menu/> <Pokemon/> <Slider/></>} />
+        {/* Route dynamique pour afficher les détails d'un Pokémon */}
+        <Route path="/pokemon/:id" element={
+          <>
+            <Menu/>
+            <Pokemon/>
+          </>
+          } />
 
         <Route path="/team" element={<><Menu /> <Team /></>} />
 
