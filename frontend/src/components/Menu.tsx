@@ -1,5 +1,6 @@
 import React from 'react';
 import { useUser } from './UserContext';
+import "../App.css";
 
 const Menu: React.FC = () => {
     const { user, setUser } = useUser();
@@ -11,9 +12,9 @@ const Menu: React.FC = () => {
     };
 
     return (
-        <div className="bg-white p-4 shadow-3lg">
+        <div className="bg-white p-4 shadow-3lg sticky top-0 z-10">
             <nav className="flex justify-around">
-                <a href="/" className="text-red-500 hover:text-red-700 font-semibold">
+                <a href="/" className="text-red-500 hover:text-red-700 fontPokemon">
                     <span style={{ color: 'red' }}>3D</span>
                     <span style={{ color: 'black' }}>Pokedex</span>
                 </a>
