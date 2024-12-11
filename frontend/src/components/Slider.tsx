@@ -6,13 +6,11 @@ const Slider: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [nextPokemon, setNextPokemon] = useState<any>(null);
   const [prevPokemon, setPrevPokemon] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   const currentId = parseInt(id || "1", 10);
 
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        setIsLoading(true);
         const response = await fetch(`http://localhost:5002/api/pokemons/${Math.min(151, currentId + 1)}`);
         if (!response.ok) {
           throw new Error("Erreur lors du chargement des données du Pokémon");
@@ -21,8 +19,6 @@ const Slider: React.FC = () => {
         setNextPokemon(data);
       } catch (error) {
         console.error(error);
-      } finally {
-        setIsLoading(false);
       }
     };
 
@@ -32,7 +28,6 @@ const Slider: React.FC = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        setIsLoading(true);
         const response = await fetch(`http://localhost:5002/api/pokemons/${Math.max(1, currentId - 1)}`);
         if (!response.ok) {
           throw new Error("Erreur lors du chargement des données du Pokémon");
@@ -41,8 +36,6 @@ const Slider: React.FC = () => {
         setPrevPokemon(data);
       } catch (error) {
         console.error(error);
-      } finally {
-        setIsLoading(false);
       }
     };
 
@@ -60,7 +53,7 @@ const Slider: React.FC = () => {
       {/* Bouton gauche avec sprite */}
       <button
         onClick={() => handleNavigate("left")}
-        className="fixed left-4 top-1/2 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:outline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
+        className="fixed left-4 top-3/4 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:outline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
       >
         {prevPokemon && (
           <>
@@ -77,7 +70,7 @@ const Slider: React.FC = () => {
       {/* Bouton droit avec sprite */}
       <button
         onClick={() => handleNavigate("right")}
-        className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:ouline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
+        className="fixed right-4 top-3/4 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:ouline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
       >
         {nextPokemon && (
           <>
