@@ -2,7 +2,7 @@ import React from "react";
 
 interface AddToTeamButtonProps {
   team: string[];
-  setTeam: React.Dispatch<React.SetStateAction<string[]>>;
+  setTeam: (team: number[]) => void;
   pokemon: any; // Adaptez si nécessaire.
 }
 
@@ -12,11 +12,11 @@ const AddToTeamButton: React.FC<AddToTeamButtonProps> = ({ team, setTeam, pokemo
       alert("Votre équipe est déjà au complet !");
       return;
     }
-    if (team.includes(pokemon.name.english)) {
+    if (team.includes(pokemon.id)) {
       alert(`${pokemon.name.french} est déjà dans votre équipe !`);
       return;
     }
-    setTeam((prev) => [...prev, pokemon.name.english]);
+    setTeam([...team, pokemon.id]);
     alert(`${pokemon.name.french} a été ajouté à votre équipe !`);
   };
 

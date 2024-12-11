@@ -10,7 +10,7 @@
 }
 
 #root {
-  overflow: hidden;
+  overflow: auto;
   background-color: rgb(243 244 246);
 }
 

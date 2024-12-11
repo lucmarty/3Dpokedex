@@ -19,8 +19,10 @@ const Team: React.FC = () => {
   // récupération des données de l'équipe stockées en session storage
   useEffect(() => {
     const data = sessionStorage.getItem("selectedPokemon");
+    console.log("aaaa")
     if (data) {
       setTeam(JSON.parse(data));
+      console.log("data", data);
     }
   }, []);
 
@@ -63,8 +65,8 @@ const Team: React.FC = () => {
         <p className="text-center">Aucun Pokémon dans l'équipe</p>
       ) : (
         <div className="flex flex-row items-center justify-evenly p-8">
-          <TeamList pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} />
-          <TeamCoverage pokemons={pokemonDetails} />
+          <TeamList pokemons={pokemonDetails} onRemovePokemon={handleRemovePokemon} /> 
+           <TeamCoverage pokemons={pokemonDetails} />
         </div>
       )}
     </div>

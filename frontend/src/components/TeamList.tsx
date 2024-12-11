@@ -6,11 +6,12 @@ interface TeamListProps {
 }
 
 const TeamList: React.FC<TeamListProps> = ({ pokemons, onRemovePokemon }) => {
+    console.log("pokemons", pokemons);
     return (
         <div className="w-fit h-fit grid grid-cols-6 gap-8 justify-start overflow-x-auto p-4 rounded-xl shadow-lg bg-white">
             {pokemons.map((pokemon) => (
                 <a
-                    href={`/pokemon/${pokemon.name.english.toLowerCase()}`}
+                    href={`/pokemon/${pokemon.id}`}
                     key={pokemon.id}
                     className="relative flex flex-col items-center w-fit cursor-pointer group"
                 >
