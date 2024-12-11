@@ -24,7 +24,7 @@ const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
 };
 
 const Pokemon3D: React.FC<{ modelPath: string }> = ({ modelPath }) => (
-  <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }}>
+  <Canvas camera={{ position: [0.5, 0.5, 2], fov: 25 }} style={{background: "transparent"}}>
     <Suspense fallback={null}>
       <ambientLight intensity={1} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
