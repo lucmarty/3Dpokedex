@@ -10,7 +10,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "bebas-neue-lavraie";
+  src: url("./assets/fonts/BebasNeueLaVraie.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
+.fontBebasLavrai{
+  font-family: "bebas-neue-lavraie",sans-serif;
+}
 .fontPokemon {
   font-family: 'CustomFont', sans-serif;
 }

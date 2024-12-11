@@ -128,28 +128,35 @@ useEffect(() => {
       >
         <div className="absolute flex items-center justify-center h-full w-full">
           <Pokemon3D modelPath={modelPath} />
-          <div className="absolute left-10 pointer-events-none">
+          <div className=" absolute left-10 top-16 pointer-events-none ">
+
             <PokemonStats maxStats={maxStats} currentStats={stats} />
           </div>
-          <div className="absolute right-10 pointer-events-none">
-            <img
-              src={`/sprites/${
-                selectedPokemon?.sprites?.default || "default.png"
-              }`}
-              alt={selectedPokemon?.name?.french || "Pokémon"}
-            />
-            <h2>{selectedPokemon?.name?.french || "Nom inconnu"} / {selectedPokemon?.name?.english || 'Nom inconnu'} </h2>
-            <p>Numéro : {selectedPokemon.id}</p>
-            <p>Type :</p>
+          <div className="max-w-[20vw] text-xl bg-gray-100/80 text-black rounded-xl p-4 shadow-2xl absolute right-10 top-16 pointer-events-none">
+
+            <div className="flex flex-row w-full">
+              <h2>{selectedPokemon?.name?.french || "Nom inconnu"} / {selectedPokemon?.name?.english || 'Nom inconnu'} </h2>
+              <img
+                  className="w-16 h-16"
+                  src={`/sprites/${
+                      selectedPokemon?.sprites?.default || "default.png"
+                  }`}
+                  alt={selectedPokemon?.name?.french || "Pokémon"}
+              />
+            </div>
+
+            <p className="mb-2"><span className="underline">Numéro : </span> {selectedPokemon.id}</p>
+            <p className="mb-2"><span className="underline">Type : </span></p>
             {type?.map((t, index) => (
               <img
                 key={`${t}-${index}`}
                 src={`/types/${t.toLowerCase()}.png`}
                 alt={t}
-                className="m-1"
+                className="m-1 mb-2"
               />
             ))}
-            <p>Talents :</p>
+            <p><span className="underline">Talents : </span></p>
+
             {abilities?.map((a, index) => (
               <p key={`${a}-${index}`}>
                 {index === 3 ? "(caché) " : ""}
@@ -158,16 +165,17 @@ useEffect(() => {
             ))}
             <div>
               <p>
-                {info?.percent_male || 0} % de male ♂️ /{" "}
-                {info?.percent_female || 0} % de femelle ♀️
+                <span className="underline">Sexe : </span>
+                {info?.percent_male || 0} % de male /{" "}
+                {info?.percent_female || 0} % de femelle
               </p>
-              <p>Taille : {info?.height_m || 0} m</p>
-              <p>Poids : {info?.weight_kg || 0} Kg</p>
-              <p>Description : {info?.description || "Aucune description"}</p>
+              <p><span className="underline">Taille : </span>{info?.height_m || 0} m</p>
+              <p><span className="underline">Poids : </span> {info?.weight_kg || 0} Kg</p>
+              <p><span className="underline">Description : </span>{info?.description || "Aucune description"}</p>
               {info.is_sublegendary === 1 || info.is_legendary === 1 ? (
-                <p>Ce pokémon est légendaire</p>
+                <p className="text-yellow-500-">Ce pokémon est légendaire</p>
               ) : info.is_mythical === 1 ? (
-                <p>Ce pokémon est mythique</p>
+                <p className="text-red-600">Ce pokémon est mythique</p>
               ) : null}
             </div>
             <AddToTeamButton
