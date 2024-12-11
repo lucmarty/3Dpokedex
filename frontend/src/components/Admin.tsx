@@ -27,7 +27,7 @@ const Admin = () => {
     return (
         <>
             <Menu />
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center h-full w-full bg-gray-800 z-5">
                 <h1>Admin Page</h1>
                 <div className="flex w-full">
                     <div className="flex flex-col w-1/2 p-4">

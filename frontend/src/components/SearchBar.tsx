@@ -34,14 +34,14 @@ interface SearchBarProps {
         onSearch(inputText, selectedType, selectedType2, value);
     };
   return (
-    <div className="my-12 p-6 sticky top-0 z-10 bg-gray-100 rounded-2xl scale-110 shadow-2xl border border-2 border-gray-200">
+    <div className="my-12 p-6 sticky top-16 z-10 bg-gray-100 rounded-2xl scale-105 shadow-2xl border border-2 border-gray-200">
       <div className="search">
         <input
           type="text"
           placeholder="Chercher un pokemon"
           value={inputText}
           onChange={handleInputChange}
-          className="placeholder-white text-center w-full rounded-full p-4 bg-red-500 shadow-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 hover:scale-105 transition-transform duration-300"
+          className="placeholder-gray-500 text-center w-full rounded-full p-4 bg-white shadow-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="filter mt-4 flex gap-4">

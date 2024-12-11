@@ -62,7 +62,7 @@ const SpriteList: React.FC = () => {
   }
 
   return (
-      <div className="px-44 pb-8 h-full overflow-scroll bg-gray-100">
+      <div className="relative px-44 pb-8 h-full">
         <SearchBar onSearch={handleSearch} pokemonTypes={pokemonTypes} />
         <div className="grid grid-cols-9 gap-4 justify-start overflow-x-auto p-4 rounded-xl shadow-lg bg-white">
           <TransitionGroup component={null}>
@@ -74,7 +74,7 @@ const SpriteList: React.FC = () => {
                 >
                   <a
                       href={`/pokemon/${pokemon.id}`}
-                      className="flex flex-col items-center w-full bg-gray-100 rounded-2xl drop-shadow-md search hover:scale-110 transition-transform ease-in-out duration-100"
+                      className="flex flex-col items-center w-full bg-white rounded-2xl  search hover:scale-110 transition-transform ease-in-out duration-100"
                   >
                     <img
                         src={`/sprites/${pokemon.sprites.default}`}
