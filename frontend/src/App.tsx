@@ -5,9 +5,10 @@ import Pokemon from "./components/Pokemon";
 import Team from "./components/Team";
 import Menu from "./components/Menu";
 import Login from "./components/Login";
-
+import Slider from "./components/Slider";
 import Admin from "./components/Admin";
 import Register from "./components/Register";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 
 const App: React.FC = () => {
@@ -23,22 +24,20 @@ const App: React.FC = () => {
         <Route path="/pokemon/:id" element={
           <>
             <Menu/>
-            <Pokemon/>
+            <ErrorBoundary>
+              <Pokemon />
+            </ErrorBoundary>
+            <Slider/>
           </>
           } />
 
         <Route path="/team" element={<><Menu /> <Team /></>} />
 
         <Route path="/login" element={<><Menu /> <Login /></>} />
-          <Route
-              path="/admin"
-              element={
 
-                      <Admin />
+        <Route path="/admin" element={<Admin />}/>
 
-              }
-          />
-          <Route path="/register" element={<><Menu /> <Register /></>} />
+        <Route path="/register" element={<><Menu /> <Register /></>} />
       </Routes>
     </BrowserRouter>
 
