@@ -4,7 +4,7 @@ import Menu from "./Menu.tsx";
 import React, { useState, useEffect, useMemo } from "react";
 import ListPokemon from "./ListPokemon.tsx";
 import PokemonDetail from "./PokemonDetail.tsx";
-import "../noOverflowRoot.css"
+
 
 const Admin = () => {
     const { user } = useUser();
