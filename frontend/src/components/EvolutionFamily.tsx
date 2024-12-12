@@ -8,24 +8,26 @@ interface EvolutionFamilyProps {
       english: string;
       french: string;
     };
-    sprite: string; 
+    sprite: string;
   }[];
 }
 
-  const EvolutionFamily: React.FC<EvolutionFamilyProps> = ({ evolutionFamily }) => {
+const EvolutionFamily: React.FC<EvolutionFamilyProps> = ({ evolutionFamily }) => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+    <div style={{ display: "flex", justifyContent: "space-around" }}>
       {evolutionFamily.map((pokemon, index) => (
         <div key={index} style={{ textAlign: "center" }}>
-          <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to={`/pokemon/${pokemon.id}`}
+            className="pointer-events-auto text-black hover:text-black"
+          >
             <img
-              src={`/sprites/${
-                pokemon?.sprite || "default.png"
-              }`}
+              src={`/sprites/${pokemon?.sprite || "default.png"
+                }`}
               alt={pokemon.name.english}
-              style={{ width: "100px", height: "100px" }}
+              className="flex w-16 h-16 align-middle"
             />
-            <p>{pokemon.name.french} / {pokemon.name.english}</p>
+            <p>{pokemon.name.french}</p>
           </Link>
         </div>
       ))}
