@@ -20,7 +20,7 @@ const AddToTeamButton: React.FC<AddToTeamButtonProps> = ({ team, setTeam, pokemo
     alert(`${pokemon.name.french} a été ajouté à votre équipe !`);
   };
 
-  return <button className="pointer-events-auto border border-2 border-gray-400 rounded-xl py-2 px-4 hover:bg-green-700 hover:text-gray-100 hover:border-green-700" onClick={handleAddPokemon}>Ajouter à la team</button>;
+  return <button className="pointer-events-auto border-2 border-gray-400 rounded-xl py-2 px-4 hover:bg-green-700 hover:text-gray-100 hover:border-green-700" onClick={handleAddPokemon}>Ajouter à la team</button>;
 };
 
 export default AddToTeamButton;
