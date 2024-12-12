@@ -49,12 +49,12 @@ const Slider: React.FC = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center">
+    <div className="relative flex flex-row items-center justify-center">
       {/* Bouton gauche avec sprite */}
       {prevPokemon && prevPokemon.id >= 1 && (
       <button
         onClick={() => handleNavigate("left")}
-        className="fixed left-4 top-3/4 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:outline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
+        className="fixed rounded-xl left-10 bottom-3 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:outline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
       >
             <img
               src={`/sprites/${prevPokemon.sprites.default}`}
@@ -69,7 +69,7 @@ const Slider: React.FC = () => {
       {nextPokemon && nextPokemon.id <= 151 && (
       <button
         onClick={() => handleNavigate("right")}
-        className="fixed right-4 top-3/4 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:ouline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
+        className="fixed rounded-xl right-10 bottom-3 transform -translate-y-1/2 bg-gray-100 px-6 py-3 shadow-lg focus:ouline-none ring-0 hover:ring-2 hover:ring-red-600 flex flex-col items-center"
       >
             <img
               src={`/sprites/${nextPokemon.sprites.default}`}
