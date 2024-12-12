@@ -90,18 +90,23 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
     };
 
     return (
-        <>
-            <h1 className="text-2xl font-semibold mb-4">Détails de {pokemon.name.french}</h1>
-            <div className="bg-black text-white p-4 rounded shadow-md w-full">
-                <h2 className="text-2xl font-bold mb-4 text-center">{pokemon.name.french} ({pokemon.name.english})</h2>
-                <div className="flex flex-col items-center">
-                    <img
-                        src={`/sprites/${pokemon.sprites?.default || "placeholder.png"}`}
-                        alt={pokemon.name.french}
-                        className="w-32 h-32 object-contain mb-4"
-                    />
+
+        <div className="w-full h-[65vh]  ">
+
+            <h1 className="text-2xl fontBebasLavrai text-black bg-gray-100 rounded-lg shadow-lg px-8 py-2 w-fit mb-4">Détails de {pokemon.name.french}</h1>
+            <div className="bg-gray-100 text-black p-8 rounded-lg -lg shadow-md h-full w-full overflow-scroll">
+                <div className="flex flex-col justify-between mb-4">
+
+                    <div className="flex flex-row justify-center items-center">
+                        <h2 className="text-5xl fontBebasLavrai mb-4 text-center">{pokemon.name.french} ({pokemon.name.english})</h2>
+                        <img
+                            src={`/sprites/${pokemon.sprites?.default || "placeholder.png"}`}
+                            alt={pokemon.name.french}
+                            className="w-32 h-32 object-contain mb-4"
+                        />
+                    </div>
                     <div className="flex w-full flex-col items-start justify-start">
-                        <p className="mb-2"><strong>ID:</strong> {pokemon.id}</p>
+                    <p className="mb-2"><strong>ID:</strong> {pokemon.id}</p>
                         <div className="mb-2">
                             <label htmlFor="nameEnglish" className="block">Nom (Anglais):</label>
                             <p className="text-xs text-red-600">Attention changer ce nom change aussi la route pour les modèles 3D, ça peut tout casser</p>
@@ -111,7 +116,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="nameEnglish"
                                 value={formData.nameEnglish}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 bg-white shadow-lg rounded-lg "
                             />
                         </div>
                         <div className="mb-2">
@@ -122,7 +127,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="nameFrench"
                                 value={formData.nameFrench}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg -full"
                             />
                         </div>
                         <div className="mb-2">
@@ -132,7 +137,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="type1"
                                 value={formData.type1}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             >
                                 {types.map((type) => (
                                     <option key={type} value={type}>
@@ -148,7 +153,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="type2"
                                 value={formData.type2}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg -lg"
                             >
                                 <option value="">Aucun</option>
                                 {types.map((type) => (
@@ -171,7 +176,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="hp"
                                 value={formData.hp}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                         <li>
@@ -182,7 +187,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="attack"
                                 value={formData.attack}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                         <li>
@@ -193,7 +198,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="defense"
                                 value={formData.defense}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                         <li>
@@ -204,7 +209,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="spAttack"
                                 value={formData.spAttack}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                         <li>
@@ -215,7 +220,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="spDefense"
                                 value={formData.spDefense}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                         <li>
@@ -226,7 +231,7 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                                 name="speed"
                                 value={formData.speed}
                                 onChange={handleInputChange}
-                                className="w-full p-2 mb-2 bg-gray-700 text-white rounded"
+                                className="w-full p-2 mb-2 bg-white shadow-lg rounded-lg "
                             />
                         </li>
                     </ul>
@@ -234,19 +239,19 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({ pokemon, types }) => {
                 <div className="mt-4 flex justify-end gap-4">
                     <button
                         onClick={handleValider}
-                        className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded"
+                        className="bg-blue-600 hover:bg-blue-800 shadow-lg text-white py-2 px-4 rounded-lg "
                     >
                         Valider
                     </button>
                     <button
                         onClick={handleAnnuler}
-                        className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-4 rounded"
+                        className="bg-gray-600 hover:bg-gray-800 shadow-lg text-white py-2 px-4 rounded-lg "
                     >
                         Annuler
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

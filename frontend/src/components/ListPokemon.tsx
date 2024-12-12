@@ -24,12 +24,12 @@ interface ListPokemonProps {
 
 const ListPokemon: React.FC<ListPokemonProps> = ({ pokemons, onSelectPokemon }) => {
     return (
-        <div className="p-4">
-            <h1 className="text-2xl font-semibold mb-4">Liste des Pokémon</h1>
-            <div className="overflow-auto border border-gray-300 rounded-md" style={{ maxHeight: '80vh' }}>
-                <table className="table-auto w-full border-collapse">
+        <>
+            <h1 className="text-2xl fontBebasLavrai text-black bg-gray-100 rounded-lg shadow-lg px-8 py-2 w-fit mb-4">Liste des Pokémon</h1>
+            <div className="h-[65vh] overflow-auto border border-gray-300 rounded-2xl" style={{ maxHeight: '80vh' }}>
+                <table className="table-auto w-full bg-gray-100 rounded-2xl text-black border-collapse">
                     <thead>
-                        <tr className="bg-black sticky top-0">
+                        <tr className="bg-red-400 sticky top-0">
                             <th className="border border-gray-300 px-4 py-2">ID</th>
                             <th className="border border-gray-300 px-4 py-2">Nom (Anglais)</th>
                             <th className="border border-gray-300 px-4 py-2">Nom (Français)</th>
@@ -52,7 +52,7 @@ const ListPokemon: React.FC<ListPokemonProps> = ({ pokemons, onSelectPokemon }) 
                     </tbody>
                 </table>
             </div>
-        </div>
+        </>
     );
 };
 

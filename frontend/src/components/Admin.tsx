@@ -1,9 +1,10 @@
 import { Navigate } from "react-router-dom";
 import { useUser } from "./UserContext";
 import Menu from "./Menu.tsx";
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ListPokemon from "./ListPokemon.tsx";
 import PokemonDetail from "./PokemonDetail.tsx";
+import "../noOverflowRoot.css"
 
 const Admin = () => {
     const { user } = useUser();
@@ -54,16 +55,18 @@ const Admin = () => {
 
     return (
         <>
-            <Menu />
-            <div className="flex flex-col items-center justify-center h-full w-full bg-gray-800 z-5">
-                <h1>Admin Page</h1>
+
+            <Menu/>
+            <div className="flex flex-col items-center overflow-hidden h-screen relative top-0 w-full z-5">
+                <h1 className="fontBebasLavrai text-black bg-gray-100 rounded-lg shadow-lg px-8 py-2 mt-12">Admin
+                    Page</h1>
                 <div className="flex w-full">
                     <div className="flex flex-col w-1/2 p-4">
-                        <ListPokemon pokemons={pokemons} onSelectPokemon={setSelectedPokemon} />
+                        <ListPokemon pokemons={pokemons} onSelectPokemon={setSelectedPokemon}/>
                     </div>
-                    <div className="flex flex-col w-1/2 p-4">
+                    <div className="flex flex-col h-full w-1/2 p-4">
                         {selectedPokemon ? (
-                            <PokemonDetail pokemon={selectedPokemon} types={types} />
+                            <PokemonDetail pokemon={selectedPokemon} types={types}/>
                         ) : (
                             <p>Sélectionnez un Pokémon pour voir les détails</p>
                         )}
