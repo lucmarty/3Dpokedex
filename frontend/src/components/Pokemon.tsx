@@ -12,9 +12,9 @@ const Pokemon: React.FC = () => {
     return storedPokemon ? JSON.parse(storedPokemon) : [];
   });
   const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
-  const [maxStats, setMaxStats] = useState<any>(null); // State pour les max stats
+  const [maxStats, setMaxStats] = useState<any>(null); 
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [pokemonData, setPokemonData] = useState<any[]>([]);
+  const [evolutionFamily, setEvolutionFamily] = useState<any[]>([]);
 
 
   useEffect(() => {
@@ -40,24 +40,23 @@ const Pokemon: React.FC = () => {
   }, [id]);
 
 
-useEffect(() => {
-  const fetchPokemonData = async () => {
-    try {
-      const response = await fetch(`http://localhost:5002/api/pokemons`);
-      if (!response.ok) {
-        throw new Error("Erreur lors du chargement des données des Pokémon");
+  useEffect(() => {
+    const fetchEvolutionFamily = async () => {
+      try {
+        const response = await fetch(`http://localhost:5002/api/pokemons/${id}/evolution`);
+        if (!response.ok) {
+          throw new Error("Erreur lors de la récupération de la famille d'évolution");
+        }
+        const data = await response.json();
+        setEvolutionFamily(data.evolutionFamily);
+      } catch (err) {
+        console.error(err);
       }
-      const data = await response.json();
-      setPokemonData(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+    };
 
-  fetchPokemonData();
-}, []);
+    fetchEvolutionFamily();
+  }, [id]);
 
-  // Récupérer les maxStats
   useEffect(() => {
     const fetchMaxStats = async () => {
       try {
@@ -175,8 +174,8 @@ useEffect(() => {
               setTeam={setTeam}
               pokemon={selectedPokemon}
             />
+            <EvolutionFamily evolutionFamily={evolutionFamily} />
           </div>
-          <EvolutionFamily evo={selectedPokemon.evo} pokemonData={pokemonData} />
         </div>
       </div>
 

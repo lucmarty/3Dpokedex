@@ -105,6 +105,55 @@ app.get('/api/pokemons/:id', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch pokemon' });
     }
 });
+// Route pour récupérer la famille d'évolution d'un Pokémon
+app.get('/api/pokemons/:id/evolution', async (req, res) => {
+    try {
+        console.log('Requête reçue pour /api/pokemons/:id/evolution');
+        
+        const pokemon = await Pokemon.findOne({ id: req.params.id }); 
+
+        if (!pokemon) {
+            return res.status(404).json({ error: 'Pokémon non trouvé' });
+        }
+
+        const evolutionChains = [
+            pokemon.evo.evochain_0,
+            pokemon.evo.evochain_2,
+            pokemon.evo.evochain_4,
+            pokemon.evo.evochain_6,
+        ]
+        .map((name, index) => ({ name, order: index })) 
+        .filter((chain) => chain.name); 
+
+        const evolutionDetails = await Pokemon.find({
+            'name.english': { $in: evolutionChains.map(chain => chain.name) },
+        }, {
+            id: 1,
+            'name.french': 1,
+            'name.english': 1,
+            'sprites.default': 1,
+        });
+
+        const evolutionFamily = evolutionChains.map((chain) => {
+            const evo = evolutionDetails.find((evo) => evo.name.english === chain.name);
+            return evo ? {
+                id: evo.id,
+                name: {
+                    french: evo.name.french,
+                    english: evo.name.english,
+                },
+                sprite: evo.sprites.default,
+                evoOrder: chain.order, 
+            } : null;
+        }).filter(Boolean); 
+
+        res.json({ evolutionFamily });
+    } catch (err) {
+        console.error('Erreur lors de la récupération de la famille d\'évolution :', err);
+        res.status(500).json({ error: 'Failed to fetch evolution family' });
+    }
+});
+
 
 app.post('/api/register', async (req, res) => {
     try {
