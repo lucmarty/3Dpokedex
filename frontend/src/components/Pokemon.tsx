@@ -91,11 +91,11 @@ const Pokemon: React.FC = () => {
     if (!selectedPokemon?.name?.english) {
       return "";
     }
-    return `/models/${pokemonName}/${pokemonName}.glb`;
+    return `/models/${pokemonName}/${pokemonName}.glb?v=${new Date().getTime()}`;
   }, [selectedPokemon]);
 
   const audio = useMemo(() => {
-    const audio = new Audio(`/models/${pokemonName}/${pokemonName}.mp3`);
+    const audio = new Audio(`/models/${pokemonName}/${pokemonName}.mp3?v=${new Date().getTime()}`);
     audio.load();
     return audio;
   }, [pokemonName]);
