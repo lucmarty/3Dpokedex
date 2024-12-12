@@ -22,7 +22,7 @@ const PokemonInformations: React.FC<PokemonInformationsProps> = ({
 
     return (
         <>
-            <div className="max-w-[20vw] text-xl bg-gray-100/80 text-black rounded-xl p-4 shadow-2xl absolute right-10 top-16 pointer-events-none">
+            <div className="max-w-[20vw] text-xl bg-gray-100/80 text-black rounded-xl p-4 shadow-2xl absolute right-10 top-10 pointer-events-none">
                 {/* types */}
                 <div className="flex justify-between w-full">
                     {selectedPokemon?.type?.map((t: string, index: number) => (

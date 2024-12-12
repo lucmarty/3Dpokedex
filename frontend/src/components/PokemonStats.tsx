@@ -109,7 +109,7 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
   }
 
   return (
-      <div className="flex flex-col items-center p-3 absolute bg-gray-100/80 rounded-xl shadow-2xl left-10 ">
+      <div className="flex flex-col items-center p-3 absolute bg-gray-100/80 rounded-xl shadow-2xl left-10">
         <h1 className="text-black text-6xl fontBebasLavrai">Statistiques</h1>
         <svg ref={svgRef}></svg>
       </div>

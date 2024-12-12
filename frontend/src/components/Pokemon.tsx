@@ -121,7 +121,7 @@ const Pokemon: React.FC = () => {
       >
         <div className="relative flex items-center justify-center h-full w-full">
           <Pokemon3D modelPath={modelPath} />
-          <div className="absolute left-10 top-16 pointer-events-none">
+          <div className="absolute left-0 top-10 pointer-events-none">
             <PokemonStats maxStats={maxStats} currentStats={stats} />
           </div>
           <PokemonInformations
