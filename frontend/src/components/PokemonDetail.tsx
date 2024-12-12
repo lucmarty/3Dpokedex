@@ -12,8 +12,8 @@ interface PokemonDetailProps {
             HP: number;
             Attack: number;
             Defense: number;
-            SpAttack: number;
-            SpDefense: number;
+            "Sp. Attack": number;
+            "Sp. Defense": number;
             Speed: number;
         };
         sprites: {
@@ -24,6 +24,7 @@ interface PokemonDetailProps {
 
 const PokemonDetail: React.FC<PokemonDetailProps> = ({pokemon}) => {
     return (
+        console.log(pokemon.base),
         <>
             <h1 className="text-2xl font-semibold mb-4">Détails de {pokemon.name.french}</h1>
             <div className="bg-black text-white p-4 rounded shadow-md w-full">
@@ -46,8 +47,8 @@ const PokemonDetail: React.FC<PokemonDetailProps> = ({pokemon}) => {
                         <li><strong>HP:</strong> {pokemon.base.HP}</li>
                         <li><strong>Attack:</strong> {pokemon.base.Attack}</li>
                         <li><strong>Defense:</strong> {pokemon.base.Defense}</li>
-                        <li><strong>Sp. Attack:</strong> {pokemon.base.SpAttack}</li>
-                        <li><strong>Sp. Defense:</strong> {pokemon.base.SpDefense}</li>
+                        <li><strong>Sp. Attack:</strong> {pokemon.base["Sp. Attack"]}</li>
+                        <li><strong>Sp. Defense:</strong> {pokemon.base["Sp. Defense"]}</li>
                         <li><strong>Speed:</strong> {pokemon.base.Speed}</li>
                     </ul>
                 </div>
