@@ -118,14 +118,14 @@ const Pokemon: React.FC = () => {
   const info = selectedPokemon.info;
 
   return (
-    <div className="h-[calc(100vh-56px)] w-full flex flex-col justify-center overflow-hidden">
+    <div className="h-[calc(100vh-68px)] w-full flex flex-col justify-center overflow-hidden">
       <div
         className="flex-1 overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage: `url("/backgrounds/${type[0]}.png")`,
         }}
       >
-        <div className="absolute flex items-center justify-center h-full w-full">
+        <div className="relative flex items-center justify-center h-full w-full">
           <Pokemon3D modelPath={modelPath} />
           <div className=" absolute left-10 top-16 pointer-events-none ">
 
