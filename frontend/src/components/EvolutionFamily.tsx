@@ -14,20 +14,20 @@ interface EvolutionFamilyProps {
 
   const EvolutionFamily: React.FC<EvolutionFamilyProps> = ({ evolutionFamily }) => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+    <div className="flex justify-around mt-5">
       {evolutionFamily.map((pokemon, index) => (
-        <div key={index} style={{ textAlign: "center" }}>
-          <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: "none", color: "inherit" }}>
-            <img
-              src={`/sprites/${
-                pokemon?.sprite || "default.png"
-              }`}
-              alt={pokemon.name.english}
-              style={{ width: "100px", height: "100px" }}
-            />
-            <p>{pokemon.name.french} / {pokemon.name.english}</p>
-          </Link>
-        </div>
+      <div key={index} className="text-center">
+        <a href={`/pokemon/${pokemon.id}`} className="no-underline text-inherit pointer-events-auto">
+        <img
+          src={`/sprites/${
+          pokemon?.sprite || "default.png"
+          }`}
+          alt={pokemon.name.english}
+          className="w-24 h-24"
+        />
+        <p>{pokemon.name.french} / {pokemon.name.english}</p>
+        </a>
+      </div>
       ))}
     </div>
   );
