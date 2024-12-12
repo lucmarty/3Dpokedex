@@ -50,7 +50,7 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
       svg.append("path")
           .attr("d", d3.line()(hexagonPoints)! as string)
           .style("fill", "none")
-          .style("stroke", "#ddd");
+          .style("stroke", "#777");
     }
 
     svg.selectAll(".axis")
@@ -61,7 +61,7 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
         .attr("y1", 0)
         .attr("x2", (_: any, i: number) => rScale(1) * Math.cos(angleSlice * i))
         .attr("y2", (_: any, i: number) => rScale(1) * Math.sin(angleSlice * i))
-        .style("stroke", "#ccc");
+        .style("stroke", "#777");
 
     svg.selectAll(".axis-label")
         .data(statNames)
@@ -100,7 +100,7 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
         .data([radarPointsCurrent])
         .attr("d", d3.line()(radarPointsCurrent)! as string)
         .style("fill", "#f00")
-        .style("opacity", 0.5);
+        .style("opacity", 0.6);
 
   }, [maxStats, currentStats]);
 
@@ -109,8 +109,8 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ maxStats, currentStats }) =
   }
 
   return (
-      <div className="flex flex-col items-center p-4 absolute bg-gray-100/80 rounded-xl shadow-2xl left-10 ">
-        <h1 className="text-black fontBebasLavrai">Statistiques</h1>
+      <div className="flex flex-col items-center p-3 absolute bg-gray-100/80 rounded-xl shadow-2xl left-10 ">
+        <h1 className="text-black text-6xl fontBebasLavrai">Statistiques</h1>
         <svg ref={svgRef}></svg>
       </div>
   );
