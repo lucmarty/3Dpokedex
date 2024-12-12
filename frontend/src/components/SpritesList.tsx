@@ -87,6 +87,7 @@ const SpriteList: React.FC = () => {
             ))}
           </TransitionGroup>
         </div>
+        <p>.</p>
       </div>
   );
 };

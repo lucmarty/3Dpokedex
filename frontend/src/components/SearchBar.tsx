@@ -41,7 +41,7 @@ interface SearchBarProps {
           placeholder="Chercher un pokemon"
           value={inputText}
           onChange={handleInputChange}
-          className="placeholder-gray-500 text-center w-full rounded-full p-4 bg-white shadow-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 hover:scale-105 transition-transform duration-300"
+          className="placeholder-gray-500 text-center w-full rounded-full p-4 bg-white shadow-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500 hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="filter mt-4 flex gap-4">
