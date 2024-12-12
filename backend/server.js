@@ -105,6 +105,41 @@ app.get('/api/pokemons/:id', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch pokemon' });
     }
 });
+
+app.post('/api/pokemons/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { nameEnglish, nameFrench, hp, attack, defense, spAttack, spDefense, speed, type1, type2 } = req.body;
+
+        const updatedPokemon = await Pokemon.findOneAndUpdate(
+            { id: id }, 
+            {
+                $set: {
+                    'name.english': nameEnglish,
+                    'name.french': nameFrench,
+                    'base.HP': hp,
+                    'base.Attack': attack,
+                    'base.Defense': defense,
+                    'base["Sp. Attack"]': spAttack,
+                    'base["Sp. Defense"]': spDefense,
+                    'base.Speed': speed,
+                    type: [type1, type2 || ''], 
+                }
+            },
+            { new: true } 
+        );
+
+        if (!updatedPokemon) {
+            return res.status(404).json({ error: 'Pokémon non trouvé' });
+        }
+
+        res.status(200).json(updatedPokemon); 
+    } catch (err) {
+        console.error('Erreur lors de la mise à jour du Pokémon :', err);
+        res.status(500).json({ error: 'Échec de la mise à jour du Pokémon' });
+    }
+});
+
 // Route pour récupérer la famille d'évolution d'un Pokémon
 app.get('/api/pokemons/:id/evolution', async (req, res) => {
     try {

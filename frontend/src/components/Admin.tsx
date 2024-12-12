@@ -1,20 +1,44 @@
 import { Navigate } from "react-router-dom";
 import { useUser } from "./UserContext";
 import Menu from "./Menu.tsx";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import ListPokemon from "./ListPokemon.tsx";
 import PokemonDetail from "./PokemonDetail.tsx";
 
 const Admin = () => {
     const { user } = useUser();
     const [isLoading, setIsLoading] = useState(true);
+    const [pokemons, setPokemons] = useState([]);
     const [selectedPokemon, setSelectedPokemon] = useState(null);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        if (user !== null) {
-            setIsLoading(false);
-        }
-    }, [user]);
+        const fetchPokemons = async () => {
+            try {
+                const response = await fetch('http://localhost:5002/api/pokemons');
+                if (!response.ok) {
+                    throw new Error('Erreur lors de la récupération des Pokémon.');
+                }
+                const data = await response.json();
+                setPokemons(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchPokemons();
+    }, []);
+
+    const types = useMemo(() => {
+    return Array.from(
+            new Set(
+                pokemons.flatMap((pokemon: any) => 
+                    pokemon.type.filter((type: string) => type !== "")
+                )
+            )
+    );    }, [pokemons]);
 
     if (isLoading) {
         return <div>Chargement...</div>;
@@ -24,6 +48,10 @@ const Admin = () => {
         return <Navigate to="/" />;
     }
 
+    if (error) {
+        return <p className="text-red-500">Erreur : {error}</p>;
+    }
+
     return (
         <>
             <Menu />
@@ -31,11 +59,11 @@ const Admin = () => {
                 <h1>Admin Page</h1>
                 <div className="flex w-full">
                     <div className="flex flex-col w-1/2 p-4">
-                        <ListPokemon onSelectPokemon={setSelectedPokemon} />
+                        <ListPokemon pokemons={pokemons} onSelectPokemon={setSelectedPokemon} />
                     </div>
                     <div className="flex flex-col w-1/2 p-4">
                         {selectedPokemon ? (
-                            <PokemonDetail pokemon={selectedPokemon} />
+                            <PokemonDetail pokemon={selectedPokemon} types={types} />
                         ) : (
                             <p>Sélectionnez un Pokémon pour voir les détails</p>
                         )}
