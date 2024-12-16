@@ -1,31 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { getPokemonById } from '../utils/PokemonUtils';
+import React from 'react';
 import Pokemon from '../utils/PokemonType';
 
-const PokemonCard: React.FC<{ id: number }> = ({ id }) => {
-    const [pokemon, setPokemon] = useState<Pokemon | null>(null);
-
-    useEffect(() => {
-        const fetchedPokemon = getPokemonById(id);
-        setPokemon(fetchedPokemon);
-    }, [id]);
-
-    if (!pokemon) {
-        return <div>Pokemon not found</div>;
-    }
+const PokemonCard: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
     return (
         <a
             href=""
-            className='flex flex-col items-center 
-            hover:scale-110 duration-200'
+            className='flex w-full flex-col items-center
+            duration-200 hover:scale-110'
         >
             <img
                 src={"/sprites/" + pokemon.sprites.default}
                 alt={pokemon.name.english}
-                className="w-16 h-16 object-contain"
+                className="size-16 object-contain"
             />
-            <p className="text-xl text-foreground mt-2">
+            <p className="mt-2 text-xl text-muted-foreground">
                 {pokemon.name.french ? pokemon.name.french : pokemon.name.english}
             </p>
         </a>

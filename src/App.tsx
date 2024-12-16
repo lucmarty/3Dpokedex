@@ -1,20 +1,18 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
 
-import PokemonCard from './components/PokemonCard'
-
-
-
-function App() {
-  
-
+const App = () => {
   return (
-    <>
-      <PokemonCard id={1}></PokemonCard>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Header />      
+      <Routes>
+        <Route path="/" element={ <Home />} />
+        <Route path="/about" element={<div>About</div>} />
+        <Route path="/contact" element={<div>Contact</div>} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
