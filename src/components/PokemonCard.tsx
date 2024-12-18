@@ -5,7 +5,7 @@ const PokemonCard: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
     return (
         <a
-            href=""
+            href={"/" + pokemon.id}
             className='flex w-full flex-col items-center
             duration-200 hover:scale-110'
         >

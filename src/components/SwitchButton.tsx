@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 
 const SwitchButton = () => {
-  // Récupérer l'état du thème depuis le localStorage ou utiliser un thème par défaut
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark"; // Vérifier si un thème est déjà sauvegardé
+      return localStorage.getItem("theme") === "dark";
     }
     return false;
   });
@@ -20,22 +19,22 @@ const SwitchButton = () => {
   }, [isDarkMode]); 
 
   return (
-    <label htmlFor="switch" className="flex items-center cursor-pointer">
+    <label htmlFor="switch" className="flex cursor-pointer items-center">
       <input
         id="switch"
         type="checkbox"
         checked={isDarkMode}
-        onChange={() => setIsDarkMode(!isDarkMode)} // Inverser l'état du mode sombre
+        onChange={() => setIsDarkMode(!isDarkMode)}
         className="hidden"
       />
       <div className="relative">
         <div
-          className={`w-12 h-6 flex items-center rounded-full p-1 transition-all duration-300 ${
-            isDarkMode ? "bg-blue-500" : "bg-gray-300"
+          className={`flex h-6 w-12 items-center rounded-full p-1 transition-all duration-300 ${
+            isDarkMode ? "bg-primary" : "bg-gray-300"
           }`}
         >
           <div
-            className={`w-4 h-4 bg-white rounded-full shadow-md transform transition-all duration-300 ${
+            className={`size-4 transform rounded-full bg-background shadow-md transition-all duration-300 ${
               isDarkMode ? "translate-x-6" : "translate-x-0"
             }`}
           ></div>

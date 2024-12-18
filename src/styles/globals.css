@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: 34 33% 100%;
   --foreground: 34 59% 0%;
   --muted: 34 34% 85%;
@@ -51,8 +51,8 @@
   --chart-3: 34 4% 14%;
   --chart-4: 34 4% 17%;
   --chart-5: 34 51% 20%;
-}
-/* 
+} */
+
 :root {
   --background: hsl(34 33% 100%);
   --foreground: hsl(34 59% 0%);
@@ -108,4 +108,4 @@
   --chart-5: hsl(34 51% 20%);
 }
 
-*/
+
