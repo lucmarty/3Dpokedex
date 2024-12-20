@@ -8,10 +8,12 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
+        {/* Home Page */}
         <Route
           path="/"
           element={<Home />}
         />
+        {/* Pokemon Page */}
         <Route
           path="/:id"
           element={<Pokemon />}
