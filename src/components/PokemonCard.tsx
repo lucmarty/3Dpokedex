@@ -5,12 +5,12 @@ const PokemonCard: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
     return (
         <a
-            href={"/" + pokemon.id}
+            href={`${import.meta.env.BASE_URL}#/` + pokemon.id}
             className='flex w-full flex-col items-center
             duration-200 hover:scale-110'
         >
             <img
-                src={"/sprites/" + pokemon.sprites.default}
+                src={`${import.meta.env.BASE_URL}sprites/` + pokemon.sprites.default}
                 alt={pokemon.name.english}
                 className="size-16 object-contain"
             />

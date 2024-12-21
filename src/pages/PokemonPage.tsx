@@ -18,7 +18,7 @@ const PokemonPage: React.FC = () => {
         if (!pokemon.name.english) {
           return "";
         }
-        return `/models/${pokemon.name.english.toLowerCase()}/${pokemon.name.english.toLowerCase()}` + ".glb";
+        return `${import.meta.env.BASE_URL}models/${pokemon.name.english.toLowerCase()}/${pokemon.name.english.toLowerCase()}` + ".glb";
       }, [pokemon]);
 
     

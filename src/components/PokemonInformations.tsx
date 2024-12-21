@@ -12,7 +12,7 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
                 {pokemon.type.map((t: string, index: number) => (
                     <img
                         key={`${t}-${index}`}
-                        src={`/types/${t.toLowerCase()}.png`}
+                        src={`${import.meta.env.BASE_URL}types/${t.toLowerCase()}.png`}
                         alt={t}
                         className="m-1 mb-2"
                     />))}
@@ -22,7 +22,7 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
             <div className="flex flex-col items-center p-4">
                 <img
                     className="flex size-16 align-middle"
-                    src={`/sprites/${pokemon.sprites.default || "default.png"}`}
+                    src={`${import.meta.env.BASE_URL}sprites/${pokemon.sprites.default || "default.png"}`}
                     alt={pokemon.name?.french || "Pokémon"}
                 />
                 <h2 className="text-lg">
