@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
@@ -13,14 +13,8 @@ const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
       const size = new THREE.Vector3();
       box.getSize(size);
 
-      const delta = Math.min(
-        size.x > 0 ? 1.0 / size.x : 1,
-        size.y > 0 ? 1.0 / size.y : 1,
-        size.z > 0 ? 1.0 / size.z : 1
-      );
+      const delta = Math.min(1.0 / size.x, 1.0 / size.y, 1.0 / size.z);
       gltf.scene.scale.set(delta, delta, delta);
-
-      console.log("Calculated scale:", gltf.scene.scale);
 
       // Traverse the scene and adjust materials
       gltf.scene.traverse((child) => {
@@ -50,31 +44,24 @@ const PokemonModel: React.FC<{ modelPath: string }> = ({ modelPath }) => {
     }
   }, [gltf]);
 
-  return <primitive object={gltf.scene} position={[0, -0.2, 0]} />;
+  return <primitive object={gltf.scene} scale={0.25} position={[0, -1.5, 0]} />;
 };
 
 const Pokemon3D: React.FC<{ modelPath: string }> = ({ modelPath }) => (
-  <Canvas
-    camera={{ fov: 40, position: [0, 0, 2] }}
-    className="absolute bg-transparent"
-  >
-    <Suspense fallback={null}>
-      <ambientLight intensity={0.8} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
-      <directionalLight position={[-5, 5, 5]} intensity={2} />
-      <directionalLight position={[5, -5, 5]} intensity={2} />
-      <directionalLight position={[5, 5, -5]} intensity={2} />
-      <PokemonModel modelPath={modelPath} />
-      <OrbitControls
-        enableDamping
-        dampingFactor={0.25}
-        minDistance={1}
-        maxDistance={6}
-        enablePan={false}
-        autoRotate
-      />
-    </Suspense>
-  </Canvas>
+  <Canvas style={{ background: "transparent" }} shadows key={modelPath}>
+          <ambientLight intensity={1} />
+          <directionalLight position={[-5, 5, 5]} intensity={1} castShadow />
+          <directionalLight position={[5, 5, -5]} intensity={1} castShadow />
+          <OrbitControls
+            enableDamping
+            dampingFactor={0.25}
+            minDistance={2}
+            maxDistance={6}
+            autoRotate
+            autoRotateSpeed={0.8}
+          />
+          <PokemonModel modelPath={modelPath} />
+        </Canvas>
 );
 
 export default Pokemon3D;

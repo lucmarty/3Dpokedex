@@ -4,7 +4,7 @@ import SwitchButton from './SwitchButton';
 const Header: React.FC = () => {
 
     return (
-        <div className="sticky top-0 z-10 w-full bg-popover p-4 shadow-lg">
+        <div className="sticky top-0 z-10 w-full h-14 bg-popover p-4 shadow-lg">
             <nav className="flex justify-around">
                 <a href={`${import.meta.env.BASE_URL}`}>
                     <span className='font-semibold text-destructive'>3D</span>
