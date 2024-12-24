@@ -1,19 +1,17 @@
 import data from '../assets/pokemons.json';
 import PokemonType from '../utils/PokemonType';
+import types from '../assets/types.json';
+import games from '../assets/games.json';
 
 const pokemons: PokemonType[] = data as PokemonType[];
 
-console.log(pokemons);
-
 const pokemonIndex: Record<number, PokemonType> = pokemons.reduce(
   (acc: Record<number, PokemonType>, pokemon: PokemonType) => {
-      acc[pokemon.id] = pokemon;
-      return acc;
+    acc[pokemon.id] = pokemon;
+    return acc;
   },
   {} as Record<number, PokemonType>
 );
-
-console.log(pokemons);
 
 export const getPokemonById = (id: number): PokemonType | null => {
   return pokemonIndex[id] || null;
@@ -21,4 +19,24 @@ export const getPokemonById = (id: number): PokemonType | null => {
 
 export const getAllPokemons = (): PokemonType[] => {
   return pokemons;
+};
+
+export const getFrenchTypes = (): string[] => {
+  return Object.values(types).map((type) => type.french);
+};
+
+export const getTypes = (): typeof types => {
+  return types;
+};
+
+export const getGamesName = (): string[] => {
+  return Object.keys(games);
+};
+
+export const getPokedexFromGame = (gameName: string): number[] => {
+  const game = games[gameName];
+  if (!game || !game.pokedex) {
+    return [];
+  }
+  return game.pokedex.map((entry: { id: number }) => entry.id);
 };

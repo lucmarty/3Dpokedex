@@ -9,6 +9,7 @@ const PokemonPage: React.FC = () => {
     if (!id) {
         return <div>Invalid Pokemon ID</div>;
     }
+    
     const pokemon = getPokemonById(parseInt(id));
     if (!pokemon) {
         return <div>Pokemon not found</div>;
