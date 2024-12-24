@@ -2562,8 +2562,7 @@
             "french": "Goupix"
         },
         "type": [
-            "fire",
-            "ice"
+            "fire"
         ],
         "base": {
             "HP": 38,
@@ -2633,8 +2632,7 @@
             "french": "Feunard"
         },
         "type": [
-            "fire",
-            "ice"
+            "fire"
         ],
         "base": {
             "HP": 73,

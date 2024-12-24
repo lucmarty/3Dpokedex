@@ -1,0 +1,20 @@
+{
+    "normal": { "french": "Normal" },
+    "fire": { "french": "Feu" },
+    "water": { "french": "Eau" },
+    "electric": { "french": "Électrique" },
+    "grass": { "french": "Plante" },
+    "ice": { "french": "Glace" },
+    "fighting": { "french": "Combat" },
+    "poison": { "french": "Poison" },
+    "ground": { "french": "Sol" },
+    "flying": { "french": "Vol" },
+    "psychic": { "french": "Psy" },
+    "bug": { "french": "Insecte" },
+    "rock": { "french": "Roche" },
+    "ghost": { "french": "Spectre" },
+    "dragon": { "french": "Dragon" },
+    "dark": { "french": "Ténèbres" },
+    "steel": { "french": "Acier" },
+    "fairy": { "french": "Fée" }
+}

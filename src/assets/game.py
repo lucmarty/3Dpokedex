@@ -3,7 +3,7 @@ import json
 import re
 
 # URL de l'API
-url = "https://pokeapi.co/api/v2/pokedex/7"
+url = "https://pokeapi.co/api/v2/pokedex/15"
 
 try:
     # Envoyer une requête GET à l'API
