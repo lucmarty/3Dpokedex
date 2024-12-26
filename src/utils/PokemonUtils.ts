@@ -21,6 +21,18 @@ export const getAllPokemons = (): PokemonType[] => {
   return pokemons;
 };
 
+export const getPokemonGLTFPath = (pokemon: PokemonType): string => {
+  if (!pokemon.name.english) {
+    return "";
+  }
+  let name = pokemon.name.english.toLowerCase();
+  name = name.replace("♀", "F")
+  .replace("♂", "M")
+  .replace(" ", "")
+  .replace(".", "");
+  return `${import.meta.env.BASE_URL}models/${name}/${name}` + ".glb";
+}
+
 export const getFrenchTypes = (): string[] => {
   return Object.values(types).map((type) => type.french);
 };

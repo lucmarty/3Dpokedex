@@ -14,7 +14,6 @@ const SpriteList: React.FC<{ pokemons: PokemonType[] }> = ({ pokemons }) => {
         sortOption: string,
         gameOption: string
     ) => {
-        // Récupérer les IDs du Pokédex pour le jeu sélectionné
         const gamePokemonIds = gameOption ? getPokedexFromGame(gameOption) : null;
 
         const filtered = pokemons.filter((pokemon) => {
@@ -27,7 +26,6 @@ const SpriteList: React.FC<{ pokemons: PokemonType[] }> = ({ pokemons }) => {
             const matchesSecondType = selectedType2 === '' || pokemon.type.includes(selectedType2);
             const matchesType = matchesFirstType && matchesSecondType;
 
-            // Filtrer par jeu (si un jeu est sélectionné)
             const matchesGame = gameOption === '' || (gamePokemonIds && gamePokemonIds.includes(pokemon.id));
 
             return matchesText && matchesType && matchesGame;

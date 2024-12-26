@@ -60,6 +60,7 @@ interface PokemonType {
     sprites: {
         default: string;
     };
+    glft: boolean;
 }
 
 export default PokemonType;

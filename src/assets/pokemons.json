@@ -68,7 +68,8 @@
         },
         "sprites": {
             "default": "001MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 2,
@@ -139,7 +140,8 @@
         },
         "sprites": {
             "default": "002MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 3,
@@ -210,7 +212,8 @@
         },
         "sprites": {
             "default": "003MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 4,
@@ -281,7 +284,8 @@
         },
         "sprites": {
             "default": "004MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 5,
@@ -352,7 +356,8 @@
         },
         "sprites": {
             "default": "005MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 6,
@@ -423,7 +428,8 @@
         },
         "sprites": {
             "default": "006MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 7,
@@ -494,7 +500,8 @@
         },
         "sprites": {
             "default": "007MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 8,
@@ -565,7 +572,8 @@
         },
         "sprites": {
             "default": "008MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 9,
@@ -636,7 +644,8 @@
         },
         "sprites": {
             "default": "009MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 10,
@@ -707,7 +716,8 @@
         },
         "sprites": {
             "default": "010MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 11,
@@ -778,7 +788,8 @@
         },
         "sprites": {
             "default": "011MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 12,
@@ -849,7 +860,8 @@
         },
         "sprites": {
             "default": "012MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 13,
@@ -920,7 +932,8 @@
         },
         "sprites": {
             "default": "013MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 14,
@@ -991,7 +1004,8 @@
         },
         "sprites": {
             "default": "014MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 15,
@@ -1062,7 +1076,8 @@
         },
         "sprites": {
             "default": "015MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 16,
@@ -1133,7 +1148,8 @@
         },
         "sprites": {
             "default": "016MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 17,
@@ -1204,7 +1220,8 @@
         },
         "sprites": {
             "default": "017MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 18,
@@ -1275,7 +1292,8 @@
         },
         "sprites": {
             "default": "018MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 19,
@@ -1346,7 +1364,8 @@
         },
         "sprites": {
             "default": "019MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 20,
@@ -1417,7 +1436,8 @@
         },
         "sprites": {
             "default": "020MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 21,
@@ -1488,7 +1508,8 @@
         },
         "sprites": {
             "default": "021MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 22,
@@ -1559,7 +1580,8 @@
         },
         "sprites": {
             "default": "022MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 23,
@@ -1630,7 +1652,8 @@
         },
         "sprites": {
             "default": "023MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 24,
@@ -1701,7 +1724,8 @@
         },
         "sprites": {
             "default": "024MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 25,
@@ -1772,7 +1796,8 @@
         },
         "sprites": {
             "default": "025MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 26,
@@ -1843,7 +1868,8 @@
         },
         "sprites": {
             "default": "026MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 27,
@@ -1914,7 +1940,8 @@
         },
         "sprites": {
             "default": "027MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 28,
@@ -1985,7 +2012,8 @@
         },
         "sprites": {
             "default": "028MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 29,
@@ -2056,7 +2084,8 @@
         },
         "sprites": {
             "default": "029MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 30,
@@ -2127,7 +2156,8 @@
         },
         "sprites": {
             "default": "030MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 31,
@@ -2198,7 +2228,8 @@
         },
         "sprites": {
             "default": "031MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 32,
@@ -2269,7 +2300,8 @@
         },
         "sprites": {
             "default": "032MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 33,
@@ -2340,7 +2372,8 @@
         },
         "sprites": {
             "default": "033MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 34,
@@ -2411,7 +2444,8 @@
         },
         "sprites": {
             "default": "034MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 35,
@@ -2482,7 +2516,8 @@
         },
         "sprites": {
             "default": "035MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 36,
@@ -2553,7 +2588,8 @@
         },
         "sprites": {
             "default": "036MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 37,
@@ -2623,7 +2659,8 @@
         },
         "sprites": {
             "default": "037MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 38,
@@ -2693,7 +2730,8 @@
         },
         "sprites": {
             "default": "038MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 39,
@@ -2764,7 +2802,8 @@
         },
         "sprites": {
             "default": "039MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 40,
@@ -2835,7 +2874,8 @@
         },
         "sprites": {
             "default": "040MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 41,
@@ -2906,7 +2946,8 @@
         },
         "sprites": {
             "default": "041MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 42,
@@ -2977,7 +3018,8 @@
         },
         "sprites": {
             "default": "042MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 43,
@@ -3048,7 +3090,8 @@
         },
         "sprites": {
             "default": "043MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 44,
@@ -3119,7 +3162,8 @@
         },
         "sprites": {
             "default": "044MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 45,
@@ -3190,7 +3234,8 @@
         },
         "sprites": {
             "default": "045MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 46,
@@ -3261,7 +3306,8 @@
         },
         "sprites": {
             "default": "046MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 47,
@@ -3332,7 +3378,8 @@
         },
         "sprites": {
             "default": "047MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 48,
@@ -3403,7 +3450,8 @@
         },
         "sprites": {
             "default": "048MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 49,
@@ -3474,7 +3522,8 @@
         },
         "sprites": {
             "default": "049MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 50,
@@ -3545,7 +3594,8 @@
         },
         "sprites": {
             "default": "050MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 51,
@@ -3616,7 +3666,8 @@
         },
         "sprites": {
             "default": "051MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 52,
@@ -3687,7 +3738,8 @@
         },
         "sprites": {
             "default": "052MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 53,
@@ -3758,7 +3810,8 @@
         },
         "sprites": {
             "default": "053MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 54,
@@ -3829,7 +3882,8 @@
         },
         "sprites": {
             "default": "054MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 55,
@@ -3900,7 +3954,8 @@
         },
         "sprites": {
             "default": "055MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 56,
@@ -3971,7 +4026,8 @@
         },
         "sprites": {
             "default": "056MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 57,
@@ -4042,7 +4098,8 @@
         },
         "sprites": {
             "default": "057MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 58,
@@ -4113,7 +4170,8 @@
         },
         "sprites": {
             "default": "058MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 59,
@@ -4184,7 +4242,8 @@
         },
         "sprites": {
             "default": "059MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 60,
@@ -4255,7 +4314,8 @@
         },
         "sprites": {
             "default": "060MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 61,
@@ -4326,7 +4386,8 @@
         },
         "sprites": {
             "default": "061MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 62,
@@ -4397,7 +4458,8 @@
         },
         "sprites": {
             "default": "062MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 63,
@@ -4468,7 +4530,8 @@
         },
         "sprites": {
             "default": "063MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 64,
@@ -4539,7 +4602,8 @@
         },
         "sprites": {
             "default": "064MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 65,
@@ -4610,7 +4674,8 @@
         },
         "sprites": {
             "default": "065MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 66,
@@ -4681,7 +4746,8 @@
         },
         "sprites": {
             "default": "066MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 67,
@@ -4752,7 +4818,8 @@
         },
         "sprites": {
             "default": "067MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 68,
@@ -4823,7 +4890,8 @@
         },
         "sprites": {
             "default": "068MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 69,
@@ -4894,7 +4962,8 @@
         },
         "sprites": {
             "default": "069MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 70,
@@ -4965,7 +5034,8 @@
         },
         "sprites": {
             "default": "070MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 71,
@@ -5036,7 +5106,8 @@
         },
         "sprites": {
             "default": "071MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 72,
@@ -5107,7 +5178,8 @@
         },
         "sprites": {
             "default": "072MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 73,
@@ -5178,7 +5250,8 @@
         },
         "sprites": {
             "default": "073MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 74,
@@ -5249,7 +5322,8 @@
         },
         "sprites": {
             "default": "074MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 75,
@@ -5320,7 +5394,8 @@
         },
         "sprites": {
             "default": "075MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 76,
@@ -5391,7 +5466,8 @@
         },
         "sprites": {
             "default": "076MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 77,
@@ -5461,7 +5537,8 @@
         },
         "sprites": {
             "default": "077MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 78,
@@ -5531,7 +5608,8 @@
         },
         "sprites": {
             "default": "078MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 79,
@@ -5602,7 +5680,8 @@
         },
         "sprites": {
             "default": "079MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 80,
@@ -5673,7 +5752,8 @@
         },
         "sprites": {
             "default": "080MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 81,
@@ -5744,7 +5824,8 @@
         },
         "sprites": {
             "default": "081MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 82,
@@ -5815,7 +5896,8 @@
         },
         "sprites": {
             "default": "082MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 83,
@@ -5886,7 +5968,8 @@
         },
         "sprites": {
             "default": "083MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 84,
@@ -5957,7 +6040,8 @@
         },
         "sprites": {
             "default": "084MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 85,
@@ -6028,7 +6112,8 @@
         },
         "sprites": {
             "default": "085MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 86,
@@ -6099,7 +6184,8 @@
         },
         "sprites": {
             "default": "086MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 87,
@@ -6170,7 +6256,8 @@
         },
         "sprites": {
             "default": "087MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 88,
@@ -6241,7 +6328,8 @@
         },
         "sprites": {
             "default": "088MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 89,
@@ -6312,7 +6400,8 @@
         },
         "sprites": {
             "default": "089MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 90,
@@ -6383,7 +6472,8 @@
         },
         "sprites": {
             "default": "090MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 91,
@@ -6454,7 +6544,8 @@
         },
         "sprites": {
             "default": "091MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 92,
@@ -6525,7 +6616,8 @@
         },
         "sprites": {
             "default": "092MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 93,
@@ -6596,7 +6688,8 @@
         },
         "sprites": {
             "default": "093MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 94,
@@ -6667,7 +6760,8 @@
         },
         "sprites": {
             "default": "094MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 95,
@@ -6738,7 +6832,8 @@
         },
         "sprites": {
             "default": "095MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 96,
@@ -6809,7 +6904,8 @@
         },
         "sprites": {
             "default": "096MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 97,
@@ -6880,7 +6976,8 @@
         },
         "sprites": {
             "default": "097MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 98,
@@ -6951,7 +7048,8 @@
         },
         "sprites": {
             "default": "098MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 99,
@@ -7022,7 +7120,8 @@
         },
         "sprites": {
             "default": "099MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 100,
@@ -7093,7 +7192,8 @@
         },
         "sprites": {
             "default": "100MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 101,
@@ -7164,7 +7264,8 @@
         },
         "sprites": {
             "default": "101MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 102,
@@ -7235,7 +7336,8 @@
         },
         "sprites": {
             "default": "102MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 103,
@@ -7306,7 +7408,8 @@
         },
         "sprites": {
             "default": "103MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 104,
@@ -7377,7 +7480,8 @@
         },
         "sprites": {
             "default": "104MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 105,
@@ -7448,7 +7552,8 @@
         },
         "sprites": {
             "default": "105MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 106,
@@ -7519,7 +7624,8 @@
         },
         "sprites": {
             "default": "106MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 107,
@@ -7590,7 +7696,8 @@
         },
         "sprites": {
             "default": "107MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 108,
@@ -7661,7 +7768,8 @@
         },
         "sprites": {
             "default": "108MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 109,
@@ -7732,7 +7840,8 @@
         },
         "sprites": {
             "default": "109MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 110,
@@ -7803,7 +7912,8 @@
         },
         "sprites": {
             "default": "110MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 111,
@@ -7874,7 +7984,8 @@
         },
         "sprites": {
             "default": "111MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 112,
@@ -7945,7 +8056,8 @@
         },
         "sprites": {
             "default": "112MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 113,
@@ -8016,7 +8128,8 @@
         },
         "sprites": {
             "default": "113MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 114,
@@ -8087,7 +8200,8 @@
         },
         "sprites": {
             "default": "114MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 115,
@@ -8158,7 +8272,8 @@
         },
         "sprites": {
             "default": "115MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 116,
@@ -8229,7 +8344,8 @@
         },
         "sprites": {
             "default": "116MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 117,
@@ -8300,7 +8416,8 @@
         },
         "sprites": {
             "default": "117MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 118,
@@ -8371,7 +8488,8 @@
         },
         "sprites": {
             "default": "118MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 119,
@@ -8442,7 +8560,8 @@
         },
         "sprites": {
             "default": "119MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 120,
@@ -8513,7 +8632,8 @@
         },
         "sprites": {
             "default": "120MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 121,
@@ -8584,7 +8704,8 @@
         },
         "sprites": {
             "default": "121MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 122,
@@ -8655,7 +8776,8 @@
         },
         "sprites": {
             "default": "122MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 123,
@@ -8726,7 +8848,8 @@
         },
         "sprites": {
             "default": "123MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 124,
@@ -8797,7 +8920,8 @@
         },
         "sprites": {
             "default": "124MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 125,
@@ -8868,7 +8992,8 @@
         },
         "sprites": {
             "default": "125MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 126,
@@ -8939,7 +9064,8 @@
         },
         "sprites": {
             "default": "126MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 127,
@@ -9010,7 +9136,8 @@
         },
         "sprites": {
             "default": "127MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 128,
@@ -9081,7 +9208,8 @@
         },
         "sprites": {
             "default": "128MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 129,
@@ -9152,7 +9280,8 @@
         },
         "sprites": {
             "default": "129MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 130,
@@ -9223,7 +9352,8 @@
         },
         "sprites": {
             "default": "130MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 131,
@@ -9294,7 +9424,8 @@
         },
         "sprites": {
             "default": "131MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 132,
@@ -9365,7 +9496,8 @@
         },
         "sprites": {
             "default": "132MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 133,
@@ -9436,7 +9568,8 @@
         },
         "sprites": {
             "default": "133MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 134,
@@ -9507,7 +9640,8 @@
         },
         "sprites": {
             "default": "134MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 135,
@@ -9578,7 +9712,8 @@
         },
         "sprites": {
             "default": "135MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 136,
@@ -9649,7 +9784,8 @@
         },
         "sprites": {
             "default": "136MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 137,
@@ -9720,7 +9856,8 @@
         },
         "sprites": {
             "default": "137MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 138,
@@ -9791,7 +9928,8 @@
         },
         "sprites": {
             "default": "138MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 139,
@@ -9862,7 +10000,8 @@
         },
         "sprites": {
             "default": "139MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 140,
@@ -9933,7 +10072,8 @@
         },
         "sprites": {
             "default": "140MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 141,
@@ -10004,7 +10144,8 @@
         },
         "sprites": {
             "default": "141MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 142,
@@ -10075,7 +10216,8 @@
         },
         "sprites": {
             "default": "142MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 143,
@@ -10146,7 +10288,8 @@
         },
         "sprites": {
             "default": "143MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 144,
@@ -10217,7 +10360,8 @@
         },
         "sprites": {
             "default": "144MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 145,
@@ -10288,7 +10432,8 @@
         },
         "sprites": {
             "default": "145MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 146,
@@ -10359,7 +10504,8 @@
         },
         "sprites": {
             "default": "146MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 147,
@@ -10430,7 +10576,8 @@
         },
         "sprites": {
             "default": "147MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 148,
@@ -10501,7 +10648,8 @@
         },
         "sprites": {
             "default": "148MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 149,
@@ -10572,7 +10720,8 @@
         },
         "sprites": {
             "default": "149MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 150,
@@ -10643,7 +10792,8 @@
         },
         "sprites": {
             "default": "150MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 151,
@@ -10714,7 +10864,8 @@
         },
         "sprites": {
             "default": "151MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 152,
@@ -10785,7 +10936,8 @@
         },
         "sprites": {
             "default": "152MS.png"
-        }
+        },
+        "glft": true
     },
     {
         "id": 153,
@@ -10856,7 +11008,8 @@
         },
         "sprites": {
             "default": "153MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 154,
@@ -10927,7 +11080,8 @@
         },
         "sprites": {
             "default": "154MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 155,
@@ -10998,7 +11152,8 @@
         },
         "sprites": {
             "default": "155MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 156,
@@ -11069,7 +11224,8 @@
         },
         "sprites": {
             "default": "156MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 157,
@@ -11140,7 +11296,8 @@
         },
         "sprites": {
             "default": "157MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 158,
@@ -11211,7 +11368,8 @@
         },
         "sprites": {
             "default": "158MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 159,
@@ -11282,7 +11440,8 @@
         },
         "sprites": {
             "default": "159MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 160,
@@ -11353,7 +11512,8 @@
         },
         "sprites": {
             "default": "160MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 161,
@@ -11424,7 +11584,8 @@
         },
         "sprites": {
             "default": "161MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 162,
@@ -11495,7 +11656,8 @@
         },
         "sprites": {
             "default": "162MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 163,
@@ -11566,7 +11728,8 @@
         },
         "sprites": {
             "default": "163MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 164,
@@ -11637,7 +11800,8 @@
         },
         "sprites": {
             "default": "164MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 165,
@@ -11708,7 +11872,8 @@
         },
         "sprites": {
             "default": "165MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 166,
@@ -11779,7 +11944,8 @@
         },
         "sprites": {
             "default": "166MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 167,
@@ -11850,7 +12016,8 @@
         },
         "sprites": {
             "default": "167MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 168,
@@ -11921,7 +12088,8 @@
         },
         "sprites": {
             "default": "168MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 169,
@@ -11992,7 +12160,8 @@
         },
         "sprites": {
             "default": "169MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 170,
@@ -12063,7 +12232,8 @@
         },
         "sprites": {
             "default": "170MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 171,
@@ -12134,7 +12304,8 @@
         },
         "sprites": {
             "default": "171MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 172,
@@ -12205,7 +12376,8 @@
         },
         "sprites": {
             "default": "172MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 173,
@@ -12276,7 +12448,8 @@
         },
         "sprites": {
             "default": "173MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 174,
@@ -12347,7 +12520,8 @@
         },
         "sprites": {
             "default": "174MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 175,
@@ -12418,7 +12592,8 @@
         },
         "sprites": {
             "default": "175MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 176,
@@ -12489,7 +12664,8 @@
         },
         "sprites": {
             "default": "176MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 177,
@@ -12560,7 +12736,8 @@
         },
         "sprites": {
             "default": "177MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 178,
@@ -12631,7 +12808,8 @@
         },
         "sprites": {
             "default": "178MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 179,
@@ -12702,7 +12880,8 @@
         },
         "sprites": {
             "default": "179MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 180,
@@ -12773,7 +12952,8 @@
         },
         "sprites": {
             "default": "180MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 181,
@@ -12844,7 +13024,8 @@
         },
         "sprites": {
             "default": "181MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 182,
@@ -12915,7 +13096,8 @@
         },
         "sprites": {
             "default": "182MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 183,
@@ -12986,7 +13168,8 @@
         },
         "sprites": {
             "default": "183MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 184,
@@ -13057,7 +13240,8 @@
         },
         "sprites": {
             "default": "184MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 185,
@@ -13128,7 +13312,8 @@
         },
         "sprites": {
             "default": "185MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 186,
@@ -13199,7 +13384,8 @@
         },
         "sprites": {
             "default": "186MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 187,
@@ -13270,7 +13456,8 @@
         },
         "sprites": {
             "default": "187MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 188,
@@ -13341,7 +13528,8 @@
         },
         "sprites": {
             "default": "188MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 189,
@@ -13412,7 +13600,8 @@
         },
         "sprites": {
             "default": "189MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 190,
@@ -13483,7 +13672,8 @@
         },
         "sprites": {
             "default": "190MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 191,
@@ -13554,7 +13744,8 @@
         },
         "sprites": {
             "default": "191MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 192,
@@ -13625,7 +13816,8 @@
         },
         "sprites": {
             "default": "192MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 193,
@@ -13696,7 +13888,8 @@
         },
         "sprites": {
             "default": "193MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 194,
@@ -13767,7 +13960,8 @@
         },
         "sprites": {
             "default": "194MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 195,
@@ -13838,7 +14032,8 @@
         },
         "sprites": {
             "default": "195MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 196,
@@ -13909,7 +14104,8 @@
         },
         "sprites": {
             "default": "196MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 197,
@@ -13980,7 +14176,8 @@
         },
         "sprites": {
             "default": "197MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 198,
@@ -14051,7 +14248,8 @@
         },
         "sprites": {
             "default": "198MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 199,
@@ -14122,7 +14320,8 @@
         },
         "sprites": {
             "default": "199MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 200,
@@ -14193,7 +14392,8 @@
         },
         "sprites": {
             "default": "200MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 201,
@@ -14264,7 +14464,8 @@
         },
         "sprites": {
             "default": "201MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 202,
@@ -14335,7 +14536,8 @@
         },
         "sprites": {
             "default": "202MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 203,
@@ -14406,7 +14608,8 @@
         },
         "sprites": {
             "default": "203MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 204,
@@ -14477,7 +14680,8 @@
         },
         "sprites": {
             "default": "204MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 205,
@@ -14548,7 +14752,8 @@
         },
         "sprites": {
             "default": "205MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 206,
@@ -14619,7 +14824,8 @@
         },
         "sprites": {
             "default": "206MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 207,
@@ -14690,7 +14896,8 @@
         },
         "sprites": {
             "default": "207MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 208,
@@ -14761,7 +14968,8 @@
         },
         "sprites": {
             "default": "208MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 209,
@@ -14832,7 +15040,8 @@
         },
         "sprites": {
             "default": "209MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 210,
@@ -14903,7 +15112,8 @@
         },
         "sprites": {
             "default": "210MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 211,
@@ -14974,7 +15184,8 @@
         },
         "sprites": {
             "default": "211MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 212,
@@ -15045,7 +15256,8 @@
         },
         "sprites": {
             "default": "212MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 213,
@@ -15116,7 +15328,8 @@
         },
         "sprites": {
             "default": "213MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 214,
@@ -15187,7 +15400,8 @@
         },
         "sprites": {
             "default": "214MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 215,
@@ -15258,7 +15472,8 @@
         },
         "sprites": {
             "default": "215MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 216,
@@ -15329,7 +15544,8 @@
         },
         "sprites": {
             "default": "216MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 217,
@@ -15400,7 +15616,8 @@
         },
         "sprites": {
             "default": "217MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 218,
@@ -15471,7 +15688,8 @@
         },
         "sprites": {
             "default": "218MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 219,
@@ -15542,7 +15760,8 @@
         },
         "sprites": {
             "default": "219MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 220,
@@ -15613,7 +15832,8 @@
         },
         "sprites": {
             "default": "220MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 221,
@@ -15684,7 +15904,8 @@
         },
         "sprites": {
             "default": "221MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 222,
@@ -15755,7 +15976,8 @@
         },
         "sprites": {
             "default": "222MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 223,
@@ -15826,7 +16048,8 @@
         },
         "sprites": {
             "default": "223MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 224,
@@ -15897,7 +16120,8 @@
         },
         "sprites": {
             "default": "224MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 225,
@@ -15968,7 +16192,8 @@
         },
         "sprites": {
             "default": "225MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 226,
@@ -16039,7 +16264,8 @@
         },
         "sprites": {
             "default": "226MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 227,
@@ -16110,7 +16336,8 @@
         },
         "sprites": {
             "default": "227MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 228,
@@ -16181,7 +16408,8 @@
         },
         "sprites": {
             "default": "228MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 229,
@@ -16252,7 +16480,8 @@
         },
         "sprites": {
             "default": "229MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 230,
@@ -16323,7 +16552,8 @@
         },
         "sprites": {
             "default": "230MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 231,
@@ -16394,7 +16624,8 @@
         },
         "sprites": {
             "default": "231MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 232,
@@ -16465,7 +16696,8 @@
         },
         "sprites": {
             "default": "232MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 233,
@@ -16536,7 +16768,8 @@
         },
         "sprites": {
             "default": "233MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 234,
@@ -16607,7 +16840,8 @@
         },
         "sprites": {
             "default": "234MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 235,
@@ -16678,7 +16912,8 @@
         },
         "sprites": {
             "default": "235MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 236,
@@ -16749,7 +16984,8 @@
         },
         "sprites": {
             "default": "236MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 237,
@@ -16820,7 +17056,8 @@
         },
         "sprites": {
             "default": "237MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 238,
@@ -16891,7 +17128,8 @@
         },
         "sprites": {
             "default": "238MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 239,
@@ -16962,7 +17200,8 @@
         },
         "sprites": {
             "default": "239MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 240,
@@ -17033,7 +17272,8 @@
         },
         "sprites": {
             "default": "240MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 241,
@@ -17104,7 +17344,8 @@
         },
         "sprites": {
             "default": "241MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 242,
@@ -17175,7 +17416,8 @@
         },
         "sprites": {
             "default": "242MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 243,
@@ -17246,7 +17488,8 @@
         },
         "sprites": {
             "default": "243MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 244,
@@ -17317,7 +17560,8 @@
         },
         "sprites": {
             "default": "244MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 245,
@@ -17388,7 +17632,8 @@
         },
         "sprites": {
             "default": "245MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 246,
@@ -17459,7 +17704,8 @@
         },
         "sprites": {
             "default": "246MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 247,
@@ -17530,7 +17776,8 @@
         },
         "sprites": {
             "default": "247MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 248,
@@ -17601,7 +17848,8 @@
         },
         "sprites": {
             "default": "248MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 249,
@@ -17672,7 +17920,8 @@
         },
         "sprites": {
             "default": "249MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 250,
@@ -17743,7 +17992,8 @@
         },
         "sprites": {
             "default": "250MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 251,
@@ -17814,7 +18064,8 @@
         },
         "sprites": {
             "default": "251MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 252,
@@ -17885,7 +18136,8 @@
         },
         "sprites": {
             "default": "252MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 253,
@@ -17956,7 +18208,8 @@
         },
         "sprites": {
             "default": "253MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 254,
@@ -18027,7 +18280,8 @@
         },
         "sprites": {
             "default": "254MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 255,
@@ -18098,7 +18352,8 @@
         },
         "sprites": {
             "default": "255MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 256,
@@ -18169,7 +18424,8 @@
         },
         "sprites": {
             "default": "256MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 257,
@@ -18240,7 +18496,8 @@
         },
         "sprites": {
             "default": "257MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 258,
@@ -18311,7 +18568,8 @@
         },
         "sprites": {
             "default": "258MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 259,
@@ -18382,7 +18640,8 @@
         },
         "sprites": {
             "default": "259MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 260,
@@ -18453,7 +18712,8 @@
         },
         "sprites": {
             "default": "260MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 261,
@@ -18524,7 +18784,8 @@
         },
         "sprites": {
             "default": "261MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 262,
@@ -18595,7 +18856,8 @@
         },
         "sprites": {
             "default": "262MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 263,
@@ -18666,7 +18928,8 @@
         },
         "sprites": {
             "default": "263MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 264,
@@ -18737,7 +19000,8 @@
         },
         "sprites": {
             "default": "264MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 265,
@@ -18808,7 +19072,8 @@
         },
         "sprites": {
             "default": "265MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 266,
@@ -18879,7 +19144,8 @@
         },
         "sprites": {
             "default": "266MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 267,
@@ -18950,7 +19216,8 @@
         },
         "sprites": {
             "default": "267MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 268,
@@ -19021,7 +19288,8 @@
         },
         "sprites": {
             "default": "268MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 269,
@@ -19092,7 +19360,8 @@
         },
         "sprites": {
             "default": "269MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 270,
@@ -19163,7 +19432,8 @@
         },
         "sprites": {
             "default": "270MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 271,
@@ -19234,7 +19504,8 @@
         },
         "sprites": {
             "default": "271MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 272,
@@ -19305,7 +19576,8 @@
         },
         "sprites": {
             "default": "272MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 273,
@@ -19376,7 +19648,8 @@
         },
         "sprites": {
             "default": "273MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 274,
@@ -19447,7 +19720,8 @@
         },
         "sprites": {
             "default": "274MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 275,
@@ -19518,7 +19792,8 @@
         },
         "sprites": {
             "default": "275MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 276,
@@ -19589,7 +19864,8 @@
         },
         "sprites": {
             "default": "276MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 277,
@@ -19660,7 +19936,8 @@
         },
         "sprites": {
             "default": "277MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 278,
@@ -19731,7 +20008,8 @@
         },
         "sprites": {
             "default": "278MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 279,
@@ -19802,7 +20080,8 @@
         },
         "sprites": {
             "default": "279MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 280,
@@ -19873,7 +20152,8 @@
         },
         "sprites": {
             "default": "280MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 281,
@@ -19944,7 +20224,8 @@
         },
         "sprites": {
             "default": "281MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 282,
@@ -20015,7 +20296,8 @@
         },
         "sprites": {
             "default": "282MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 283,
@@ -20086,7 +20368,8 @@
         },
         "sprites": {
             "default": "283MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 284,
@@ -20157,7 +20440,8 @@
         },
         "sprites": {
             "default": "284MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 285,
@@ -20228,7 +20512,8 @@
         },
         "sprites": {
             "default": "285MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 286,
@@ -20299,7 +20584,8 @@
         },
         "sprites": {
             "default": "286MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 287,
@@ -20370,7 +20656,8 @@
         },
         "sprites": {
             "default": "287MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 288,
@@ -20441,7 +20728,8 @@
         },
         "sprites": {
             "default": "288MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 289,
@@ -20512,7 +20800,8 @@
         },
         "sprites": {
             "default": "289MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 290,
@@ -20583,7 +20872,8 @@
         },
         "sprites": {
             "default": "290MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 291,
@@ -20654,7 +20944,8 @@
         },
         "sprites": {
             "default": "291MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 292,
@@ -20725,7 +21016,8 @@
         },
         "sprites": {
             "default": "292MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 293,
@@ -20796,7 +21088,8 @@
         },
         "sprites": {
             "default": "293MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 294,
@@ -20867,7 +21160,8 @@
         },
         "sprites": {
             "default": "294MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 295,
@@ -20938,7 +21232,8 @@
         },
         "sprites": {
             "default": "295MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 296,
@@ -21009,7 +21304,8 @@
         },
         "sprites": {
             "default": "296MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 297,
@@ -21080,7 +21376,8 @@
         },
         "sprites": {
             "default": "297MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 298,
@@ -21151,7 +21448,8 @@
         },
         "sprites": {
             "default": "298MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 299,
@@ -21222,7 +21520,8 @@
         },
         "sprites": {
             "default": "299MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 300,
@@ -21293,7 +21592,8 @@
         },
         "sprites": {
             "default": "300MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 301,
@@ -21364,7 +21664,8 @@
         },
         "sprites": {
             "default": "301MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 302,
@@ -21435,7 +21736,8 @@
         },
         "sprites": {
             "default": "302MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 303,
@@ -21506,7 +21808,8 @@
         },
         "sprites": {
             "default": "303MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 304,
@@ -21577,7 +21880,8 @@
         },
         "sprites": {
             "default": "304MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 305,
@@ -21648,7 +21952,8 @@
         },
         "sprites": {
             "default": "305MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 306,
@@ -21719,7 +22024,8 @@
         },
         "sprites": {
             "default": "306MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 307,
@@ -21790,7 +22096,8 @@
         },
         "sprites": {
             "default": "307MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 308,
@@ -21861,7 +22168,8 @@
         },
         "sprites": {
             "default": "308MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 309,
@@ -21932,7 +22240,8 @@
         },
         "sprites": {
             "default": "309MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 310,
@@ -22003,7 +22312,8 @@
         },
         "sprites": {
             "default": "310MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 311,
@@ -22074,7 +22384,8 @@
         },
         "sprites": {
             "default": "311MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 312,
@@ -22145,7 +22456,8 @@
         },
         "sprites": {
             "default": "312MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 313,
@@ -22216,7 +22528,8 @@
         },
         "sprites": {
             "default": "313MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 314,
@@ -22287,7 +22600,8 @@
         },
         "sprites": {
             "default": "314MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 315,
@@ -22358,7 +22672,8 @@
         },
         "sprites": {
             "default": "315MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 316,
@@ -22429,7 +22744,8 @@
         },
         "sprites": {
             "default": "316MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 317,
@@ -22500,7 +22816,8 @@
         },
         "sprites": {
             "default": "317MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 318,
@@ -22571,7 +22888,8 @@
         },
         "sprites": {
             "default": "318MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 319,
@@ -22642,7 +22960,8 @@
         },
         "sprites": {
             "default": "319MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 320,
@@ -22713,7 +23032,8 @@
         },
         "sprites": {
             "default": "320MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 321,
@@ -22784,7 +23104,8 @@
         },
         "sprites": {
             "default": "321MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 322,
@@ -22855,7 +23176,8 @@
         },
         "sprites": {
             "default": "322MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 323,
@@ -22926,7 +23248,8 @@
         },
         "sprites": {
             "default": "323MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 324,
@@ -22997,7 +23320,8 @@
         },
         "sprites": {
             "default": "324MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 325,
@@ -23068,7 +23392,8 @@
         },
         "sprites": {
             "default": "325MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 326,
@@ -23139,7 +23464,8 @@
         },
         "sprites": {
             "default": "326MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 327,
@@ -23210,7 +23536,8 @@
         },
         "sprites": {
             "default": "327MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 328,
@@ -23281,7 +23608,8 @@
         },
         "sprites": {
             "default": "328MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 329,
@@ -23352,7 +23680,8 @@
         },
         "sprites": {
             "default": "329MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 330,
@@ -23423,7 +23752,8 @@
         },
         "sprites": {
             "default": "330MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 331,
@@ -23494,7 +23824,8 @@
         },
         "sprites": {
             "default": "331MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 332,
@@ -23565,7 +23896,8 @@
         },
         "sprites": {
             "default": "332MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 333,
@@ -23636,7 +23968,8 @@
         },
         "sprites": {
             "default": "333MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 334,
@@ -23707,7 +24040,8 @@
         },
         "sprites": {
             "default": "334MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 335,
@@ -23778,7 +24112,8 @@
         },
         "sprites": {
             "default": "335MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 336,
@@ -23849,7 +24184,8 @@
         },
         "sprites": {
             "default": "336MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 337,
@@ -23920,7 +24256,8 @@
         },
         "sprites": {
             "default": "337MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 338,
@@ -23991,7 +24328,8 @@
         },
         "sprites": {
             "default": "338MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 339,
@@ -24062,7 +24400,8 @@
         },
         "sprites": {
             "default": "339MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 340,
@@ -24133,7 +24472,8 @@
         },
         "sprites": {
             "default": "340MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 341,
@@ -24204,7 +24544,8 @@
         },
         "sprites": {
             "default": "341MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 342,
@@ -24275,7 +24616,8 @@
         },
         "sprites": {
             "default": "342MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 343,
@@ -24346,7 +24688,8 @@
         },
         "sprites": {
             "default": "343MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 344,
@@ -24417,7 +24760,8 @@
         },
         "sprites": {
             "default": "344MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 345,
@@ -24488,7 +24832,8 @@
         },
         "sprites": {
             "default": "345MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 346,
@@ -24559,7 +24904,8 @@
         },
         "sprites": {
             "default": "346MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 347,
@@ -24630,7 +24976,8 @@
         },
         "sprites": {
             "default": "347MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 348,
@@ -24701,7 +25048,8 @@
         },
         "sprites": {
             "default": "348MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 349,
@@ -24772,7 +25120,8 @@
         },
         "sprites": {
             "default": "349MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 350,
@@ -24843,7 +25192,8 @@
         },
         "sprites": {
             "default": "350MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 351,
@@ -24914,7 +25264,8 @@
         },
         "sprites": {
             "default": "351MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 352,
@@ -24985,7 +25336,8 @@
         },
         "sprites": {
             "default": "352MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 353,
@@ -25056,7 +25408,8 @@
         },
         "sprites": {
             "default": "353MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 354,
@@ -25127,7 +25480,8 @@
         },
         "sprites": {
             "default": "354MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 355,
@@ -25198,7 +25552,8 @@
         },
         "sprites": {
             "default": "355MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 356,
@@ -25269,7 +25624,8 @@
         },
         "sprites": {
             "default": "356MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 357,
@@ -25340,7 +25696,8 @@
         },
         "sprites": {
             "default": "357MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 358,
@@ -25411,7 +25768,8 @@
         },
         "sprites": {
             "default": "358MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 359,
@@ -25482,7 +25840,8 @@
         },
         "sprites": {
             "default": "359MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 360,
@@ -25553,7 +25912,8 @@
         },
         "sprites": {
             "default": "360MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 361,
@@ -25624,7 +25984,8 @@
         },
         "sprites": {
             "default": "361MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 362,
@@ -25695,7 +26056,8 @@
         },
         "sprites": {
             "default": "362MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 363,
@@ -25766,7 +26128,8 @@
         },
         "sprites": {
             "default": "363MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 364,
@@ -25837,7 +26200,8 @@
         },
         "sprites": {
             "default": "364MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 365,
@@ -25908,7 +26272,8 @@
         },
         "sprites": {
             "default": "365MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 366,
@@ -25979,7 +26344,8 @@
         },
         "sprites": {
             "default": "366MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 367,
@@ -26050,7 +26416,8 @@
         },
         "sprites": {
             "default": "367MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 368,
@@ -26121,7 +26488,8 @@
         },
         "sprites": {
             "default": "368MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 369,
@@ -26192,7 +26560,8 @@
         },
         "sprites": {
             "default": "369MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 370,
@@ -26263,7 +26632,8 @@
         },
         "sprites": {
             "default": "370MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 371,
@@ -26334,7 +26704,8 @@
         },
         "sprites": {
             "default": "371MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 372,
@@ -26405,7 +26776,8 @@
         },
         "sprites": {
             "default": "372MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 373,
@@ -26476,7 +26848,8 @@
         },
         "sprites": {
             "default": "373MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 374,
@@ -26547,7 +26920,8 @@
         },
         "sprites": {
             "default": "374MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 375,
@@ -26618,7 +26992,8 @@
         },
         "sprites": {
             "default": "375MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 376,
@@ -26689,7 +27064,8 @@
         },
         "sprites": {
             "default": "376MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 377,
@@ -26760,7 +27136,8 @@
         },
         "sprites": {
             "default": "377MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 378,
@@ -26831,7 +27208,8 @@
         },
         "sprites": {
             "default": "378MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 379,
@@ -26902,7 +27280,8 @@
         },
         "sprites": {
             "default": "379MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 380,
@@ -26973,7 +27352,8 @@
         },
         "sprites": {
             "default": "380MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 381,
@@ -27044,7 +27424,8 @@
         },
         "sprites": {
             "default": "381MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 382,
@@ -27115,7 +27496,8 @@
         },
         "sprites": {
             "default": "382MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 383,
@@ -27186,7 +27568,8 @@
         },
         "sprites": {
             "default": "383MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 384,
@@ -27257,7 +27640,8 @@
         },
         "sprites": {
             "default": "384MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 385,
@@ -27328,7 +27712,8 @@
         },
         "sprites": {
             "default": "385MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 386,
@@ -27399,7 +27784,8 @@
         },
         "sprites": {
             "default": "386MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 387,
@@ -27470,7 +27856,8 @@
         },
         "sprites": {
             "default": "387MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 388,
@@ -27541,7 +27928,8 @@
         },
         "sprites": {
             "default": "388MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 389,
@@ -27612,7 +28000,8 @@
         },
         "sprites": {
             "default": "389MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 390,
@@ -27683,7 +28072,8 @@
         },
         "sprites": {
             "default": "390MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 391,
@@ -27754,7 +28144,8 @@
         },
         "sprites": {
             "default": "391MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 392,
@@ -27825,7 +28216,8 @@
         },
         "sprites": {
             "default": "392MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 393,
@@ -27896,7 +28288,8 @@
         },
         "sprites": {
             "default": "393MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 394,
@@ -27967,7 +28360,8 @@
         },
         "sprites": {
             "default": "394MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 395,
@@ -28038,7 +28432,8 @@
         },
         "sprites": {
             "default": "395MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 396,
@@ -28109,7 +28504,8 @@
         },
         "sprites": {
             "default": "396MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 397,
@@ -28180,7 +28576,8 @@
         },
         "sprites": {
             "default": "397MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 398,
@@ -28251,7 +28648,8 @@
         },
         "sprites": {
             "default": "398MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 399,
@@ -28322,7 +28720,8 @@
         },
         "sprites": {
             "default": "399MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 400,
@@ -28393,7 +28792,8 @@
         },
         "sprites": {
             "default": "400MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 401,
@@ -28464,7 +28864,8 @@
         },
         "sprites": {
             "default": "401MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 402,
@@ -28535,7 +28936,8 @@
         },
         "sprites": {
             "default": "402MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 403,
@@ -28606,7 +29008,8 @@
         },
         "sprites": {
             "default": "403MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 404,
@@ -28677,7 +29080,8 @@
         },
         "sprites": {
             "default": "404MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 405,
@@ -28748,7 +29152,8 @@
         },
         "sprites": {
             "default": "405MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 406,
@@ -28819,7 +29224,8 @@
         },
         "sprites": {
             "default": "406MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 407,
@@ -28890,7 +29296,8 @@
         },
         "sprites": {
             "default": "407MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 408,
@@ -28961,7 +29368,8 @@
         },
         "sprites": {
             "default": "408MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 409,
@@ -29032,7 +29440,8 @@
         },
         "sprites": {
             "default": "409MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 410,
@@ -29103,7 +29512,8 @@
         },
         "sprites": {
             "default": "410MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 411,
@@ -29174,7 +29584,8 @@
         },
         "sprites": {
             "default": "411MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 412,
@@ -29245,7 +29656,8 @@
         },
         "sprites": {
             "default": "412MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 413,
@@ -29316,7 +29728,8 @@
         },
         "sprites": {
             "default": "413MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 414,
@@ -29387,7 +29800,8 @@
         },
         "sprites": {
             "default": "414MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 415,
@@ -29458,7 +29872,8 @@
         },
         "sprites": {
             "default": "415MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 416,
@@ -29529,7 +29944,8 @@
         },
         "sprites": {
             "default": "416MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 417,
@@ -29600,7 +30016,8 @@
         },
         "sprites": {
             "default": "417MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 418,
@@ -29671,7 +30088,8 @@
         },
         "sprites": {
             "default": "418MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 419,
@@ -29742,7 +30160,8 @@
         },
         "sprites": {
             "default": "419MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 420,
@@ -29813,7 +30232,8 @@
         },
         "sprites": {
             "default": "420MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 421,
@@ -29884,7 +30304,8 @@
         },
         "sprites": {
             "default": "421MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 422,
@@ -29955,7 +30376,8 @@
         },
         "sprites": {
             "default": "422MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 423,
@@ -30026,7 +30448,8 @@
         },
         "sprites": {
             "default": "423MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 424,
@@ -30097,7 +30520,8 @@
         },
         "sprites": {
             "default": "424MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 425,
@@ -30168,7 +30592,8 @@
         },
         "sprites": {
             "default": "425MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 426,
@@ -30239,7 +30664,8 @@
         },
         "sprites": {
             "default": "426MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 427,
@@ -30310,7 +30736,8 @@
         },
         "sprites": {
             "default": "427MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 428,
@@ -30381,7 +30808,8 @@
         },
         "sprites": {
             "default": "428MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 429,
@@ -30452,7 +30880,8 @@
         },
         "sprites": {
             "default": "429MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 430,
@@ -30523,7 +30952,8 @@
         },
         "sprites": {
             "default": "430MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 431,
@@ -30594,7 +31024,8 @@
         },
         "sprites": {
             "default": "431MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 432,
@@ -30665,7 +31096,8 @@
         },
         "sprites": {
             "default": "432MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 433,
@@ -30736,7 +31168,8 @@
         },
         "sprites": {
             "default": "433MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 434,
@@ -30807,7 +31240,8 @@
         },
         "sprites": {
             "default": "434MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 435,
@@ -30878,7 +31312,8 @@
         },
         "sprites": {
             "default": "435MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 436,
@@ -30949,7 +31384,8 @@
         },
         "sprites": {
             "default": "436MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 437,
@@ -31020,7 +31456,8 @@
         },
         "sprites": {
             "default": "437MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 438,
@@ -31091,7 +31528,8 @@
         },
         "sprites": {
             "default": "438MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 439,
@@ -31162,7 +31600,8 @@
         },
         "sprites": {
             "default": "439MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 440,
@@ -31233,7 +31672,8 @@
         },
         "sprites": {
             "default": "440MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 441,
@@ -31304,7 +31744,8 @@
         },
         "sprites": {
             "default": "441MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 442,
@@ -31375,7 +31816,8 @@
         },
         "sprites": {
             "default": "442MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 443,
@@ -31446,7 +31888,8 @@
         },
         "sprites": {
             "default": "443MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 444,
@@ -31517,7 +31960,8 @@
         },
         "sprites": {
             "default": "444MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 445,
@@ -31588,7 +32032,8 @@
         },
         "sprites": {
             "default": "445MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 446,
@@ -31659,7 +32104,8 @@
         },
         "sprites": {
             "default": "446MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 447,
@@ -31730,7 +32176,8 @@
         },
         "sprites": {
             "default": "447MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 448,
@@ -31801,7 +32248,8 @@
         },
         "sprites": {
             "default": "448MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 449,
@@ -31872,7 +32320,8 @@
         },
         "sprites": {
             "default": "449MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 450,
@@ -31943,7 +32392,8 @@
         },
         "sprites": {
             "default": "450MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 451,
@@ -32014,7 +32464,8 @@
         },
         "sprites": {
             "default": "451MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 452,
@@ -32085,7 +32536,8 @@
         },
         "sprites": {
             "default": "452MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 453,
@@ -32156,7 +32608,8 @@
         },
         "sprites": {
             "default": "453MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 454,
@@ -32227,7 +32680,8 @@
         },
         "sprites": {
             "default": "454MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 455,
@@ -32298,7 +32752,8 @@
         },
         "sprites": {
             "default": "455MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 456,
@@ -32369,7 +32824,8 @@
         },
         "sprites": {
             "default": "456MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 457,
@@ -32440,7 +32896,8 @@
         },
         "sprites": {
             "default": "457MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 458,
@@ -32511,7 +32968,8 @@
         },
         "sprites": {
             "default": "458MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 459,
@@ -32582,7 +33040,8 @@
         },
         "sprites": {
             "default": "459MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 460,
@@ -32653,7 +33112,8 @@
         },
         "sprites": {
             "default": "460MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 461,
@@ -32724,7 +33184,8 @@
         },
         "sprites": {
             "default": "461MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 462,
@@ -32795,7 +33256,8 @@
         },
         "sprites": {
             "default": "462MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 463,
@@ -32866,7 +33328,8 @@
         },
         "sprites": {
             "default": "463MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 464,
@@ -32937,7 +33400,8 @@
         },
         "sprites": {
             "default": "464MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 465,
@@ -33008,7 +33472,8 @@
         },
         "sprites": {
             "default": "465MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 466,
@@ -33079,7 +33544,8 @@
         },
         "sprites": {
             "default": "466MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 467,
@@ -33150,7 +33616,8 @@
         },
         "sprites": {
             "default": "467MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 468,
@@ -33221,7 +33688,8 @@
         },
         "sprites": {
             "default": "468MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 469,
@@ -33292,7 +33760,8 @@
         },
         "sprites": {
             "default": "469MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 470,
@@ -33363,7 +33832,8 @@
         },
         "sprites": {
             "default": "470MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 471,
@@ -33434,7 +33904,8 @@
         },
         "sprites": {
             "default": "471MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 472,
@@ -33505,7 +33976,8 @@
         },
         "sprites": {
             "default": "472MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 473,
@@ -33576,7 +34048,8 @@
         },
         "sprites": {
             "default": "473MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 474,
@@ -33647,7 +34120,8 @@
         },
         "sprites": {
             "default": "474MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 475,
@@ -33718,7 +34192,8 @@
         },
         "sprites": {
             "default": "475MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 476,
@@ -33789,7 +34264,8 @@
         },
         "sprites": {
             "default": "476MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 477,
@@ -33860,7 +34336,8 @@
         },
         "sprites": {
             "default": "477MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 478,
@@ -33931,7 +34408,8 @@
         },
         "sprites": {
             "default": "478MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 479,
@@ -34002,7 +34480,8 @@
         },
         "sprites": {
             "default": "479MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 480,
@@ -34073,7 +34552,8 @@
         },
         "sprites": {
             "default": "480MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 481,
@@ -34144,7 +34624,8 @@
         },
         "sprites": {
             "default": "481MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 482,
@@ -34215,7 +34696,8 @@
         },
         "sprites": {
             "default": "482MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 483,
@@ -34286,7 +34768,8 @@
         },
         "sprites": {
             "default": "483MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 484,
@@ -34357,7 +34840,8 @@
         },
         "sprites": {
             "default": "484MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 485,
@@ -34428,7 +34912,8 @@
         },
         "sprites": {
             "default": "485MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 486,
@@ -34499,7 +34984,8 @@
         },
         "sprites": {
             "default": "486MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 487,
@@ -34570,7 +35056,8 @@
         },
         "sprites": {
             "default": "487MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 488,
@@ -34641,7 +35128,8 @@
         },
         "sprites": {
             "default": "488MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 489,
@@ -34712,7 +35200,8 @@
         },
         "sprites": {
             "default": "489MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 490,
@@ -34783,7 +35272,8 @@
         },
         "sprites": {
             "default": "490MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 491,
@@ -34854,7 +35344,8 @@
         },
         "sprites": {
             "default": "491MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 492,
@@ -34925,7 +35416,8 @@
         },
         "sprites": {
             "default": "492MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 493,
@@ -34996,7 +35488,8 @@
         },
         "sprites": {
             "default": "493MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 494,
@@ -35067,7 +35560,8 @@
         },
         "sprites": {
             "default": "494MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 495,
@@ -35138,7 +35632,8 @@
         },
         "sprites": {
             "default": "495MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 496,
@@ -35209,7 +35704,8 @@
         },
         "sprites": {
             "default": "496MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 497,
@@ -35280,7 +35776,8 @@
         },
         "sprites": {
             "default": "497MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 498,
@@ -35351,7 +35848,8 @@
         },
         "sprites": {
             "default": "498MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 499,
@@ -35422,7 +35920,8 @@
         },
         "sprites": {
             "default": "499MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 500,
@@ -35493,7 +35992,8 @@
         },
         "sprites": {
             "default": "500MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 501,
@@ -35564,7 +36064,8 @@
         },
         "sprites": {
             "default": "501MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 502,
@@ -35635,7 +36136,8 @@
         },
         "sprites": {
             "default": "502MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 503,
@@ -35706,7 +36208,8 @@
         },
         "sprites": {
             "default": "503MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 504,
@@ -35777,7 +36280,8 @@
         },
         "sprites": {
             "default": "504MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 505,
@@ -35848,7 +36352,8 @@
         },
         "sprites": {
             "default": "505MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 506,
@@ -35919,7 +36424,8 @@
         },
         "sprites": {
             "default": "506MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 507,
@@ -35990,7 +36496,8 @@
         },
         "sprites": {
             "default": "507MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 508,
@@ -36061,7 +36568,8 @@
         },
         "sprites": {
             "default": "508MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 509,
@@ -36132,7 +36640,8 @@
         },
         "sprites": {
             "default": "509MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 510,
@@ -36203,7 +36712,8 @@
         },
         "sprites": {
             "default": "510MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 511,
@@ -36274,7 +36784,8 @@
         },
         "sprites": {
             "default": "511MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 512,
@@ -36345,7 +36856,8 @@
         },
         "sprites": {
             "default": "512MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 513,
@@ -36416,7 +36928,8 @@
         },
         "sprites": {
             "default": "513MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 514,
@@ -36487,7 +37000,8 @@
         },
         "sprites": {
             "default": "514MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 515,
@@ -36558,7 +37072,8 @@
         },
         "sprites": {
             "default": "515MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 516,
@@ -36629,7 +37144,8 @@
         },
         "sprites": {
             "default": "516MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 517,
@@ -36700,7 +37216,8 @@
         },
         "sprites": {
             "default": "517MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 518,
@@ -36771,7 +37288,8 @@
         },
         "sprites": {
             "default": "518MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 519,
@@ -36842,7 +37360,8 @@
         },
         "sprites": {
             "default": "519MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 520,
@@ -36913,7 +37432,8 @@
         },
         "sprites": {
             "default": "520MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 521,
@@ -36984,7 +37504,8 @@
         },
         "sprites": {
             "default": "521MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 522,
@@ -37055,7 +37576,8 @@
         },
         "sprites": {
             "default": "522MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 523,
@@ -37126,7 +37648,8 @@
         },
         "sprites": {
             "default": "523MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 524,
@@ -37197,7 +37720,8 @@
         },
         "sprites": {
             "default": "524MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 525,
@@ -37268,7 +37792,8 @@
         },
         "sprites": {
             "default": "525MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 526,
@@ -37339,7 +37864,8 @@
         },
         "sprites": {
             "default": "526MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 527,
@@ -37410,7 +37936,8 @@
         },
         "sprites": {
             "default": "527MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 528,
@@ -37481,7 +38008,8 @@
         },
         "sprites": {
             "default": "528MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 529,
@@ -37552,7 +38080,8 @@
         },
         "sprites": {
             "default": "529MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 530,
@@ -37623,7 +38152,8 @@
         },
         "sprites": {
             "default": "530MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 531,
@@ -37694,7 +38224,8 @@
         },
         "sprites": {
             "default": "531MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 532,
@@ -37765,7 +38296,8 @@
         },
         "sprites": {
             "default": "532MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 533,
@@ -37836,7 +38368,8 @@
         },
         "sprites": {
             "default": "533MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 534,
@@ -37907,7 +38440,8 @@
         },
         "sprites": {
             "default": "534MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 535,
@@ -37978,7 +38512,8 @@
         },
         "sprites": {
             "default": "535MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 536,
@@ -38049,7 +38584,8 @@
         },
         "sprites": {
             "default": "536MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 537,
@@ -38120,7 +38656,8 @@
         },
         "sprites": {
             "default": "537MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 538,
@@ -38191,7 +38728,8 @@
         },
         "sprites": {
             "default": "538MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 539,
@@ -38262,7 +38800,8 @@
         },
         "sprites": {
             "default": "539MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 540,
@@ -38333,7 +38872,8 @@
         },
         "sprites": {
             "default": "540MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 541,
@@ -38404,7 +38944,8 @@
         },
         "sprites": {
             "default": "541MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 542,
@@ -38475,7 +39016,8 @@
         },
         "sprites": {
             "default": "542MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 543,
@@ -38546,7 +39088,8 @@
         },
         "sprites": {
             "default": "543MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 544,
@@ -38617,7 +39160,8 @@
         },
         "sprites": {
             "default": "544MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 545,
@@ -38688,7 +39232,8 @@
         },
         "sprites": {
             "default": "545MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 546,
@@ -38759,7 +39304,8 @@
         },
         "sprites": {
             "default": "546MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 547,
@@ -38830,7 +39376,8 @@
         },
         "sprites": {
             "default": "547MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 548,
@@ -38901,7 +39448,8 @@
         },
         "sprites": {
             "default": "548MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 549,
@@ -38972,7 +39520,8 @@
         },
         "sprites": {
             "default": "549MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 550,
@@ -39043,7 +39592,8 @@
         },
         "sprites": {
             "default": "550MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 551,
@@ -39114,7 +39664,8 @@
         },
         "sprites": {
             "default": "551MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 552,
@@ -39185,7 +39736,8 @@
         },
         "sprites": {
             "default": "552MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 553,
@@ -39256,7 +39808,8 @@
         },
         "sprites": {
             "default": "553MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 554,
@@ -39327,7 +39880,8 @@
         },
         "sprites": {
             "default": "554MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 555,
@@ -39398,7 +39952,8 @@
         },
         "sprites": {
             "default": "555MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 556,
@@ -39469,7 +40024,8 @@
         },
         "sprites": {
             "default": "556MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 557,
@@ -39540,7 +40096,8 @@
         },
         "sprites": {
             "default": "557MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 558,
@@ -39611,7 +40168,8 @@
         },
         "sprites": {
             "default": "558MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 559,
@@ -39682,7 +40240,8 @@
         },
         "sprites": {
             "default": "559MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 560,
@@ -39753,7 +40312,8 @@
         },
         "sprites": {
             "default": "560MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 561,
@@ -39824,7 +40384,8 @@
         },
         "sprites": {
             "default": "561MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 562,
@@ -39895,7 +40456,8 @@
         },
         "sprites": {
             "default": "562MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 563,
@@ -39966,7 +40528,8 @@
         },
         "sprites": {
             "default": "563MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 564,
@@ -40037,7 +40600,8 @@
         },
         "sprites": {
             "default": "564MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 565,
@@ -40108,7 +40672,8 @@
         },
         "sprites": {
             "default": "565MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 566,
@@ -40179,7 +40744,8 @@
         },
         "sprites": {
             "default": "566MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 567,
@@ -40250,7 +40816,8 @@
         },
         "sprites": {
             "default": "567MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 568,
@@ -40321,7 +40888,8 @@
         },
         "sprites": {
             "default": "568MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 569,
@@ -40392,7 +40960,8 @@
         },
         "sprites": {
             "default": "569MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 570,
@@ -40463,7 +41032,8 @@
         },
         "sprites": {
             "default": "570MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 571,
@@ -40534,7 +41104,8 @@
         },
         "sprites": {
             "default": "571MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 572,
@@ -40605,7 +41176,8 @@
         },
         "sprites": {
             "default": "572MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 573,
@@ -40676,7 +41248,8 @@
         },
         "sprites": {
             "default": "573MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 574,
@@ -40747,7 +41320,8 @@
         },
         "sprites": {
             "default": "574MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 575,
@@ -40818,7 +41392,8 @@
         },
         "sprites": {
             "default": "575MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 576,
@@ -40889,7 +41464,8 @@
         },
         "sprites": {
             "default": "576MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 577,
@@ -40960,7 +41536,8 @@
         },
         "sprites": {
             "default": "577MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 578,
@@ -41031,7 +41608,8 @@
         },
         "sprites": {
             "default": "578MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 579,
@@ -41102,7 +41680,8 @@
         },
         "sprites": {
             "default": "579MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 580,
@@ -41173,7 +41752,8 @@
         },
         "sprites": {
             "default": "580MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 581,
@@ -41244,7 +41824,8 @@
         },
         "sprites": {
             "default": "581MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 582,
@@ -41315,7 +41896,8 @@
         },
         "sprites": {
             "default": "582MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 583,
@@ -41386,7 +41968,8 @@
         },
         "sprites": {
             "default": "583MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 584,
@@ -41457,7 +42040,8 @@
         },
         "sprites": {
             "default": "584MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 585,
@@ -41528,7 +42112,8 @@
         },
         "sprites": {
             "default": "585MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 586,
@@ -41599,7 +42184,8 @@
         },
         "sprites": {
             "default": "586MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 587,
@@ -41670,7 +42256,8 @@
         },
         "sprites": {
             "default": "587MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 588,
@@ -41741,7 +42328,8 @@
         },
         "sprites": {
             "default": "588MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 589,
@@ -41812,7 +42400,8 @@
         },
         "sprites": {
             "default": "589MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 590,
@@ -41883,7 +42472,8 @@
         },
         "sprites": {
             "default": "590MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 591,
@@ -41954,7 +42544,8 @@
         },
         "sprites": {
             "default": "591MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 592,
@@ -42025,7 +42616,8 @@
         },
         "sprites": {
             "default": "592MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 593,
@@ -42096,7 +42688,8 @@
         },
         "sprites": {
             "default": "593MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 594,
@@ -42167,7 +42760,8 @@
         },
         "sprites": {
             "default": "594MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 595,
@@ -42238,7 +42832,8 @@
         },
         "sprites": {
             "default": "595MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 596,
@@ -42309,7 +42904,8 @@
         },
         "sprites": {
             "default": "596MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 597,
@@ -42380,7 +42976,8 @@
         },
         "sprites": {
             "default": "597MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 598,
@@ -42451,7 +43048,8 @@
         },
         "sprites": {
             "default": "598MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 599,
@@ -42522,7 +43120,8 @@
         },
         "sprites": {
             "default": "599MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 600,
@@ -42593,7 +43192,8 @@
         },
         "sprites": {
             "default": "600MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 601,
@@ -42664,7 +43264,8 @@
         },
         "sprites": {
             "default": "601MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 602,
@@ -42735,7 +43336,8 @@
         },
         "sprites": {
             "default": "602MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 603,
@@ -42806,7 +43408,8 @@
         },
         "sprites": {
             "default": "603MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 604,
@@ -42877,7 +43480,8 @@
         },
         "sprites": {
             "default": "604MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 605,
@@ -42948,7 +43552,8 @@
         },
         "sprites": {
             "default": "605MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 606,
@@ -43019,7 +43624,8 @@
         },
         "sprites": {
             "default": "606MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 607,
@@ -43090,7 +43696,8 @@
         },
         "sprites": {
             "default": "607MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 608,
@@ -43161,7 +43768,8 @@
         },
         "sprites": {
             "default": "608MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 609,
@@ -43232,7 +43840,8 @@
         },
         "sprites": {
             "default": "609MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 610,
@@ -43303,7 +43912,8 @@
         },
         "sprites": {
             "default": "610MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 611,
@@ -43374,7 +43984,8 @@
         },
         "sprites": {
             "default": "611MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 612,
@@ -43445,7 +44056,8 @@
         },
         "sprites": {
             "default": "612MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 613,
@@ -43516,7 +44128,8 @@
         },
         "sprites": {
             "default": "613MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 614,
@@ -43587,7 +44200,8 @@
         },
         "sprites": {
             "default": "614MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 615,
@@ -43658,7 +44272,8 @@
         },
         "sprites": {
             "default": "615MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 616,
@@ -43729,7 +44344,8 @@
         },
         "sprites": {
             "default": "616MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 617,
@@ -43800,7 +44416,8 @@
         },
         "sprites": {
             "default": "617MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 618,
@@ -43871,7 +44488,8 @@
         },
         "sprites": {
             "default": "618MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 619,
@@ -43942,7 +44560,8 @@
         },
         "sprites": {
             "default": "619MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 620,
@@ -44013,7 +44632,8 @@
         },
         "sprites": {
             "default": "620MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 621,
@@ -44084,7 +44704,8 @@
         },
         "sprites": {
             "default": "621MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 622,
@@ -44155,7 +44776,8 @@
         },
         "sprites": {
             "default": "622MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 623,
@@ -44226,7 +44848,8 @@
         },
         "sprites": {
             "default": "623MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 624,
@@ -44297,7 +44920,8 @@
         },
         "sprites": {
             "default": "624MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 625,
@@ -44368,7 +44992,8 @@
         },
         "sprites": {
             "default": "625MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 626,
@@ -44439,7 +45064,8 @@
         },
         "sprites": {
             "default": "626MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 627,
@@ -44510,7 +45136,8 @@
         },
         "sprites": {
             "default": "627MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 628,
@@ -44581,7 +45208,8 @@
         },
         "sprites": {
             "default": "628MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 629,
@@ -44652,7 +45280,8 @@
         },
         "sprites": {
             "default": "629MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 630,
@@ -44723,7 +45352,8 @@
         },
         "sprites": {
             "default": "630MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 631,
@@ -44794,7 +45424,8 @@
         },
         "sprites": {
             "default": "631MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 632,
@@ -44865,7 +45496,8 @@
         },
         "sprites": {
             "default": "632MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 633,
@@ -44936,7 +45568,8 @@
         },
         "sprites": {
             "default": "633MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 634,
@@ -45007,7 +45640,8 @@
         },
         "sprites": {
             "default": "634MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 635,
@@ -45078,7 +45712,8 @@
         },
         "sprites": {
             "default": "635MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 636,
@@ -45149,7 +45784,8 @@
         },
         "sprites": {
             "default": "636MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 637,
@@ -45220,7 +45856,8 @@
         },
         "sprites": {
             "default": "637MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 638,
@@ -45291,7 +45928,8 @@
         },
         "sprites": {
             "default": "638MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 639,
@@ -45362,7 +46000,8 @@
         },
         "sprites": {
             "default": "639MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 640,
@@ -45433,7 +46072,8 @@
         },
         "sprites": {
             "default": "640MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 641,
@@ -45504,7 +46144,8 @@
         },
         "sprites": {
             "default": "641MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 642,
@@ -45575,7 +46216,8 @@
         },
         "sprites": {
             "default": "642MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 643,
@@ -45646,7 +46288,8 @@
         },
         "sprites": {
             "default": "643MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 644,
@@ -45717,7 +46360,8 @@
         },
         "sprites": {
             "default": "644MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 645,
@@ -45788,7 +46432,8 @@
         },
         "sprites": {
             "default": "645MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 646,
@@ -45859,7 +46504,8 @@
         },
         "sprites": {
             "default": "646MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 647,
@@ -45930,7 +46576,8 @@
         },
         "sprites": {
             "default": "647MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 648,
@@ -46001,7 +46648,8 @@
         },
         "sprites": {
             "default": "648MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 649,
@@ -46072,7 +46720,8 @@
         },
         "sprites": {
             "default": "649MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 650,
@@ -46143,7 +46792,8 @@
         },
         "sprites": {
             "default": "650MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 651,
@@ -46214,7 +46864,8 @@
         },
         "sprites": {
             "default": "651MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 652,
@@ -46285,7 +46936,8 @@
         },
         "sprites": {
             "default": "652MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 653,
@@ -46356,7 +47008,8 @@
         },
         "sprites": {
             "default": "653MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 654,
@@ -46427,7 +47080,8 @@
         },
         "sprites": {
             "default": "654MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 655,
@@ -46498,7 +47152,8 @@
         },
         "sprites": {
             "default": "655MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 656,
@@ -46569,7 +47224,8 @@
         },
         "sprites": {
             "default": "656MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 657,
@@ -46640,7 +47296,8 @@
         },
         "sprites": {
             "default": "657MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 658,
@@ -46711,7 +47368,8 @@
         },
         "sprites": {
             "default": "658MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 659,
@@ -46782,7 +47440,8 @@
         },
         "sprites": {
             "default": "659MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 660,
@@ -46853,7 +47512,8 @@
         },
         "sprites": {
             "default": "660MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 661,
@@ -46924,7 +47584,8 @@
         },
         "sprites": {
             "default": "661MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 662,
@@ -46995,7 +47656,8 @@
         },
         "sprites": {
             "default": "662MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 663,
@@ -47066,7 +47728,8 @@
         },
         "sprites": {
             "default": "663MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 664,
@@ -47137,7 +47800,8 @@
         },
         "sprites": {
             "default": "664MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 665,
@@ -47208,7 +47872,8 @@
         },
         "sprites": {
             "default": "665MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 666,
@@ -47279,7 +47944,8 @@
         },
         "sprites": {
             "default": "666MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 667,
@@ -47350,7 +48016,8 @@
         },
         "sprites": {
             "default": "667MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 668,
@@ -47421,7 +48088,8 @@
         },
         "sprites": {
             "default": "668MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 669,
@@ -47492,7 +48160,8 @@
         },
         "sprites": {
             "default": "669MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 670,
@@ -47563,7 +48232,8 @@
         },
         "sprites": {
             "default": "670MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 671,
@@ -47634,7 +48304,8 @@
         },
         "sprites": {
             "default": "671MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 672,
@@ -47705,7 +48376,8 @@
         },
         "sprites": {
             "default": "672MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 673,
@@ -47776,7 +48448,8 @@
         },
         "sprites": {
             "default": "673MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 674,
@@ -47847,7 +48520,8 @@
         },
         "sprites": {
             "default": "674MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 675,
@@ -47918,7 +48592,8 @@
         },
         "sprites": {
             "default": "675MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 676,
@@ -47989,7 +48664,8 @@
         },
         "sprites": {
             "default": "676MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 677,
@@ -48060,7 +48736,8 @@
         },
         "sprites": {
             "default": "677MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 678,
@@ -48131,7 +48808,8 @@
         },
         "sprites": {
             "default": "678MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 679,
@@ -48202,7 +48880,8 @@
         },
         "sprites": {
             "default": "679MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 680,
@@ -48273,7 +48952,8 @@
         },
         "sprites": {
             "default": "680MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 681,
@@ -48344,7 +49024,8 @@
         },
         "sprites": {
             "default": "681MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 682,
@@ -48415,7 +49096,8 @@
         },
         "sprites": {
             "default": "682MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 683,
@@ -48486,7 +49168,8 @@
         },
         "sprites": {
             "default": "683MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 684,
@@ -48557,7 +49240,8 @@
         },
         "sprites": {
             "default": "684MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 685,
@@ -48628,7 +49312,8 @@
         },
         "sprites": {
             "default": "685MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 686,
@@ -48699,7 +49384,8 @@
         },
         "sprites": {
             "default": "686MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 687,
@@ -48770,7 +49456,8 @@
         },
         "sprites": {
             "default": "687MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 688,
@@ -48841,7 +49528,8 @@
         },
         "sprites": {
             "default": "688MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 689,
@@ -48912,7 +49600,8 @@
         },
         "sprites": {
             "default": "689MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 690,
@@ -48983,7 +49672,8 @@
         },
         "sprites": {
             "default": "690MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 691,
@@ -49054,7 +49744,8 @@
         },
         "sprites": {
             "default": "691MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 692,
@@ -49125,7 +49816,8 @@
         },
         "sprites": {
             "default": "692MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 693,
@@ -49196,7 +49888,8 @@
         },
         "sprites": {
             "default": "693MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 694,
@@ -49267,7 +49960,8 @@
         },
         "sprites": {
             "default": "694MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 695,
@@ -49338,7 +50032,8 @@
         },
         "sprites": {
             "default": "695MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 696,
@@ -49409,7 +50104,8 @@
         },
         "sprites": {
             "default": "696MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 697,
@@ -49480,7 +50176,8 @@
         },
         "sprites": {
             "default": "697MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 698,
@@ -49551,7 +50248,8 @@
         },
         "sprites": {
             "default": "698MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 699,
@@ -49622,7 +50320,8 @@
         },
         "sprites": {
             "default": "699MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 700,
@@ -49693,7 +50392,8 @@
         },
         "sprites": {
             "default": "700MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 701,
@@ -49764,7 +50464,8 @@
         },
         "sprites": {
             "default": "701MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 702,
@@ -49835,7 +50536,8 @@
         },
         "sprites": {
             "default": "702MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 703,
@@ -49906,7 +50608,8 @@
         },
         "sprites": {
             "default": "703MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 704,
@@ -49977,7 +50680,8 @@
         },
         "sprites": {
             "default": "704MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 705,
@@ -50048,7 +50752,8 @@
         },
         "sprites": {
             "default": "705MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 706,
@@ -50119,7 +50824,8 @@
         },
         "sprites": {
             "default": "706MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 707,
@@ -50190,7 +50896,8 @@
         },
         "sprites": {
             "default": "707MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 708,
@@ -50261,7 +50968,8 @@
         },
         "sprites": {
             "default": "708MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 709,
@@ -50332,7 +51040,8 @@
         },
         "sprites": {
             "default": "709MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 710,
@@ -50403,7 +51112,8 @@
         },
         "sprites": {
             "default": "710MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 711,
@@ -50474,7 +51184,8 @@
         },
         "sprites": {
             "default": "711MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 712,
@@ -50545,7 +51256,8 @@
         },
         "sprites": {
             "default": "712MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 713,
@@ -50616,7 +51328,8 @@
         },
         "sprites": {
             "default": "713MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 714,
@@ -50687,7 +51400,8 @@
         },
         "sprites": {
             "default": "714MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 715,
@@ -50758,7 +51472,8 @@
         },
         "sprites": {
             "default": "715MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 716,
@@ -50829,7 +51544,8 @@
         },
         "sprites": {
             "default": "716MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 717,
@@ -50900,7 +51616,8 @@
         },
         "sprites": {
             "default": "717MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 718,
@@ -50971,7 +51688,8 @@
         },
         "sprites": {
             "default": "718MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 719,
@@ -51042,7 +51760,8 @@
         },
         "sprites": {
             "default": "719MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 720,
@@ -51113,7 +51832,8 @@
         },
         "sprites": {
             "default": "720MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 721,
@@ -51184,7 +51904,8 @@
         },
         "sprites": {
             "default": "721MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 722,
@@ -51255,7 +51976,8 @@
         },
         "sprites": {
             "default": "722MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 723,
@@ -51326,7 +52048,8 @@
         },
         "sprites": {
             "default": "723MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 724,
@@ -51397,7 +52120,8 @@
         },
         "sprites": {
             "default": "724MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 725,
@@ -51468,7 +52192,8 @@
         },
         "sprites": {
             "default": "725MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 726,
@@ -51539,7 +52264,8 @@
         },
         "sprites": {
             "default": "726MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 727,
@@ -51610,7 +52336,8 @@
         },
         "sprites": {
             "default": "727MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 728,
@@ -51681,7 +52408,8 @@
         },
         "sprites": {
             "default": "728MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 729,
@@ -51752,7 +52480,8 @@
         },
         "sprites": {
             "default": "729MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 730,
@@ -51823,7 +52552,8 @@
         },
         "sprites": {
             "default": "730MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 731,
@@ -51894,7 +52624,8 @@
         },
         "sprites": {
             "default": "731MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 732,
@@ -51965,7 +52696,8 @@
         },
         "sprites": {
             "default": "732MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 733,
@@ -52036,7 +52768,8 @@
         },
         "sprites": {
             "default": "733MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 734,
@@ -52107,7 +52840,8 @@
         },
         "sprites": {
             "default": "734MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 735,
@@ -52178,7 +52912,8 @@
         },
         "sprites": {
             "default": "735MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 736,
@@ -52249,7 +52984,8 @@
         },
         "sprites": {
             "default": "736MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 737,
@@ -52320,7 +53056,8 @@
         },
         "sprites": {
             "default": "737MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 738,
@@ -52391,7 +53128,8 @@
         },
         "sprites": {
             "default": "738MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 739,
@@ -52462,7 +53200,8 @@
         },
         "sprites": {
             "default": "739MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 740,
@@ -52533,7 +53272,8 @@
         },
         "sprites": {
             "default": "740MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 741,
@@ -52604,7 +53344,8 @@
         },
         "sprites": {
             "default": "741MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 742,
@@ -52675,7 +53416,8 @@
         },
         "sprites": {
             "default": "742MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 743,
@@ -52746,7 +53488,8 @@
         },
         "sprites": {
             "default": "743MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 744,
@@ -52817,7 +53560,8 @@
         },
         "sprites": {
             "default": "744MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 745,
@@ -52888,7 +53632,8 @@
         },
         "sprites": {
             "default": "745MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 746,
@@ -52959,7 +53704,8 @@
         },
         "sprites": {
             "default": "746MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 747,
@@ -53030,7 +53776,8 @@
         },
         "sprites": {
             "default": "747MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 748,
@@ -53101,7 +53848,8 @@
         },
         "sprites": {
             "default": "748MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 749,
@@ -53172,7 +53920,8 @@
         },
         "sprites": {
             "default": "749MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 750,
@@ -53243,7 +53992,8 @@
         },
         "sprites": {
             "default": "750MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 751,
@@ -53314,7 +54064,8 @@
         },
         "sprites": {
             "default": "751MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 752,
@@ -53385,7 +54136,8 @@
         },
         "sprites": {
             "default": "752MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 753,
@@ -53456,7 +54208,8 @@
         },
         "sprites": {
             "default": "753MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 754,
@@ -53527,7 +54280,8 @@
         },
         "sprites": {
             "default": "754MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 755,
@@ -53598,7 +54352,8 @@
         },
         "sprites": {
             "default": "755MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 756,
@@ -53669,7 +54424,8 @@
         },
         "sprites": {
             "default": "756MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 757,
@@ -53740,7 +54496,8 @@
         },
         "sprites": {
             "default": "757MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 758,
@@ -53811,7 +54568,8 @@
         },
         "sprites": {
             "default": "758MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 759,
@@ -53882,7 +54640,8 @@
         },
         "sprites": {
             "default": "759MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 760,
@@ -53953,7 +54712,8 @@
         },
         "sprites": {
             "default": "760MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 761,
@@ -54024,7 +54784,8 @@
         },
         "sprites": {
             "default": "761MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 762,
@@ -54095,7 +54856,8 @@
         },
         "sprites": {
             "default": "762MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 763,
@@ -54166,7 +54928,8 @@
         },
         "sprites": {
             "default": "763MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 764,
@@ -54237,7 +55000,8 @@
         },
         "sprites": {
             "default": "764MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 765,
@@ -54308,7 +55072,8 @@
         },
         "sprites": {
             "default": "765MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 766,
@@ -54379,7 +55144,8 @@
         },
         "sprites": {
             "default": "766MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 767,
@@ -54450,7 +55216,8 @@
         },
         "sprites": {
             "default": "767MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 768,
@@ -54521,7 +55288,8 @@
         },
         "sprites": {
             "default": "768MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 769,
@@ -54592,7 +55360,8 @@
         },
         "sprites": {
             "default": "769MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 770,
@@ -54663,7 +55432,8 @@
         },
         "sprites": {
             "default": "770MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 771,
@@ -54734,7 +55504,8 @@
         },
         "sprites": {
             "default": "771MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 772,
@@ -54805,7 +55576,8 @@
         },
         "sprites": {
             "default": "772MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 773,
@@ -54876,7 +55648,8 @@
         },
         "sprites": {
             "default": "773MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 774,
@@ -54947,7 +55720,8 @@
         },
         "sprites": {
             "default": "774MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 775,
@@ -55018,7 +55792,8 @@
         },
         "sprites": {
             "default": "775MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 776,
@@ -55089,7 +55864,8 @@
         },
         "sprites": {
             "default": "776MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 777,
@@ -55160,7 +55936,8 @@
         },
         "sprites": {
             "default": "777MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 778,
@@ -55231,7 +56008,8 @@
         },
         "sprites": {
             "default": "778MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 779,
@@ -55302,7 +56080,8 @@
         },
         "sprites": {
             "default": "779MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 780,
@@ -55373,7 +56152,8 @@
         },
         "sprites": {
             "default": "780MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 781,
@@ -55444,7 +56224,8 @@
         },
         "sprites": {
             "default": "781MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 782,
@@ -55515,7 +56296,8 @@
         },
         "sprites": {
             "default": "782MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 783,
@@ -55586,7 +56368,8 @@
         },
         "sprites": {
             "default": "783MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 784,
@@ -55657,7 +56440,8 @@
         },
         "sprites": {
             "default": "784MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 785,
@@ -55728,7 +56512,8 @@
         },
         "sprites": {
             "default": "785MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 786,
@@ -55799,7 +56584,8 @@
         },
         "sprites": {
             "default": "786MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 787,
@@ -55870,7 +56656,8 @@
         },
         "sprites": {
             "default": "787MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 788,
@@ -55941,7 +56728,8 @@
         },
         "sprites": {
             "default": "788MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 789,
@@ -56012,7 +56800,8 @@
         },
         "sprites": {
             "default": "789MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 790,
@@ -56083,7 +56872,8 @@
         },
         "sprites": {
             "default": "790MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 791,
@@ -56154,7 +56944,8 @@
         },
         "sprites": {
             "default": "791MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 792,
@@ -56225,7 +57016,8 @@
         },
         "sprites": {
             "default": "792MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 793,
@@ -56296,7 +57088,8 @@
         },
         "sprites": {
             "default": "793MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 794,
@@ -56367,7 +57160,8 @@
         },
         "sprites": {
             "default": "794MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 795,
@@ -56438,7 +57232,8 @@
         },
         "sprites": {
             "default": "795MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 796,
@@ -56509,7 +57304,8 @@
         },
         "sprites": {
             "default": "796MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 797,
@@ -56580,7 +57376,8 @@
         },
         "sprites": {
             "default": "797MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 798,
@@ -56651,7 +57448,8 @@
         },
         "sprites": {
             "default": "798MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 799,
@@ -56722,7 +57520,8 @@
         },
         "sprites": {
             "default": "799MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 800,
@@ -56793,7 +57592,8 @@
         },
         "sprites": {
             "default": "800MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 801,
@@ -56864,7 +57664,8 @@
         },
         "sprites": {
             "default": "801MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 802,
@@ -56935,7 +57736,8 @@
         },
         "sprites": {
             "default": "802MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 803,
@@ -57006,7 +57808,8 @@
         },
         "sprites": {
             "default": "803MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 804,
@@ -57077,7 +57880,8 @@
         },
         "sprites": {
             "default": "804MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 805,
@@ -57148,7 +57952,8 @@
         },
         "sprites": {
             "default": "805MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 806,
@@ -57219,7 +58024,8 @@
         },
         "sprites": {
             "default": "806MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 807,
@@ -57290,7 +58096,8 @@
         },
         "sprites": {
             "default": "807MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 808,
@@ -57361,7 +58168,8 @@
         },
         "sprites": {
             "default": "808MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 809,
@@ -57432,7 +58240,8 @@
         },
         "sprites": {
             "default": "809MS.png"
-        }
+        },
+        "glft": false
     },
     {
         "id": 810,
@@ -57499,7 +58308,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 811,
@@ -57566,7 +58376,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 812,
@@ -57633,7 +58444,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 813,
@@ -57700,7 +58512,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 814,
@@ -57767,7 +58580,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 815,
@@ -57834,7 +58648,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 816,
@@ -57901,7 +58716,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 817,
@@ -57968,7 +58784,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 818,
@@ -58035,7 +58852,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 819,
@@ -58102,7 +58920,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 820,
@@ -58169,7 +58988,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 821,
@@ -58236,7 +59056,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 822,
@@ -58303,7 +59124,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 823,
@@ -58370,7 +59192,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 824,
@@ -58437,7 +59260,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 825,
@@ -58504,7 +59328,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 826,
@@ -58571,7 +59396,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 827,
@@ -58638,7 +59464,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 828,
@@ -58705,7 +59532,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 829,
@@ -58772,7 +59600,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 830,
@@ -58839,7 +59668,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 831,
@@ -58906,7 +59736,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 832,
@@ -58973,7 +59804,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 833,
@@ -59040,7 +59872,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 834,
@@ -59107,7 +59940,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 835,
@@ -59174,7 +60008,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 836,
@@ -59241,7 +60076,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 837,
@@ -59308,7 +60144,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 838,
@@ -59375,7 +60212,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 839,
@@ -59442,7 +60280,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 840,
@@ -59509,7 +60348,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 841,
@@ -59576,7 +60416,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 842,
@@ -59643,7 +60484,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 843,
@@ -59710,7 +60552,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 844,
@@ -59777,7 +60620,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 845,
@@ -59844,7 +60688,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 846,
@@ -59911,7 +60756,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 847,
@@ -59978,7 +60824,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 848,
@@ -60045,7 +60892,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 849,
@@ -60112,7 +60960,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 850,
@@ -60179,7 +61028,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 851,
@@ -60246,7 +61096,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 852,
@@ -60313,7 +61164,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 853,
@@ -60380,7 +61232,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 854,
@@ -60447,7 +61300,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 855,
@@ -60514,7 +61368,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 856,
@@ -60581,7 +61436,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 857,
@@ -60648,7 +61504,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 858,
@@ -60715,7 +61572,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 859,
@@ -60782,7 +61640,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 860,
@@ -60849,7 +61708,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 861,
@@ -60916,7 +61776,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 862,
@@ -60983,7 +61844,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 863,
@@ -61050,7 +61912,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 864,
@@ -61117,7 +61980,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 865,
@@ -61184,7 +62048,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 866,
@@ -61251,7 +62116,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 867,
@@ -61318,7 +62184,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 868,
@@ -61385,7 +62252,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 869,
@@ -61452,7 +62320,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 870,
@@ -61519,7 +62388,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 871,
@@ -61586,7 +62456,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 872,
@@ -61653,7 +62524,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 873,
@@ -61720,7 +62592,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 874,
@@ -61787,7 +62660,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 875,
@@ -61854,7 +62728,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 876,
@@ -61921,7 +62796,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 877,
@@ -61988,7 +62864,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 878,
@@ -62055,7 +62932,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 879,
@@ -62122,7 +63000,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 880,
@@ -62189,7 +63068,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 881,
@@ -62256,7 +63136,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 882,
@@ -62323,7 +63204,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 883,
@@ -62390,7 +63272,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 884,
@@ -62457,7 +63340,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 885,
@@ -62524,7 +63408,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 886,
@@ -62591,7 +63476,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 887,
@@ -62658,7 +63544,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 888,
@@ -62725,7 +63612,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 889,
@@ -62792,7 +63680,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 890,
@@ -62859,7 +63748,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 891,
@@ -62926,7 +63816,8 @@
             "is_sublegendary": 1,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 892,
@@ -62993,7 +63884,8 @@
             "is_sublegendary": 1,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 893,
@@ -63060,7 +63952,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 894,
@@ -63127,7 +64020,8 @@
             "is_sublegendary": 1,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 895,
@@ -63194,7 +64088,8 @@
             "is_sublegendary": 1,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 896,
@@ -63261,7 +64156,8 @@
             "is_sublegendary": 1,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 897,
@@ -63328,7 +64224,8 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     },
     {
         "id": 898,
@@ -63395,6 +64292,7 @@
             "is_sublegendary": 0,
             "is_legendary": 0,
             "is_mythical": 0
-        }
+        },
+        "glft": false
     }
 ]

@@ -50,7 +50,7 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
             
             {/* Description */}
             <div>
-                <p className="p-4 pt-0 max-w-72">
+                <p className="max-w-72 p-4 pt-0">
                     {pokemon.info.description || "Aucune description"}
                 </p>
                 {pokemon.info.is_sublegendary === 1 || pokemon.info.is_legendary === 1 ? (
