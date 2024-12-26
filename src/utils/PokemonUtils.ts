@@ -34,7 +34,10 @@ export const getGamesName = (): string[] => {
 };
 
 export const getPokedexFromGame = (gameName: string): number[] => {
-  const game = games[gameName];
+  if (!Object.prototype.hasOwnProperty.call(games, gameName)) {
+    return [];
+  }
+  const game = games[gameName as keyof typeof games];
   if (!game || !game.pokedex) {
     return [];
   }
