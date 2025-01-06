@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getPokemonById, getPokemonGLTFPath } from '../utils/PokemonUtils';
 import PokemonInformations from '../components/PokemonInformations';
 import Pokemon3D from '../components/Pokemon3D';
+import Statistiques from '../components/Statistiques';
 
 const PokemonPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -29,7 +30,7 @@ const PokemonPage: React.FC = () => {
                     <h1 className='text-red-600'> Model not found </h1>
                 )}
             </div>
-
+            <Statistiques pokemon={pokemon.base} />
             <PokemonInformations pokemon={pokemon} />
 
         </div>

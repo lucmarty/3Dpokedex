@@ -5,7 +5,7 @@ import SpriteList from '../components/SpriteList';
 const Home: React.FC = ()=> {
     const pokemons = getAllPokemons().slice(0, 809);
     return (
-        <div className="px-48 py-8">
+        <div className=" ">
             <SpriteList pokemons={pokemons}/>
         </div>
     );
