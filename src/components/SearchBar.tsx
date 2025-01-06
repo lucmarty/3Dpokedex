@@ -45,69 +45,73 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     }
 
     return (
-        <div className="sticky top-16 z-10 my-12 scale-105 rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
-            <div>
-                <input
-                    type="text"
-                    placeholder="Chercher un pokemon"
-                    value={inputText}
-                    onChange={handleInputChange}
-                    className="w-full rounded-full bg-white p-4 text-center text-black shadow-lg transition-transform duration-300 placeholder:text-gray-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
+        <div className="sticky top-16 z-10 m-12 flex justify-center">
+            <div className=" w-full scale-105 rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Chercher un pokemon"
+                        value={inputText}
+                        onChange={handleInputChange}
+                        className="w-full rounded-full bg-white p-4 text-center text-black shadow-lg transition-transform duration-300 placeholder:text-gray-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500"
+                    />
+                </div>
+                <div className="mt-4 flex flex-wrap gap-4">
+                    <select
+                        value={selectedType}
+                        onChange={(e) => handleTypeChange(e, 1)}
+                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                    >
+                        <option value="">Type 1</option>
+                        {Object.entries(types).map(([key, value], index) => (
+                            <option value={key} key={index}>
+                                {value.french}
+                            </option>
+                        ))}
+                    </select>
+                    <select
+                        value={selectedType2}
+                        onChange={(e) => handleTypeChange(e, 2)}
+                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                    >
+                        <option value="">Type 2</option>
+                        {Object.entries(types).map(([key, value], index) => (
+                            <option value={key} key={index}>
+                                {value.french}
+                            </option>
+                        ))}
+                    </select>
+                    <select
+                        value={sortOption}
+                        onChange={handleSortChange}
+                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                    >
+                        <option value="id">Numéro</option>
+                        <option value="HP">HP</option>
+                        <option value="Attack">Attack</option>
+                        <option value="Defense">Defense</option>
+                        <option value="Sp. Attack">Sp. Attack</option>
+                        <option value="Sp. Defense">Sp. Defense</option>
+                        <option value="Speed">Speed</option>
+                    </select>
+
+
+                    <select
+                        value={selectGame}
+                        onChange={handmeGameChange}
+                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                    >
+                        <option value="">Game</option>
+                        {games.map((game, index) =>
+                            <option value={game} key={index}>{game}</option>
+                        )}
+
+                    </select>
+                </div>
             </div>
-            <div className="mt-4 flex gap-4">
-                <select
-                    value={selectedType}
-                    onChange={(e) => handleTypeChange(e, 1)}
-                    className="w-full rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
-                >
-                    <option value="">Type 1</option>
-                    {Object.entries(types).map(([key, value], index) => (
-                        <option value={key} key={index}>
-                            {value.french}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    value={selectedType2}
-                    onChange={(e) => handleTypeChange(e, 2)}
-                    className="w-full rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
-                >
-                    <option value="">Type 2</option>
-                    {Object.entries(types).map(([key, value], index) => (
-                        <option value={key} key={index}>
-                            {value.french}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    value={sortOption}
-                    onChange={handleSortChange}
-                    className="w-full rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
-                >
-                    <option value="id">Numéro</option>
-                    <option value="HP">HP</option>
-                    <option value="Attack">Attack</option>
-                    <option value="Defense">Defense</option>
-                    <option value="Sp. Attack">Sp. Attack</option>
-                    <option value="Sp. Defense">Sp. Defense</option>
-                    <option value="Speed">Speed</option>
-                </select>
 
-
-                <select
-                    value={selectGame}
-                    onChange={handmeGameChange}
-                    className="w-full rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
-                >
-                    <option value="">Game</option>
-                    {games.map((game, index) =>
-                        <option value={game} key={index}>{game}</option>
-                    )}
-
-                </select>
-            </div>
         </div>
+
     );
 };
 
