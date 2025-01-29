@@ -18,57 +18,89 @@ const Statistiques: React.FC<PokemonStatsProps> = ({ pokemon }) => {
   useEffect(() => {
     if (!svgRef.current || !pokemon) return;
 
-    d3.select(svgRef.current).selectAll("*").remove();
+    d3.select(svgRef.current).selectAll("*").remove(); // Reset SVG
 
+    const width = 400;
+    const height = 400;
+    const radius = 150;
+    const centerX = width / 2;
+    const centerY = height / 2;
+    
     const svg = d3.select(svgRef.current)
-      .attr("width", 400)
-      .attr("height", 400)
+      .attr("width", width)
+      .attr("height", height)
       .append("g")
-      .attr("transform", `translate(200, 200)`);
+      .attr("transform", `translate(${centerX}, ${centerY})`);
 
     const statNames = ["HP", "Attack", "Defense", "Sp. Attack", "Sp. Defense", "Speed"];
     const angleSlice = (Math.PI * 2) / statNames.length;
-    const rScale = d3.scaleLinear()
-      .domain([0, d3.max(Object.values(pokemon)) || 1])
-      .range([0, 150]);
 
+    const maxStat = d3.max(Object.values(pokemon)) || 100; // Définit l'échelle max
+    const rScale = d3.scaleLinear().domain([0, maxStat]).range([0, radius]);
+
+    // 🟢 **Dessiner la grille hexagonale**
     for (let level = 1; level <= 5; level++) {
-      const gridRadius = (150 * level) / 5;
-      const hexagonPoints = statNames.map((_, i) => {
+      const gridRadius = (radius * level) / 5;
+      const gridPoints = statNames.map((_, i) => {
         const angle = angleSlice * i;
-        return [gridRadius * Math.cos(angle), gridRadius * Math.sin(angle)] as [number, number];
+        return [gridRadius * Math.cos(angle), gridRadius * Math.sin(angle)];
       });
-      hexagonPoints.push(hexagonPoints[0]);
+      gridPoints.push(gridPoints[0]);
 
       svg.append("path")
-        .attr("d", d3.line()(hexagonPoints)!)
+        .attr("d", d3.line()(gridPoints)!)
         .style("fill", "none")
-        .style("stroke", "#777");
+        .style("stroke", "#aaa")
+        .style("stroke-width", "1px");
     }
 
-    const radarPointsCurrent = statNames.map((stat, i) => {
+    // 🟥 **Tracer le polygone du Pokémon**
+    const radarPoints = statNames.map((stat, i) => {
       const value = pokemon[stat as keyof typeof pokemon];
-      const x = rScale(value) * Math.cos(angleSlice * i);
-      const y = rScale(value) * Math.sin(angleSlice * i);
-      return [x, y] as [number, number];
+      return [rScale(value) * Math.cos(angleSlice * i), rScale(value) * Math.sin(angleSlice * i)];
     });
-    radarPointsCurrent.push(radarPointsCurrent[0]);
+    radarPoints.push(radarPoints[0]); // Fermer le polygone
 
     svg.append("path")
-      .data([radarPointsCurrent])
-      .attr("d", d3.line()(radarPointsCurrent)!)
-      .style("fill", "#f00")
-      .style("opacity", 0.6);
+      .attr("d", d3.line()(radarPoints)!)
+      .style("fill", "rgba(255, 0, 0, 0.4)")
+      .style("stroke", "#f00")
+      .style("stroke-width", "2px");
+
+
+    // 🔢 **Ajouter les valeurs des statistiques autour du polygone**
+    svg.selectAll(".stat-label")
+      .data(statNames)
+      .enter()
+      .append("text")
+      .attr("x", (_, i) => radarPoints[i][0] * 1.2) // Décalage vers l'extérieur
+      .attr("y", (_, i) => radarPoints[i][1] * 1.2)
+      .text((d) => pokemon[d as keyof typeof pokemon]) // Affiche la valeur
+      .attr("fill", "black")
+      .attr("font-size", "14px")
+      .attr("text-anchor", "middle")
+      .attr("dy", "0.35em")
+      .style("font-weight", "bold");
+
+    // 🏷 **Ajouter les noms des statistiques autour du graphique**
+    svg.selectAll(".stat-name")
+      .data(statNames)
+      .enter()
+      .append("text")
+      .attr("x", (_, i) => (radius + 20) * Math.cos(angleSlice * i)) // Positionné légèrement plus loin
+      .attr("y", (_, i) => (radius + 20) * Math.sin(angleSlice * i))
+      .text(d => d)
+      .attr("fill", "black")
+      .attr("font-size", "14px")
+      .attr("text-anchor", "middle")
+      .attr("dy", "0.35em")
+      .style("font-weight", "bold");
 
   }, [pokemon]);
 
-  if (!pokemon) {
-    return <p>Chargement des statistiques...</p>;
-  }
-
   return (
-    <div className="absolute left-10 flex flex-col items-center rounded-xl bg-gray-100/80 p-3 shadow-2xl">
-      <h1 className="text-6xl text-black">Statistiques</h1>
+    <div className="flex size-fit flex-col items-center rounded-xl  bg-background p-2 shadow-2xl">
+      <h1 className="text-3xl text-black">Statistiques</h1>
       <svg ref={svgRef}></svg>
     </div>
   );

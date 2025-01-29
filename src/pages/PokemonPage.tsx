@@ -18,20 +18,22 @@ const PokemonPage: React.FC = () => {
 
     return (
         <div
-            className="min-h-[calc(100vh-56px)] bg-cover bg-center"
+            className="flex min-h-[calc(100vh-56px)] bg-cover bg-center"
             style={{
                 backgroundImage: `url('${import.meta.env.BASE_URL}backgrounds/${pokemon.type[0]}.png')`,
             }}
-        >
-            <div className='size-96'>
+        >   
+        <div className="flex flex-1 justify-center self-center"><Statistiques pokemon={pokemon.base} /></div>
+            
+            <div className="flex flex-1">
                 {pokemon.glft ? (
                     <Pokemon3D modelPath={getPokemonGLTFPath(pokemon)} />
                 ) : (
                     <h1 className='text-red-600'> Model not found </h1>
                 )}
             </div>
-            <Statistiques pokemon={pokemon.base} />
-            <PokemonInformations pokemon={pokemon} />
+            <div className="flex flex-1 justify-center self-center"><PokemonInformations pokemon={pokemon} /></div>
+            
 
         </div>
     );

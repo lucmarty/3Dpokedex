@@ -46,14 +46,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
     return (
         <div className="sticky top-16 z-10 m-12 flex justify-center">
-            <div className=" w-full scale-105 rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
+            <div className=" w-full rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
                 <div>
                     <input
                         type="text"
                         placeholder="Chercher un pokemon"
                         value={inputText}
                         onChange={handleInputChange}
-                        className="w-full rounded-full bg-white p-4 text-center text-black shadow-lg transition-transform duration-300 placeholder:text-gray-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        className="w-full rounded-full bg-white p-4 text-center text-black shadow-lg transition-transform duration-300 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                     />
                 </div>
                 <div className="mt-4 flex flex-wrap gap-4">

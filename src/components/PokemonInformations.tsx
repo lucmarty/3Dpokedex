@@ -6,7 +6,7 @@ import weight from "../assets/icons8-weight-kg-64.png";
 const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
     return (
-        <div className="w-fit rounded-xl bg-background p-4 shadow-2xl">
+        <div className="size-fit rounded-xl bg-background p-4 shadow-2xl">
             {/* Types */}
             <div className="flex w-full justify-between">
                 {pokemon.type.map((t: string, index: number) => (
