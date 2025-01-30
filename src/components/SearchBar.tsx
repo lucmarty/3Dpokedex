@@ -46,7 +46,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
     return (
         <div className="sticky top-16 z-10 m-12 flex justify-center">
-            <div className=" w-full rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
+            <div className="w-fit rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
                 <div>
                     <input
                         type="text"

@@ -104,7 +104,7 @@ const Statistiques: React.FC<PokemonStatsProps> = ({ pokemon }) => {
   }, [pokemon]);
 
   return (
-    <div className="flex size-fit flex-col items-center rounded-xl bg-gray-100/80 p-3 shadow-2xl">
+    <div className="flex size-fit flex-col items-center rounded-xl bg-background p-3 shadow-2xl">
       <h1 className="text-3xl text-black">Statistiques</h1>
       <svg ref={svgRef}></svg>
     </div>
