@@ -55511,7 +55511,7 @@
         "id": 772,
         "name": {
             "english": "Type: Null",
-            "french": "Silvallié"
+            "french": "Type:0"
         },
         "type": [
             "normal",
@@ -55583,7 +55583,7 @@
         "id": 773,
         "name": {
             "english": "Silvally",
-            "french": "Météno"
+            "french": "Silvallié"
         },
         "type": [
             "normal",
@@ -55655,7 +55655,7 @@
         "id": 774,
         "name": {
             "english": "Minior",
-            "french": "Dodoala"
+            "french": "Météno"
         },
         "type": [
             "rock",
@@ -55727,7 +55727,7 @@
         "id": 775,
         "name": {
             "english": "Komala",
-            "french": "Boumata"
+            "french": "Dodoala"
         },
         "type": [
             "normal",
@@ -55799,7 +55799,7 @@
         "id": 776,
         "name": {
             "english": "Turtonator",
-            "french": "Togedemaru"
+            "french": "Boumata"
         },
         "type": [
             "fire",
@@ -55871,7 +55871,7 @@
         "id": 777,
         "name": {
             "english": "Togedemaru",
-            "french": "Mimiqui"
+            "french": "Togedemaru"
         },
         "type": [
             "electric",
@@ -55943,7 +55943,7 @@
         "id": 778,
         "name": {
             "english": "Mimikyu",
-            "french": "Denticrisse"
+            "french": "Mimiqui"
         },
         "type": [
             "ghost",
@@ -56015,7 +56015,7 @@
         "id": 779,
         "name": {
             "english": "Bruxish",
-            "french": "Draïeul"
+            "french": "Denticrisse"
         },
         "type": [
             "water",
@@ -56087,7 +56087,7 @@
         "id": 780,
         "name": {
             "english": "Drampa",
-            "french": "Sinistrail"
+            "french": "Draïeul"
         },
         "type": [
             "normal",
@@ -56159,7 +56159,7 @@
         "id": 781,
         "name": {
             "english": "Dhelmise",
-            "french": "Bébécaille"
+            "french": "Sinistrail"
         },
         "type": [
             "ghost",
@@ -56231,7 +56231,7 @@
         "id": 782,
         "name": {
             "english": "Jangmo-o",
-            "french": "Écaïd"
+            "french": "Bébécaille"
         },
         "type": [
             "dragon",
@@ -56303,7 +56303,7 @@
         "id": 783,
         "name": {
             "english": "Hakamo-o",
-            "french": "Ékaïser"
+            "french": "Écaïd"
         },
         "type": [
             "dragon",
@@ -56375,7 +56375,7 @@
         "id": 784,
         "name": {
             "english": "Kommo-o",
-            "french": "Tokorico"
+            "french": "Ékaïser"
         },
         "type": [
             "dragon",
@@ -56447,7 +56447,7 @@
         "id": 785,
         "name": {
             "english": "Tapu Koko",
-            "french": "Tokopiyon"
+            "french": "Tokorico"
         },
         "type": [
             "electric",
@@ -56519,7 +56519,7 @@
         "id": 786,
         "name": {
             "english": "Tapu Lele",
-            "french": "Tokotoro"
+            "french": "Tokopiyon"
         },
         "type": [
             "psychic",
@@ -56591,7 +56591,7 @@
         "id": 787,
         "name": {
             "english": "Tapu Bulu",
-            "french": "Tokopisco"
+            "french": "Tokotoro"
         },
         "type": [
             "grass",
@@ -56663,7 +56663,7 @@
         "id": 788,
         "name": {
             "english": "Tapu Fini",
-            "french": "Cosmog"
+            "french": "Tokopisco"
         },
         "type": [
             "water",
@@ -56735,7 +56735,7 @@
         "id": 789,
         "name": {
             "english": "Cosmog",
-            "french": "Cosmovum"
+            "french": "Cosmog"
         },
         "type": [
             "psychic",
@@ -56807,7 +56807,7 @@
         "id": 790,
         "name": {
             "english": "Cosmoem",
-            "french": "Solgaleo"
+            "french": "Cosmovum"
         },
         "type": [
             "psychic",
@@ -56879,7 +56879,7 @@
         "id": 791,
         "name": {
             "english": "Solgaleo",
-            "french": "Lunala"
+            "french": "Solgaleo"
         },
         "type": [
             "psychic",
@@ -56951,7 +56951,7 @@
         "id": 792,
         "name": {
             "english": "Lunala",
-            "french": "Zéroïd"
+            "french": "Lunala"
         },
         "type": [
             "psychic",
@@ -57023,7 +57023,7 @@
         "id": 793,
         "name": {
             "english": "Nihilego",
-            "french": "Mouscoto"
+            "french": "Zéroïd"
         },
         "type": [
             "rock",
@@ -57095,7 +57095,7 @@
         "id": 794,
         "name": {
             "english": "Buzzwole",
-            "french": "Cancrelove"
+            "french": "Mouscoto"
         },
         "type": [
             "bug",
@@ -57167,7 +57167,7 @@
         "id": 795,
         "name": {
             "english": "Pheromosa",
-            "french": "Câblifère"
+            "french": "Cancrelove"
         },
         "type": [
             "bug",
@@ -57239,7 +57239,7 @@
         "id": 796,
         "name": {
             "english": "Xurkitree",
-            "french": "Bamboiselle"
+            "french": "Câblifère"
         },
         "type": [
             "electric",
@@ -57311,7 +57311,7 @@
         "id": 797,
         "name": {
             "english": "Celesteela",
-            "french": "Katagami"
+            "french": "Bamboiselle"
         },
         "type": [
             "steel",
@@ -57383,7 +57383,7 @@
         "id": 798,
         "name": {
             "english": "Kartana",
-            "french": "Engloutyran"
+            "french": "Katagami"
         },
         "type": [
             "grass",
@@ -57455,7 +57455,7 @@
         "id": 799,
         "name": {
             "english": "Guzzlord",
-            "french": "Necrozma"
+            "french": "Engloutyran"
         },
         "type": [
             "dark",
@@ -57527,7 +57527,7 @@
         "id": 800,
         "name": {
             "english": "Necrozma",
-            "french": "Magearna"
+            "french": "Necrozma"
         },
         "type": [
             "psychic",
@@ -57599,7 +57599,7 @@
         "id": 801,
         "name": {
             "english": "Magearna",
-            "french": "Marshadow"
+            "french": "Magearna"
         },
         "type": [
             "steel",
@@ -57671,7 +57671,7 @@
         "id": 802,
         "name": {
             "english": "Marshadow",
-            "french": "Vémini"
+            "french": "Marshadow"
         },
         "type": [
             "fighting",
@@ -57743,7 +57743,7 @@
         "id": 803,
         "name": {
             "english": "Poipole",
-            "french": "Mandrillon"
+            "french": "Vémini"
         },
         "type": [
             "poison",
@@ -57815,7 +57815,7 @@
         "id": 804,
         "name": {
             "english": "Naganadel",
-            "french": "Ama-Ama"
+            "french": "Mandrillon"
         },
         "type": [
             "poison",
@@ -57887,7 +57887,7 @@
         "id": 805,
         "name": {
             "english": "Stakataka",
-            "french": "Pierroteknik"
+            "french": "Ama-Ama"
         },
         "type": [
             "rock",
@@ -57959,7 +57959,7 @@
         "id": 806,
         "name": {
             "english": "Blacephalon",
-            "french": "Zeraora"
+            "french": "Pierroteknik"
         },
         "type": [
             "fire",
@@ -58031,7 +58031,7 @@
         "id": 807,
         "name": {
             "english": "Zeraora",
-            "french": "Meltan"
+            "french": "Zeraora"
         },
         "type": [
             "electric",
@@ -58103,7 +58103,7 @@
         "id": 808,
         "name": {
             "english": "Meltan",
-            "french": "Melmetal"
+            "french": "Meltan"
         },
         "type": [
             "steel",
@@ -58175,7 +58175,7 @@
         "id": 809,
         "name": {
             "english": "Melmetal",
-            "french": ""
+            "french": "Melmetal"
         },
         "type": [
             "steel",
