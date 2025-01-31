@@ -38,7 +38,7 @@ const PokemonPage: React.FC = () => {
                 {pokemon.glft ? (
                     <Pokemon3D modelPath={getPokemonGLTFPath(pokemon)} />
                 ) : (
-                    <h1 className='text-red-600'> Model not found </h1>
+                    <h1 className='flex w-full justify-center self-center text-5xl font-bold text-red-600'> Model not found </h1>
                 )}
             </div>
             <div className="flex flex-1 justify-center self-center"><PokemonInformations pokemon={pokemon} /></div>
