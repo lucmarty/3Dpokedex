@@ -21,7 +21,19 @@ export const getAllPokemons = (): PokemonType[] => {
   return pokemons;
 };
 
-export const getPokemonGLTFPath = (pokemon: PokemonType): string => {
+export const getPokemonFamily = (pokemon: PokemonType): PokemonType[] | null => { 
+  return pokemons.filter((p:PokemonType) => 
+    p.evo.evochain_0 === pokemon.name.english ||
+    p.evo.evochain_1 === pokemon.name.english ||
+    p.evo.evochain_2 === pokemon.name.english ||
+    p.evo.evochain_3 === pokemon.name.english ||
+    p.evo.evochain_4 === pokemon.name.english ||
+    p.evo.evochain_5 === pokemon.name.english ||
+    p.evo.evochain_6 === pokemon.name.english
+  );
+};
+
+export const getPokemonGLTFPath = (pokemon: PokemonType): string => {  
   if (!pokemon.name.english) {
     return "";
   }

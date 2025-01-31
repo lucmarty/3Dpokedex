@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {  useEffect, useState }  from 'react';
+import { getPokemonFamily } from '../utils/PokemonUtils';
 import Pokemon from '../utils/PokemonType';
+import PokemonCard from './PokemonCard';
 import height from "../assets//icons8-height-32.png";
 import weight from "../assets/icons8-weight-kg-64.png";
 
-const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
+const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {    
+    const [evolutionFamily, setEvolutionFamily] = useState<Pokemon[]>([]);      
+
+    useEffect(() => {
+        setEvolutionFamily(getPokemonFamily(pokemon) || []);
+    }, [pokemon]);
 
     return (
         <div className="size-fit rounded-xl bg-background p-4 shadow-2xl">
@@ -59,6 +66,23 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
                     <p className="text-center text-red-600">Ce Pokémon est mythique</p>
                 ) : null}
             </div>
+
+            {/* Famille d'évolution */}
+            <div>
+                {evolutionFamily.length > 0 ? (
+                    <div className="flex flex-col items-center">
+                        <div className="flex flex-row gap-4">
+                            {evolutionFamily.map((p: Pokemon) => (
+                                <div key={p.id} className="flex flex-col items-center">                                    
+                                    <PokemonCard pokemon={p} size={"48em"} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ) : null}
+            </div>
+                
+            
 
         </div>
     );

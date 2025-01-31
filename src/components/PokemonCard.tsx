@@ -10,7 +10,7 @@ const PokemonCard: React.FC<{ pokemon: Pokemon, size: string }> = ({ pokemon, si
             {/* Conteneur relatif pour positionner l'ID */}
             <div className="relative">
                 <img
-                    src={`${import.meta.env.BASE_URL}sprites/` + pokemon.sprites.default}
+                    src={`${import.meta.env.BASE_URL}sprites/` + pokemon.sprites?.default}
                     alt={pokemon.name.english}
                     height={size}
                     width={size}

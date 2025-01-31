@@ -45,8 +45,8 @@ const PokemonPage: React.FC = () => {
             <div className="absolute bottom-1 left-1/2 size-fit -translate-x-1/2">
                 <div className="flex gap-12 rounded-xl bg-background p-2 shadow-2xl">
                     {pokemonSlider?.map((pokemon) => (
-                        <div className='flex flex-col items-center'>
-                            <PokemonCard key={pokemon.id} pokemon={pokemon} size={"54em"} />
+                        <div key={pokemon.id} className='flex flex-col items-center'>
+                            <PokemonCard pokemon={pokemon} size={"54em"} />
                         </div>
 
                     ))}
