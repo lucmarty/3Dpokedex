@@ -43,10 +43,10 @@ const PokemonPage: React.FC = () => {
             </div>
             <div className="flex flex-1 justify-center self-center"><PokemonInformations pokemon={pokemon} /></div>
             <div className="absolute bottom-1 left-1/2 size-fit -translate-x-1/2">
-                <div className="flex justify-around gap-5 rounded-xl bg-background p-3 shadow-2xl">
+                <div className="flex gap-12 rounded-xl bg-background p-2 shadow-2xl">
                     {pokemonSlider?.map((pokemon) => (
                         <div className='flex flex-col items-center'>
-                            <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                            <PokemonCard key={pokemon.id} pokemon={pokemon} size={"54em"} />
                         </div>
 
                     ))}
