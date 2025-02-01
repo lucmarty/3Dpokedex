@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import { getPokemonById, getPokemonGLTFPath } from '../utils/PokemonUtils';
 import PokemonInformations from '../components/PokemonInformations';
 import Pokemon3D from '../components/Pokemon3D';
-import Statistiques from '../components/Statistiques';
 import PokemonCard from '../components/PokemonCard';
+import Barplot from '../components/Barplot';
 
 const PokemonPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -32,8 +32,12 @@ const PokemonPage: React.FC = () => {
                 backgroundImage: `url('${import.meta.env.BASE_URL}backgrounds/${pokemon.type[0]}.png')`,
             }}
         >
-            <div className="flex flex-1 justify-center self-center"><Statistiques pokemon={pokemon.base} /></div>
+            {/* Pokemon Stats */}
+            {/* <div className="flex flex-1 justify-center self-center"><Statistiques pokemon={pokemon.base} /></div> */}
 
+            <div className='flex flex-1 justify-center self-center'> <Barplot width={375} height={400} data={pokemon.base} /> </div>
+
+            {/* Pokemon 3D */}
             <div className="flex flex-1">
                 {pokemon.glft ? (
                     <Pokemon3D modelPath={getPokemonGLTFPath(pokemon)} />
@@ -41,12 +45,16 @@ const PokemonPage: React.FC = () => {
                     <h1 className='flex w-full justify-center self-center text-5xl font-bold text-red-600'> Model not found </h1>
                 )}
             </div>
+            
+            {/* Pokemon Informations */}
             <div className="flex flex-1 justify-center self-center"><PokemonInformations pokemon={pokemon} /></div>
+            
+            {/* Pokemon Slider */}
             <div className="absolute bottom-1 left-1/2 size-fit -translate-x-1/2">
-                <div className="flex gap-12 rounded-xl bg-background p-2 shadow-2xl">
+                <div className="flex gap-12 rounded-xl bg-background p-3 shadow-2xl">
                     {pokemonSlider?.map((pokemon) => (
                         <div key={pokemon.id} className='flex flex-col items-center'>
-                            <PokemonCard pokemon={pokemon} size={"54em"} />
+                            <PokemonCard pokemon={pokemon} size="md"/>
                         </div>
 
                     ))}
