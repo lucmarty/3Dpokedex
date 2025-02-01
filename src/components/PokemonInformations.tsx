@@ -74,16 +74,13 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
                         <div className="flex flex-row gap-4">
                             {evolutionFamily.map((p: Pokemon) => (
                                 <div key={p.id} className="flex flex-col items-center">                                    
-                                    <PokemonCard pokemon={p} size={"48em"} />
+                                    <PokemonCard pokemon={p} size="sm" />
                                 </div>
                             ))}
                         </div>
                     </div>
                 ) : null}
-            </div>
-                
-            
-
+            </div>           
         </div>
     );
 };

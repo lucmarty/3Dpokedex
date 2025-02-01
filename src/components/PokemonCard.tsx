@@ -1,7 +1,24 @@
 import React from 'react';
 import Pokemon from '../utils/PokemonType';
 
-const PokemonCard: React.FC<{ pokemon: Pokemon, size: string }> = ({ pokemon, size }) => {
+export type SizeProps = {
+    size?: "sm" | "md" | "lg";
+};
+
+const PokemonCard: React.FC<{ pokemon: Pokemon } & SizeProps> = ({ pokemon, size = "md" }) => {
+
+    const spriteSize = {
+        sm: "size-14",
+        md: "size-20",
+        lg: "size-24",
+    };
+
+    const fontSize = {
+        sm: "text-sm",
+        md: "text-md",
+        lg: "text-lg",
+    };
+
     return (
         <a
             href={`${import.meta.env.BASE_URL}#/` + pokemon.id}
@@ -12,8 +29,8 @@ const PokemonCard: React.FC<{ pokemon: Pokemon, size: string }> = ({ pokemon, si
                 <img
                     src={`${import.meta.env.BASE_URL}sprites/` + pokemon.sprites?.default}
                     alt={pokemon.name.english}
-                    height={size}
-                    width={size}
+                    className={`rounded-md ${spriteSize[size]}`}
+                    
                 />
                 {/* ID du Pokémon en haut à gauche */}
                 <p className="absolute left-0 top-0 rounded px-1 text-xs font-bold text-muted-foreground">
@@ -21,7 +38,7 @@ const PokemonCard: React.FC<{ pokemon: Pokemon, size: string }> = ({ pokemon, si
                 </p>
             </div>
 
-            <p className="text-xl text-muted-foreground">
+            <p className={`${fontSize[size]} text-muted-foreground`}>
                 {pokemon.name.french ? pokemon.name.french : pokemon.name.english}
             </p>
         </a>
