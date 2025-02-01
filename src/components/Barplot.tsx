@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
 interface PokemonStatsProps {
@@ -51,6 +51,7 @@ export const Barplot = ({ width, height, data }: BarplotProps) => {
         const g = svg.append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
 
+        // Animation des barres
         g.selectAll(".bar")
             .data(stats)
             .enter()
@@ -58,22 +59,31 @@ export const Barplot = ({ width, height, data }: BarplotProps) => {
             .attr("class", "bar")
             .attr("y", d => y(d[0]) || 0)
             .attr("height", y.bandwidth())
-            .attr("x", 0)  // Commence à gauche
-            .attr("width", d => x(d[1]))
-            .attr("fill", d => colorMap[d[0]]);
+            .attr("x", 0)  
+            .attr("width", 0) 
+            .attr("fill", d => colorMap[d[0]])
+            .transition()  
+            .duration(1000)  
+            .attr("width", d => x(d[1]))  
 
+        // Animation des labels
         g.selectAll(".label")
             .data(stats)
             .enter()
             .append("text")
             .attr("class", "label")
-            .attr("x", d => x(d[1]) > 50 ? 5 : x(d[1]) + 5)  // Position des labels à droite ou à gauche de la barre
+            .attr("x", d => x(d[1]) > 50 ? 5 : x(d[1]) + 5) 
             .attr("y", d => (y(d[0]) || 0) + y.bandwidth() / 2)
             .attr("dy", "0.35em")
             .attr("fill", "black")
             .attr("text-anchor", "start")
-            .text(d => d[0]);
+            .text(d => d[0])
+            .attr("opacity", 0) 
+            .transition()
+            .duration(1000)
+            .attr("opacity", 1); 
 
+        // Animation des valeurs
         g.selectAll(".value")
             .data(stats)
             .enter()
@@ -84,7 +94,12 @@ export const Barplot = ({ width, height, data }: BarplotProps) => {
             .attr("dy", "0.35em")
             .attr("fill", "black")
             .attr("text-anchor", "end")
-            .text(d => d[1]);
+            .text(d => d[1])
+            .attr("opacity", 0)  
+            .transition()
+            .duration(1000)
+            .attr("opacity", 1);  
+
     }, [data, width, height]);
 
     return (
