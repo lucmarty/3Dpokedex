@@ -22,15 +22,45 @@ export const getAllPokemons = (): PokemonType[] => {
 };
 
 export const getPokemonFamily = (pokemon: PokemonType): PokemonType[] | null => { 
-  return pokemons.filter((p:PokemonType) => 
-    p.evo.evochain_0 === pokemon.name.english ||
-    p.evo.evochain_1 === pokemon.name.english ||
-    p.evo.evochain_2 === pokemon.name.english ||
-    p.evo.evochain_3 === pokemon.name.english ||
-    p.evo.evochain_4 === pokemon.name.english ||
-    p.evo.evochain_5 === pokemon.name.english ||
-    p.evo.evochain_6 === pokemon.name.english
-  );
+  const family: PokemonType[] = []; 
+  const evoChains = [
+    pokemon.evo.evochain_0,
+    pokemon.evo.evochain_1,
+    pokemon.evo.evochain_2,
+    pokemon.evo.evochain_3,
+    pokemon.evo.evochain_4,
+    pokemon.evo.evochain_5,
+    pokemon.evo.evochain_6,
+  ];
+
+  evoChains.forEach((evoName) => {
+    if (evoName) {
+      const evoPokemon = pokemons.find(p => p.name.english === evoName);
+      if (evoPokemon) {
+        family.push(evoPokemon);
+      }
+    }
+  });
+
+  pokemons.forEach((p) => {
+    if (p.evo.evochain_0 === pokemon.name.english ||
+      p.evo.evochain_1 === pokemon.name.english ||
+      p.evo.evochain_2 === pokemon.name.english ||
+      p.evo.evochain_3 === pokemon.name.english ||
+      p.evo.evochain_4 === pokemon.name.english ||
+      p.evo.evochain_5 === pokemon.name.english ||
+      p.evo.evochain_6 === pokemon.name.english) {
+      if (!family.includes(p)) {
+        family.push(p);
+      }
+    }
+  });
+
+  if (!family.includes(pokemon)) {
+    family.push(pokemon);
+  }
+
+  return family;
 };
 
 export const getPokemonGLTFPath = (pokemon: PokemonType): string => {  

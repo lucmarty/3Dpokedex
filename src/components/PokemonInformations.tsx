@@ -10,6 +10,7 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
     useEffect(() => {
         setEvolutionFamily(getPokemonFamily(pokemon) || []);
+        console.log(evolutionFamily);
     }, [pokemon]);
 
     return (
@@ -69,9 +70,9 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
 
             {/* Famille d'évolution */}
             <div>
-                {evolutionFamily.length > 0 ? (
-                    <div className="flex flex-col items-center">
-                        <div className="flex flex-row gap-4">
+                {evolutionFamily.length > 1 ? (
+                    <div className="flex flex-col">
+                        <div className="flex max-w-80 flex-row flex-wrap justify-center gap-4">
                             {evolutionFamily.map((p: Pokemon) => (
                                 <div key={p.id} className="flex flex-col items-center">                                    
                                     <PokemonCard pokemon={p} size="sm" />
