@@ -46,25 +46,28 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
     return (
         <div className="sticky top-16 z-10 m-12 flex justify-center">
-            <div className="w-fit rounded-2xl border-2 border-gray-200 bg-gray-100 p-6 shadow-2xl">
-                <div>
-                    <input
-                        type="text"
-                        placeholder="Chercher un pokemon"
-                        value={inputText}
-                        onChange={handleInputChange}
-                        className="w-full rounded-full bg-white p-4 text-center text-black shadow-lg transition-transform duration-300 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
-                    />
-                </div>
-                <div className="mt-4 flex flex-wrap gap-4">
+            <div className="w-fit rounded-2xl border-2 border-border bg-background p-6 shadow-xl">
+                
+                {/* Search bar */}
+                <input
+                    type="text"
+                    placeholder="Chercher un pokemon"
+                    value={inputText}
+                    onChange={handleInputChange}
+                    className="w-full rounded-full border-2 border-border bg-input p-4 text-center text-foreground shadow-lg transition-transform duration-300 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+                
+                {/* Filters */}
+                <div className=" mx-24 mt-6 flex flex-wrap gap-5">
+                    {/* Types */}
                     <select
                         value={selectedType}
                         onChange={(e) => handleTypeChange(e, 1)}
-                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                        className="flex-1 rounded-lg border-2 border-border bg-input p-2 text-muted-foreground shadow-lg focus:ring-2 focus:ring-red-500"
                     >
                         <option value="">Type 1</option>
                         {Object.entries(types).map(([key, value], index) => (
-                            <option value={key} key={index}>
+                            <option className='text-foreground' value={key} key={index}>
                                 {value.french}
                             </option>
                         ))}
@@ -72,38 +75,40 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                     <select
                         value={selectedType2}
                         onChange={(e) => handleTypeChange(e, 2)}
-                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                        className="flex-1 rounded-lg border-2 border-border bg-input p-2 text-muted-foreground shadow-lg focus:ring-2 focus:ring-red-500"
                     >
                         <option value="">Type 2</option>
                         {Object.entries(types).map(([key, value], index) => (
-                            <option value={key} key={index}>
+                            <option className='text-foreground' value={key} key={index}>
                                 {value.french}
                             </option>
                         ))}
                     </select>
+                    
+                    {/* Sort */}
                     <select
                         value={sortOption}
                         onChange={handleSortChange}
-                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                        className="flex-1 rounded-lg border-2 border-border bg-input p-2 text-muted-foreground shadow-lg focus:ring-2 focus:ring-red-500"
                     >
-                        <option value="id">Numéro</option>
-                        <option value="HP">HP</option>
-                        <option value="Attack">Attack</option>
-                        <option value="Defense">Defense</option>
-                        <option value="Sp. Attack">Sp. Attack</option>
-                        <option value="Sp. Defense">Sp. Defense</option>
-                        <option value="Speed">Speed</option>
+                        <option className='text-foreground' value="id">Numéro</option>
+                        <option className='text-foreground' value="HP">HP</option>
+                        <option className='text-foreground' value="Attack">Attack</option>
+                        <option className='text-foreground' value="Defense">Defense</option>
+                        <option className='text-foreground' value="Sp. Attack">Sp. Attack</option>
+                        <option className='text-foreground' value="Sp. Defense">Sp. Defense</option>
+                        <option className='text-foreground' value="Speed">Speed</option>
                     </select>
 
-
+                    {/* Games */}
                     <select
                         value={selectGame}
                         onChange={handmeGameChange}
-                        className="flex-1 rounded-lg bg-white p-2 text-black shadow-lg focus:ring-2 focus:ring-red-500"
+                        className="flex-1 rounded-lg border-2 border-border bg-input p-2 text-muted-foreground shadow-lg focus:ring-2 focus:ring-red-500"
                     >
                         <option value="">Game</option>
                         {games.map((game, index) =>
-                            <option value={game} key={index}>{game}</option>
+                            <option className='text-foreground' value={game} key={index}>{game}</option>
                         )}
 
                     </select>

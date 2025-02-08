@@ -45,7 +45,7 @@ const SpriteList: React.FC<{ pokemons: PokemonType[] }> = ({ pokemons }) => {
     return (
         <div>
             <SearchBar onSearch={handleSearch} />
-            <div className="flex flex-wrap justify-center gap-14 overflow-x-auto rounded-xl bg-card p-4 shadow-lg">
+            <div className="mb-8 flex min-h-[8em] flex-wrap justify-center gap-14 overflow-x-auto rounded-xl bg-card p-4 py-8 shadow-lg">
                 {filteredPokemon.map((pokemon) => (
                     <PokemonCard key={pokemon.id} pokemon={pokemon} size="md"/>
                 ))}

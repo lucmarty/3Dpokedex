@@ -1,16 +1,15 @@
-import React, {  useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
 import { getPokemonFamily } from '../utils/PokemonUtils';
 import Pokemon from '../utils/PokemonType';
 import PokemonCard from './PokemonCard';
-import height from "../assets//icons8-height-32.png";
-import weight from "../assets/icons8-weight-kg-64.png";
+import { HeightIcon } from './icons/HeightIcon';
+import { WeightIcon } from './icons/WeightIcon';
 
-const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {    
-    const [evolutionFamily, setEvolutionFamily] = useState<Pokemon[]>([]);      
+const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
+    const [evolutionFamily, setEvolutionFamily] = useState<Pokemon[]>([]);
 
     useEffect(() => {
         setEvolutionFamily(getPokemonFamily(pokemon) || []);
-        console.log(evolutionFamily);
     }, [pokemon]);
 
     return (
@@ -33,32 +32,26 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
                     src={`${import.meta.env.BASE_URL}sprites/${pokemon.sprites.default || "default.png"}`}
                     alt={pokemon.name?.french || "Pokémon"}
                 />
-                <h2 className="text-lg">
+                <h2 className="text-lg text-foreground">
                     N° {pokemon.id} -{" "} {pokemon.name.french || "Nom inconnu"}
                 </h2>
             </div>
 
             {/* Taille Poids */}
             <div className="flex w-full justify-around p-4">
-                <div className="flex flex-row items-center">
-                    <img
-                        src={height} alt="height"
-                        className="inline size-8"
-                    />
+                <div className="flex flex-row items-center text-foreground">
+                    <HeightIcon size={24} className="mx-2 text-foreground" />
                     {pokemon.info.height_m || 0} m
                 </div>
-                <div className="flex flex-row items-center">
-                    <img
-                        src={weight} alt="weight"
-                        className="inline size-9"
-                    />
+                <div className="flex flex-row items-center text-foreground">
+                    <WeightIcon size={24} className="mx-2 text-foreground" />
                     {pokemon.info.weight_kg || 0} Kg
                 </div>
             </div>
-            
+
             {/* Description */}
-            <div>
-                <p className="max-w-72 p-4 pt-0">
+            <div className='flex flex-col items-center'>
+                <p className="max-w-72 p-1 pt-0 text-foreground">
                     {pokemon.info.description || "Aucune description"}
                 </p>
                 {pokemon.info.is_sublegendary === 1 || pokemon.info.is_legendary === 1 ? (
@@ -74,14 +67,14 @@ const PokemonInformations: React.FC<{ pokemon: Pokemon }> = ({ pokemon }) => {
                     <div className="flex flex-col">
                         <div className="flex max-w-80 flex-row flex-wrap justify-center gap-4">
                             {evolutionFamily.map((p: Pokemon) => (
-                                <div key={p.id} className="flex flex-col items-center">                                    
+                                <div key={p.id} className="flex flex-col items-center">
                                     <PokemonCard pokemon={p} size="sm" />
                                 </div>
                             ))}
                         </div>
                     </div>
                 ) : null}
-            </div>           
+            </div>
         </div>
     );
 };
